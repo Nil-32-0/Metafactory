@@ -1,0 +1,347 @@
+[
+    {
+        "filename": "ae2wtlib-15.2.3-forge.jar",
+        "name": "AE2WTLib",
+        "version": "15.2.3-forge"
+    },
+    {
+        "filename": "AI-Improvements-1.20-0.5.2.jar",
+        "name": "AI-Improvements",
+        "version": "0.5.2"
+    },
+    {
+        "filename": "appleskin-forge-mc1.20.1-2.5.1.jar",
+        "name": "AppleSkin",
+        "version": "2.5.1+mc1.20.1"
+    },
+    {
+        "filename": "appliedenergistics2-forge-15.4.8.jar",
+        "name": "Applied Energistics 2",
+        "version": "15.4.8"
+    },
+    {
+        "filename": "architectury-9.2.14-forge.jar",
+        "name": "Architectury",
+        "version": "9.2.14"
+    },
+    {
+        "filename": "AttributeFix-Forge-1.20.1-21.0.4.jar",
+        "name": "AttributeFix",
+        "version": "21.0.4"
+    },
+    {
+        "filename": "balm-forge-1.20.1-7.3.35-all.jar",
+        "name": "Balm",
+        "version": "7.3.35"
+    },
+    {
+        "filename": "BetterAdvancements-NeoForge-1.20.1-0.4.2.25.jar",
+        "name": "Better Advancements",
+        "version": "0.4.2.25"
+    },
+    {
+        "filename": "bloodmagic-1.20.1-3.3.3-45.jar",
+        "name": "Blood Magic",
+        "version": "3.3.3-45"
+    },
+    {
+        "filename": "Botania-1.20.1-450-FORGE.jar",
+        "name": "Botania",
+        "version": "1.20.1-450-FORGE"
+    },
+    {
+        "filename": "BrandonsCore-1.20.1-3.2.1.302-universal.jar",
+        "name": "Brandon's Core",
+        "version": "3.2.1.302"
+    },
+    {
+        "filename": "cloth-config-11.1.136-forge.jar",
+        "name": "Cloth Config v10 API",
+        "version": "11.1.136"
+    },
+    {
+        "filename": "Clumps-forge-1.20.1-12.0.0.4.jar",
+        "name": "Clumps",
+        "version": "12.0.0.4"
+    },
+    {
+        "filename": "CodeChickenLib-1.20.1-4.4.0.516-universal.jar",
+        "name": "CodeChicken Lib",
+        "version": "4.4.0.516"
+    },
+    {
+        "filename": "Controlling-forge-1.20.1-12.0.2.jar",
+        "name": "Controlling",
+        "version": "12.0.2"
+    },
+    {
+        "filename": "craftingtweaks-forge-1.20.1-18.2.6.jar",
+        "name": "CraftingTweaks",
+        "version": "18.2.6"
+    },
+    {
+        "filename": "Cucumber-1.20.1-7.0.15.jar",
+        "name": "Cucumber Library",
+        "version": "7.0.15"
+    },
+    {
+        "filename": "curios-forge-5.14.1+1.20.1.jar",
+        "name": "Curios API",
+        "version": "5.14.1+1.20.1"
+    },
+    {
+        "filename": "Draconic-Evolution-1.20.1-3.1.2.621-universal.jar",
+        "name": "Draconic Evolution",
+        "version": "3.1.2.621"
+    },
+    {
+        "filename": "emi-1.1.22+1.20.1+forge.jar",
+        "name": "EMI",
+        "version": "1.1.22+1.20.1+forge"
+    },
+    {
+        "filename": "embeddium-0.3.31+mc1.20.1.jar",
+        "name": "Embeddium",
+        "version": "0.3.31+mc1.20.1"
+    },
+    {
+        "filename": "EnderIO-1.20.1-6.2.15-beta-all.jar",
+        "name": "Ender IO",
+        "version": "6.2.15-beta"
+    },
+    {
+        "filename": "entityculling-forge-1.8.2-mc1.20.1.jar",
+        "name": "EntityCulling",
+        "version": "1.8.2"
+    },
+    {
+        "filename": "ExtendedCrafting-1.20.1-6.0.10.jar",
+        "name": "Extended Crafting",
+        "version": "6.0.10"
+    },
+    {
+        "filename": "ExtendedAE-1.20-1.4.2-forge.jar",
+        "name": "ExtendedAE",
+        "version": "1.20-1.4.2-forge"
+    },
+    {
+        "filename": "ftb-library-forge-2001.2.10.jar",
+        "name": "FTB Library",
+        "version": "2001.2.10"
+    },
+    {
+        "filename": "ftb-quests-forge-2001.4.14.jar",
+        "name": "FTB Quests",
+        "version": "2001.4.14"
+    },
+    {
+        "filename": "ftb-teams-forge-2001.3.1.jar",
+        "name": "FTB Teams",
+        "version": "2001.3.1"
+    },
+    {
+        "filename": "ferritecore-6.0.1-forge.jar",
+        "name": "Ferrite Core",
+        "version": "6.0.1"
+    },
+    {
+        "filename": "geckolib-forge-1.20.1-4.7.4.jar",
+        "name": "GeckoLib 4",
+        "version": "4.7.4"
+    },
+    {
+        "filename": "Glodium-1.20-1.5-forge.jar",
+        "name": "Glodium",
+        "version": "1.20-1.5-forge"
+    },
+    {
+        "filename": "gtceu-1.20.1-7.1.4.jar",
+        "name": "GregTech",
+        "version": "7.1.4"
+    },
+    {
+        "filename": "guideme-20.1.12.jar",
+        "name": "GuideME",
+        "version": "20.1.12"
+    },
+    {
+        "filename": "ImmediatelyFast-Forge-1.5.2+1.20.4.jar",
+        "name": "ImmediatelyFast",
+        "version": "1.5.2+1.20.4"
+    },
+    {
+        "filename": "ImmersiveEngineering-1.20.1-10.2.0-183.jar",
+        "name": "Immersive Engineering",
+        "version": "1.20.1-10.2.0-183"
+    },
+    {
+        "filename": "jei-1.20.1-forge-15.20.0.112.jar",
+        "name": "Just Enough Items",
+        "version": "15.20.0.112"
+    },
+    {
+        "filename": "Kiwi-1.20.1-Forge-11.9.2.jar",
+        "name": "Kiwi Library",
+        "version": "11.9.2+forge"
+    },
+    {
+        "filename": "kubejs-forge-2001.6.5-build.16.jar",
+        "name": "KubeJS",
+        "version": "2001.6.5-build.16"
+    },
+    {
+        "filename": "kubejs_naturesaura-1.20.1-forge-1.0.1.jar",
+        "name": "KubeJS Nature's Aura",
+        "version": "1.0.0"
+    },
+    {
+        "filename": "kubejs_enderio-forge-1.20.1-0.6.0.jar",
+        "name": "KubeJS-EnderIO",
+        "version": "1.20.1-0.6.0"
+    },
+    {
+        "filename": "lootr-forge-1.20-0.7.35.93.jar",
+        "name": "Lootr",
+        "version": "0.7.35.92"
+    },
+    {
+        "filename": "ldlib-forge-1.20.1-1.0.45.jar",
+        "name": "LowDragLib",
+        "version": "1.0.45"
+    },
+    {
+        "filename": "Lychee-1.20.1-Forge-5.1.21.jar",
+        "name": "Lychee Tweaker",
+        "version": "5.1.21+forge"
+    },
+    {
+        "filename": "mna-forge-1.20.1-3.1.11-all.jar",
+        "name": "Mana and Artifice",
+        "version": "3.1.11"
+    },
+    {
+        "filename": "Mantle-1.20.1-1.11.79.jar",
+        "name": "Mantle",
+        "version": "1.11.79"
+    },
+    {
+        "filename": "mcjtylib-1.20-8.0.7.jar",
+        "name": "McJtyLib",
+        "version": "1.20-8.0.7"
+    },
+    {
+        "filename": "modernfix-forge-5.24.4+mc1.20.1.jar",
+        "name": "ModernFix",
+        "version": "5.24.4+mc1.20.1"
+    },
+    {
+        "filename": "MouseTweaks-forge-mc1.20.1-2.25.1.jar",
+        "name": "Mouse Tweaks",
+        "version": "2.25.1"
+    },
+    {
+        "filename": "multiblocked2-1.20.1-1.0.36.jar",
+        "name": "Multiblocked2",
+        "version": "1.0.36"
+    },
+    {
+        "filename": "NaturesAura-39.4.jar",
+        "name": "NaturesAura",
+        "version": "39.4"
+    },
+    {
+        "filename": "NoChatReports-FORGE-1.20.1-v2.2.2.jar",
+        "name": "No Chat Reports",
+        "version": "1.20.1-v2.2.2"
+    },
+    {
+        "filename": "Patchouli-1.20.1-84.1-FORGE.jar",
+        "name": "Patchouli",
+        "version": "1.20.1-84.1-FORGE"
+    },
+    {
+        "filename": "photon-forge-1.20.1-1.1.14.jar",
+        "name": "Photon",
+        "version": "1.1.14"
+    },
+    {
+        "filename": "rftoolsbase-1.20-5.0.6.jar",
+        "name": "RFToolsBase",
+        "version": "1.20-5.0.6"
+    },
+    {
+        "filename": "rhino-forge-2001.2.3-build.10.jar",
+        "name": "Rhino",
+        "version": "2001.2.3-build.10"
+    },
+    {
+        "filename": "Searchables-forge-1.20.1-1.0.3.jar",
+        "name": "Searchables",
+        "version": "1.0.3"
+    },
+    {
+        "filename": "starlight-1.1.2+forge.1cda73c.jar",
+        "name": "Starlight",
+        "version": "1.1.2+forge.1cda73c"
+    },
+    {
+        "filename": "supermartijn642configlib-1.1.8-forge-mc1.20.jar",
+        "name": "SuperMartijn642's Config Library",
+        "version": "1.1.8"
+    },
+    {
+        "filename": "supermartijn642corelib-1.1.18-forge-mc1.20.1.jar",
+        "name": "SuperMartijn642's Core Lib",
+        "version": "1.1.18"
+    },
+    {
+        "filename": "Terralith_1.20.x_v2.5.4.jar",
+        "name": "Terralith",
+        "version": "2.5.4"
+    },
+    {
+        "filename": "theoneprobe-1.20.1-10.0.3.jar",
+        "name": "The One Probe",
+        "version": "1.20.1-10.0.3"
+    },
+    {
+        "filename": "TConstruct-1.20.1-3.10.2.92.jar",
+        "name": "Tinkers' Construct",
+        "version": "3.10.2.92"
+    },
+    {
+        "filename": "trashcans-1.0.18b-forge-mc1.20.jar",
+        "name": "Trash Cans",
+        "version": "1.0.18b"
+    },
+    {
+        "filename": "trashslot-forge-1.20-15.1.1.jar",
+        "name": "TrashSlot",
+        "version": "15.1.1"
+    },
+    {
+        "filename": "waystones-forge-1.20.1-14.1.17.jar",
+        "name": "Waystones",
+        "version": "14.1.17"
+    },
+    {
+        "filename": "xnet-1.20-6.1.6.jar",
+        "name": "XNet",
+        "version": "1.20-6.1.6"
+    },
+    {
+        "filename": "Xaeros_Minimap_25.2.10_Forge_1.20.jar",
+        "name": "Xaero's Minimap",
+        "version": "25.2.10"
+    },
+    {
+        "filename": "XaerosWorldMap_1.39.12_Forge_1.20.jar",
+        "name": "Xaero's World Map",
+        "version": "1.39.12"
+    },
+    {
+        "filename": "YeetusExperimentus-Forge-2.3.0-build.4+mc1.20.1.jar",
+        "name": "Yeetus Experimentus",
+        "version": "2.3.0-build.4+mc1.20.1"
+    }
+]

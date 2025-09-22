@@ -28,6 +28,8 @@ minecraft/kubejs/startup_scripts/example.js
 minecraft/kubejs/config/probe-settings.json
 /minecraft/.vscode
 
+/Pack Docs/.obsidian/
+
 # Included config files
 /minecraft/config/*
 !/minecraft/config/apotheosis/

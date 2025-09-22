@@ -1,8 +1,8 @@
 [
     {
-        "filename": "ae2wtlib-15.2.3-forge.jar",
+        "filename": "ae2wtlib-15.3.0-forge.jar",
         "name": "AE2WTLib",
-        "version": "15.2.3-forge"
+        "version": "15.3.0-forge"
     },
     {
         "filename": "AI-Improvements-1.20-0.5.2.jar",
@@ -10,14 +10,59 @@
         "version": "0.5.2"
     },
     {
+        "filename": "AdvancedAE-1.2.6-1.20.1.jar",
+        "name": "Advanced AE",
+        "version": "1.2.6-1.20.1"
+    },
+    {
+        "filename": "AkashicTome-1.7-27.jar",
+        "name": "Akashic Tome",
+        "version": "1.7-27"
+    },
+    {
+        "filename": "almostunified-forge-1.20.1-0.10.1.jar",
+        "name": "AlmostUnified",
+        "version": "1.20.1-0.10.1"
+    },
+    {
+        "filename": "Apotheosis-1.20.1-7.4.8.jar",
+        "name": "Apotheosis",
+        "version": "7.4.8"
+    },
+    {
+        "filename": "ApothicAttributes-1.20.1-1.3.7.jar",
+        "name": "Apothic Attributes",
+        "version": "1.3.7"
+    },
+    {
+        "filename": "ApothicCurios-1.20.1-1.0.3e.jar",
+        "name": "Apothic Curios",
+        "version": "1.0.3e"
+    },
+    {
         "filename": "appleskin-forge-mc1.20.1-2.5.1.jar",
         "name": "AppleSkin",
         "version": "2.5.1+mc1.20.1"
     },
     {
+        "filename": "Applied-Botanics-forge-1.5.0.jar",
+        "name": "Applied Botanics",
+        "version": "1.5.0"
+    },
+    {
+        "filename": "appliedcooking-4.0.0.jar",
+        "name": "Applied Cooking",
+        "version": "4.0.0"
+    },
+    {
         "filename": "appliedenergistics2-forge-15.4.8.jar",
         "name": "Applied Energistics 2",
         "version": "15.4.8"
+    },
+    {
+        "filename": "appliede-0.14.3.jar",
+        "name": "AppliedE",
+        "version": "0.14.3"
     },
     {
         "filename": "architectury-9.2.14-forge.jar",
@@ -28,6 +73,11 @@
         "filename": "AttributeFix-Forge-1.20.1-21.0.4.jar",
         "name": "AttributeFix",
         "version": "21.0.4"
+    },
+    {
+        "filename": "avaritia_delight-0.3.jar",
+        "name": "Avaritia's Delight",
+        "version": "0.3"
     },
     {
         "filename": "balm-forge-1.20.1-7.3.35-all.jar",
@@ -55,6 +105,16 @@
         "version": "3.2.1.302"
     },
     {
+        "filename": "chisel-forge-2.0.0+mc1.20.1.jar",
+        "name": "Chisel Reborn",
+        "version": "2.0.0+mc1.20.1"
+    },
+    {
+        "filename": "cleanswing-1.20-1.8.jar",
+        "name": "Clean Swing Through Grass",
+        "version": "1.8"
+    },
+    {
         "filename": "cloth-config-11.1.136-forge.jar",
         "name": "Cloth Config v10 API",
         "version": "11.1.136"
@@ -70,14 +130,44 @@
         "version": "4.4.0.516"
     },
     {
+        "filename": "colorfulhearts-forge-1.20.1-4.3.16.jar",
+        "name": "Colorful Hearts",
+        "version": "4.3.16"
+    },
+    {
+        "filename": "compactmachines-forge-6.0.3.jar",
+        "name": "Compact Machines",
+        "version": "6.0.3"
+    },
+    {
         "filename": "Controlling-forge-1.20.1-12.0.2.jar",
         "name": "Controlling",
         "version": "12.0.2"
     },
     {
+        "filename": "cookingforblockheads-forge-1.20.1-16.0.14.jar",
+        "name": "CookingForBlockheads",
+        "version": "16.0.14"
+    },
+    {
+        "filename": "cosmeticarmorreworked-1.20.1-v1a.jar",
+        "name": "CosmeticArmorReworked",
+        "version": "1.20.1-v1a"
+    },
+    {
         "filename": "craftingtweaks-forge-1.20.1-18.2.6.jar",
         "name": "CraftingTweaks",
         "version": "18.2.6"
+    },
+    {
+        "filename": "CreativeCore_FORGE_v2.12.32_mc1.20.1.jar",
+        "name": "CreativeCore",
+        "version": "2.12.32"
+    },
+    {
+        "filename": "cryonicconfig-forge-1.0.0+mc1.20.1.jar",
+        "name": "Cryonic Config",
+        "version": "1.0.0+mc1.20.1"
     },
     {
         "filename": "Cucumber-1.20.1-7.0.15.jar",
@@ -90,6 +180,11 @@
         "version": "5.14.1+1.20.1"
     },
     {
+        "filename": "dpanvil-1.20.1-5.0.1.jar",
+        "name": "DataPack Anvil",
+        "version": "1.20.1-5.0.1"
+    },
+    {
         "filename": "Draconic-Evolution-1.20.1-3.1.2.621-universal.jar",
         "name": "Draconic Evolution",
         "version": "3.1.2.621"
@@ -100,9 +195,24 @@
         "version": "1.1.22+1.20.1+forge"
     },
     {
+        "filename": "elementalcraft-1.20.1-6.0.1.jar",
+        "name": "ElementalCraft",
+        "version": "1.20.1-6.0.1"
+    },
+    {
         "filename": "embeddium-0.3.31+mc1.20.1.jar",
         "name": "Embeddium",
         "version": "0.3.31+mc1.20.1"
+    },
+    {
+        "filename": "rubidium-extra-0.5.4.4+mc1.20.1-build.131.jar",
+        "name": "Embeddium Extra",
+        "version": "0.5.4.4+mc1.20.1-build.131"
+    },
+    {
+        "filename": "endrem_forge-5.3.3-R-1.20.1.jar",
+        "name": "End Remastered",
+        "version": "5.3.3-R-1.20.1"
     },
     {
         "filename": "EnderIO-1.20.1-6.2.15-beta-all.jar",
@@ -115,9 +225,19 @@
         "version": "1.8.2"
     },
     {
+        "filename": "ExplorersCompass-1.20.1-1.3.3-forge.jar",
+        "name": "Explorer's Compass",
+        "version": "1.20.1-1.3.3-forge"
+    },
+    {
         "filename": "ExtendedCrafting-1.20.1-6.0.10.jar",
         "name": "Extended Crafting",
         "version": "6.0.10"
+    },
+    {
+        "filename": "ExtendedCrafting-1.20.1-6.1.5u.jar",
+        "name": "Extended Crafting: Expanded",
+        "version": "6.1.5u"
     },
     {
         "filename": "ExtendedAE-1.20-1.4.2-forge.jar",
@@ -140,14 +260,64 @@
         "version": "2001.3.1"
     },
     {
+        "filename": "FarmersDelight-1.20.1-1.2.9.jar",
+        "name": "Farmer's Delight",
+        "version": "1.20.1-1.2.9"
+    },
+    {
+        "filename": "fast-ip-ping-v1.0.7-mc1.20.4-forge.jar",
+        "name": "Fast IP Ping",
+        "version": "1.0.7"
+    },
+    {
+        "filename": "FastSuite-1.20.1-5.1.0.jar",
+        "name": "Fast Suite",
+        "version": "5.1.0"
+    },
+    {
+        "filename": "FastWorkbench-1.20.1-8.0.4.jar",
+        "name": "Fast Workbench",
+        "version": "8.0.4"
+    },
+    {
+        "filename": "FastFurnace-1.20.1-8.0.2.jar",
+        "name": "FastFurnace",
+        "version": "8.0.2"
+    },
+    {
         "filename": "ferritecore-6.0.1-forge.jar",
         "name": "Ferrite Core",
         "version": "6.0.1"
     },
     {
-        "filename": "geckolib-forge-1.20.1-4.7.4.jar",
+        "filename": "forestry-1.20.1-2.6.2.jar",
+        "name": "Forestry",
+        "version": "2.6.2"
+    },
+    {
+        "filename": "gtca-1.20.1-2.0.1.jar",
+        "name": "GT Community Additions",
+        "version": "2.0.1"
+    },
+    {
+        "filename": "gtexolegs-1.1.0.jar",
+        "name": "GT Exoskeleton Legs",
+        "version": "1.1.0"
+    },
+    {
+        "filename": "GatewaysToEternity-1.20.1-4.2.6.jar",
+        "name": "Gateways To Eternity",
+        "version": "4.2.6"
+    },
+    {
+        "filename": "geckolib-forge-1.20.1-4.8.1.jar",
         "name": "GeckoLib 4",
-        "version": "4.7.4"
+        "version": "4.8.1"
+    },
+    {
+        "filename": "GeckoLibOculusCompat-Forge-1.0.1.jar",
+        "name": "GeckoLibIrisCompat",
+        "version": "1.0.0"
     },
     {
         "filename": "Glodium-1.20-1.5-forge.jar",
@@ -155,14 +325,34 @@
         "version": "1.20-1.5-forge"
     },
     {
+        "filename": "gravestone-forge-1.20.1-1.0.33.jar",
+        "name": "Gravestone Mod",
+        "version": "1.20.1-1.0.33"
+    },
+    {
+        "filename": "gm_construct-1.0.7.jar",
+        "name": "Greg's Modern Construct",
+        "version": "1.0.7"
+    },
+    {
         "filename": "gtceu-1.20.1-7.1.4.jar",
         "name": "GregTech",
         "version": "7.1.4"
     },
     {
-        "filename": "guideme-20.1.12.jar",
+        "filename": "gcyr-1.20.1-0.2.7.jar",
+        "name": "Gregicality Rocketry",
+        "version": "0.2.7"
+    },
+    {
+        "filename": "guideme-20.1.13.jar",
         "name": "GuideME",
-        "version": "20.1.12"
+        "version": "20.1.13"
+    },
+    {
+        "filename": "HostileNeuralNetworks-1.20.1-5.3.3.jar",
+        "name": "Hostile Neural Networks",
+        "version": "5.3.3"
     },
     {
         "filename": "ImmediatelyFast-Forge-1.5.2+1.20.4.jar",
@@ -175,9 +365,24 @@
         "version": "1.20.1-10.2.0-183"
     },
     {
-        "filename": "jei-1.20.1-forge-15.20.0.112.jar",
+        "filename": "inventoryessentials-forge-1.20.1-8.2.12.jar",
+        "name": "Inventory Essentials",
+        "version": "8.2.12"
+    },
+    {
+        "filename": "ironchest-1.20.1-14.4.4.jar",
+        "name": "Iron Chests",
+        "version": "1.20.1-14.4.4"
+    },
+    {
+        "filename": "ironshulkerbox-1.20.1-5.3.2.jar",
+        "name": "Iron Shulker Boxes",
+        "version": "1.20.1-5.3.2"
+    },
+    {
+        "filename": "jei-1.20.1-forge-15.20.0.113.jar",
         "name": "Just Enough Items",
-        "version": "15.20.0.112"
+        "version": "15.20.0.113"
     },
     {
         "filename": "Kiwi-1.20.1-Forge-11.9.2.jar",
@@ -195,9 +400,19 @@
         "version": "1.0.0"
     },
     {
+        "filename": "kjsprojecte-1.20.1-1.0.jar",
+        "name": "KubeJS ProjectE",
+        "version": "1.0"
+    },
+    {
         "filename": "kubejs_enderio-forge-1.20.1-0.6.0.jar",
         "name": "KubeJS-EnderIO",
         "version": "1.20.1-0.6.0"
+    },
+    {
+        "filename": "lodestone-1.20.1-1.6.4.1.jar",
+        "name": "Lodestone",
+        "version": "1.20.1-1.6.4.1"
     },
     {
         "filename": "lootr-forge-1.20-0.7.35.93.jar",
@@ -210,9 +425,24 @@
         "version": "1.0.45"
     },
     {
-        "filename": "Lychee-1.20.1-Forge-5.1.21.jar",
+        "filename": "Lychee-1.20.1-Forge-5.1.22.jar",
         "name": "Lychee Tweaker",
-        "version": "5.1.21+forge"
+        "version": "5.1.22+forge"
+    },
+    {
+        "filename": "merequester-forge-1.20.1-1.1.5.jar",
+        "name": "ME Requester",
+        "version": "1.20.1-1.1.5"
+    },
+    {
+        "filename": "megacells-forge-2.4.6-1.20.1.jar",
+        "name": "MEGA Cells",
+        "version": "2.4.6-1.20.1"
+    },
+    {
+        "filename": "malum-1.20.1-1.6.7.jar",
+        "name": "Malum",
+        "version": "1.20.1-1.6.7"
     },
     {
         "filename": "mna-forge-1.20.1-3.1.11-all.jar",
@@ -230,6 +460,11 @@
         "version": "1.20-8.0.7"
     },
     {
+        "filename": "mobees-1.20.1-0.1.5.jar",
+        "name": "Mo' Bees",
+        "version": "0.1.5"
+    },
+    {
         "filename": "modernfix-forge-5.24.4+mc1.20.1.jar",
         "name": "ModernFix",
         "version": "5.24.4+mc1.20.1"
@@ -245,14 +480,84 @@
         "version": "1.0.36"
     },
     {
+        "filename": "MysticalAdaptations-1.20.1-1.0.1.jar",
+        "name": "Mystical Adaptations",
+        "version": "1.20.1-1.0.1"
+    },
+    {
+        "filename": "MysticalAgradditions-1.20.1-7.0.11.jar",
+        "name": "Mystical Agradditions",
+        "version": "7.0.11"
+    },
+    {
+        "filename": "MysticalAgriculture-1.20.1-7.0.23.jar",
+        "name": "Mystical Agriculture",
+        "version": "7.0.23"
+    },
+    {
+        "filename": "matc-1.6.0.jar",
+        "name": "Mystical Agriculture Tiered Crystals",
+        "version": "1.6.0"
+    },
+    {
+        "filename": "MysticalCustomization-1.20.1-5.0.3.jar",
+        "name": "Mystical Customization",
+        "version": "5.0.3"
+    },
+    {
+        "filename": "NaturesCompass-1.20.1-1.11.2-forge.jar",
+        "name": "Nature's Compass",
+        "version": "1.20.1-1.11.2-forge"
+    },
+    {
         "filename": "NaturesAura-39.4.jar",
         "name": "NaturesAura",
         "version": "39.4"
     },
     {
+        "filename": "netherportalfix-forge-1.20-13.0.1.jar",
+        "name": "NetherPortalFix",
+        "version": "13.0.1"
+    },
+    {
         "filename": "NoChatReports-FORGE-1.20.1-v2.2.2.jar",
         "name": "No Chat Reports",
         "version": "1.20.1-v2.2.2"
+    },
+    {
+        "filename": "oculus-mc1.20.1-1.8.0.jar",
+        "name": "Oculus",
+        "version": "1.8.0"
+    },
+    {
+        "filename": "overloadedarmorbar-1.20.1-1.jar",
+        "name": "Overloaded Armor Bar",
+        "version": "1.20.1-1"
+    },
+    {
+        "filename": "PackagedAuto-1.20.1-3.4.14.44.jar",
+        "name": "PackagedAuto",
+        "version": "3.4.14.44"
+    },
+    {
+        "filename": "PackagedAvaritia-Re-1.20.1-2.2.2.13.jar",
+        "name": "PackagedAvaritia:Re",
+        "version": "2.2.2.13"
+    },
+    {
+        "filename": "PackagedDraconic-1.20.1-3.1.2.9.jar",
+        "name": "PackagedDraconic",
+        "version": "3.1.2.9"
+    },
+    {
+        "filename": "PackagedExCrafting-1.20.1-3.4.0.20.jar",
+        "name": "PackagedExCrafting",
+        "version": "3.4.0.20"
+    },
+    {
+        "filename": "PackagedExExCrafting-1.20.1-1.0.0.6.jar",
+        "name": "PackagedExExCrafting",
+        "version": "1.0.0.6"
     },
     {
         "filename": "Patchouli-1.20.1-84.1-FORGE.jar",
@@ -265,9 +570,49 @@
         "version": "1.1.14"
     },
     {
+        "filename": "Placebo-1.20.1-8.6.3.jar",
+        "name": "Placebo",
+        "version": "8.6.3"
+    },
+    {
+        "filename": "pneumaticcraft-repressurized-6.0.20+mc1.20.1.jar",
+        "name": "PneumaticCraft: Repressurized",
+        "version": "6.0.20+mc1.20.1"
+    },
+    {
+        "filename": "probejs-7.0.0-forge.jar",
+        "name": "ProbeJS",
+        "version": "7.0.0"
+    },
+    {
+        "filename": "ProjectExpansion-1.20.1-1.1.2.jar",
+        "name": "Project Expansion",
+        "version": "1.20.1-1.1.2"
+    },
+    {
+        "filename": "ProjectE-1.20.1-PE1.0.1.jar",
+        "name": "ProjectE",
+        "version": "1.0.1"
+    },
+    {
+        "filename": "Quark-4.0-462.jar",
+        "name": "Quark",
+        "version": "4.0-462"
+    },
+    {
         "filename": "rftoolsbase-1.20-5.0.6.jar",
         "name": "RFToolsBase",
         "version": "1.20-5.0.6"
+    },
+    {
+        "filename": "RapidLeafDecay-1.20.1-2.0.2.jar",
+        "name": "Rapid Leaf Decay",
+        "version": "2.0.2"
+    },
+    {
+        "filename": "Re-Avaritia-forged-1.20.1-1.3.9.1-release.jar",
+        "name": "Re-Avaritia-forged",
+        "version": "1.3.9.1"
     },
     {
         "filename": "rhino-forge-2001.2.3-build.10.jar",
@@ -280,9 +625,34 @@
         "version": "1.0.3"
     },
     {
+        "filename": "sebastrnlib-4.0.0.jar",
+        "name": "Sebastrn Lib",
+        "version": "4.0.0"
+    },
+    {
+        "filename": "sophisticatedbackpacks-1.20.1-3.24.6.1366.jar",
+        "name": "Sophisticated Backpacks",
+        "version": "3.24.6.1366"
+    },
+    {
+        "filename": "sophisticatedcore-1.20.1-1.2.92.1159.jar",
+        "name": "Sophisticated Core",
+        "version": "1.2.92.1159"
+    },
+    {
+        "filename": "SoLOnion_FORGE_v1.4.5_mc1.20.1.jar",
+        "name": "Spice of Life Onion",
+        "version": "1.4.5"
+    },
+    {
         "filename": "starlight-1.1.2+forge.1cda73c.jar",
         "name": "Starlight",
         "version": "1.1.2+forge.1cda73c"
+    },
+    {
+        "filename": "StorageDrawers-forge-1.20.1-12.14.3.jar",
+        "name": "Storage Drawers",
+        "version": "12.14.3"
     },
     {
         "filename": "supermartijn642configlib-1.1.8-forge-mc1.20.jar",
@@ -343,5 +713,10 @@
         "filename": "YeetusExperimentus-Forge-2.3.0-build.4+mc1.20.1.jar",
         "name": "Yeetus Experimentus",
         "version": "2.3.0-build.4+mc1.20.1"
+    },
+    {
+        "filename": "Zeta-1.0-30.jar",
+        "name": "Zeta",
+        "version": "1.0-30"
     }
 ]

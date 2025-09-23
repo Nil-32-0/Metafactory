@@ -6,7 +6,7 @@ Particle accelerator that smashes atoms together to create various fundamental p
 Takes up to 9 stacks of items, or 8 stacks and a circuit
 Takes up to 2 fluids
 Outputs up to 9 stacks of randomly determined items and up to 2 fluids
-Consumes power? - check
+Optionally consumes power
 
 Recipe format:
 ```

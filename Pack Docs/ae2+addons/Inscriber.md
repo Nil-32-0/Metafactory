@@ -1,6 +1,6 @@
 AE2 Machine
 
-Inscribes material(s) together or presses a pattern into a material
+Inscribes material(s) together or presses a pattern into a material.
 Custom unlock tier: *MV*
 
 <ins>Recipes</ins>

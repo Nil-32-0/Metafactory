@@ -7,14 +7,14 @@ List of recipe options, sorted by mod:
 	[[Item Transformation]]
 	[[Reaction Chamber]]
 <ins>Avaritia</ins>
-	Crop Extracting
-	End Crafting (7x7)
-	Extreme Cooking (9x9)
-	Extreme Crafting (9x9)
-	Extreme Smithing
-	Nether Crafting (5x5)
-	Neutronium Compressor
-	Sculk Crafting (3x3)
+	[[Crop Extracting]]
+	[End Crafting (7x7)](Table%20Crafting)
+	[Extreme Cooking (9x9)](Extreme%20Cooking)
+	[Exteme Crafting (9x9)](Table%20Crafting)
+	[[Extreme Smithing]]
+	[Nether Crafting (5x5)](Table%20Crafting)
+	[[Neutronium Compressor]]
+	[Sculk Crafting (3x3)](Table%20Crafting)
 <ins>Blood Magic</ins>
 	Alchemical Reaction Chamber (ARC)
 	Alchemy Array
@@ -50,9 +50,10 @@ List of recipe options, sorted by mod:
 	Slicing
 	Soul Binding
 <ins>Extended Crafting</ins>
-	Elite Crafting (7x7)
+	Crafting Tables
 	Ender Crafting
 	Flux Crafting
+	Quantum Compressor
 <ins>Farmer's Delight</ins>
 	Cooking Pot
 	Cutting Board

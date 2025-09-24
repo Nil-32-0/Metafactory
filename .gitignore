@@ -3,7 +3,6 @@ instance.cfg
 /.idea/
 /minecraft/coremods/
 /minecraft/crash-reports/
-/minecraft/defaultconfigs/
 /minecraft/gtceu/
 minecraft/kubejs/client_scripts/example.js
 minecraft/kubejs/server_scripts/example.js
@@ -29,6 +28,7 @@ minecraft/kubejs/startup_scripts/example.js
 minecraft/kubejs/config/probe-settings.json
 /minecraft/.vscode
 /minecraft/kubejs/.probe/
+/minecraft/.probe/
 /minecraft/kubejs/*_scripts/*.json
 
 /Pack Docs/.obsidian/
@@ -42,3 +42,6 @@ minecraft/kubejs/config/probe-settings.json
 
 !/minecraft/config/extendedcrafting-common.toml
 !/minecraft/config/gtceu.yaml
+!/minecraft/config/mysticalagriculture-common.toml
+
+/minecraft/defaultconfigs/ftb*/

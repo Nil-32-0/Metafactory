@@ -44,7 +44,7 @@ event.recipe.gtceu.tegmark_forge("recipe_id")
 										// Research requires 4000x this computation
 		.EUt(GTValues.VA[GTValues.VoltageTier]) // Optional, defaults to LuV
 	)
-	.duration()     // Duration in ticks, default 5 seconds
+	.duration()     // Optional duration in ticks, default 5 seconds
 	.EUt(GTValues.VA[GTValues.VoltageTier])
 					// Optional, energy not needed if omitted
 ```

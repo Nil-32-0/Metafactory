@@ -1,11 +1,11 @@
 List of recipe options, sorted by mod:
 
 <ins>AE2 (+Addons)</ins>
-	Charger
-	Circuit Slicer
-	Inscriber
-	Item Transformation
-	Reaction Chamber
+	[[Charger]]
+	[[Circuit Slicer]]
+	[[Inscriber]]
+	[[Item Transformation]]
+	[[Reaction Chamber]]
 <ins>Avaritia</ins>
 	Crop Extracting
 	End Crafting (7x7)

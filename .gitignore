@@ -1,4 +1,5 @@
 instance.cfg
+.packignore
 /.idea/
 /minecraft/coremods/
 /minecraft/crash-reports/
@@ -27,6 +28,8 @@ minecraft/kubejs/startup_scripts/example.js
 /minecraft/shaderpacks
 minecraft/kubejs/config/probe-settings.json
 /minecraft/.vscode
+/minecraft/kubejs/.probe/
+/minecraft/kubejs/*_scripts/*.json
 
 /Pack Docs/.obsidian/
 

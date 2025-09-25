@@ -21,6 +21,9 @@ In particular, ores that have been removed are:
 | Mystical Agriculture  | Inferium          |
 | Mystical Agriculture  | Prosperity        |
 | Mystical Agriculture  | Soulstone         |
+| Mythical Botany       | Dragonstone       |
+| Mythical Botany       | Elementium        |
+| Mythical Botany       | Gold              |
 | Occultism             | Iesnium           |
 | Occultism             | Silver            |
 | RF Tools Base         | Dimensional Shard |

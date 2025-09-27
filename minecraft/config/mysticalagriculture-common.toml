@@ -44,5 +44,5 @@
 	#Should Prosperity Ore generate in the world?
 	generateProsperityOre = false
 	#Should Soulstone generate in the world?
-	generateSoulstone = false
+	generateSoulstone = true
 

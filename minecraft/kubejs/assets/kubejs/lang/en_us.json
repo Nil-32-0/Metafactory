@@ -1,0 +1,26 @@
+{
+    "material.gtceu.blazing_quartz": "Blazing Quartz",
+    "material.gtceu.cthonic_gold": "Cthonic Gold",
+    "material.gtceu.dimensional_shard": "Dimensional Shard",
+    "material.gtceu.draconium": "Draconium",
+    "material.gtceu.inert_crystal": "Inert Crystal",
+    "material.gtceu.inferium": "Inferium",
+    "material.gtceu.natural_quartz": "Natural Quartz",
+    "material.gtceu.prosperity": "Prosperity Shard",
+    "material.gtceu.soulstone": "Soulstone",
+    "material.gtceu.vinteum": "Vinteum",
+
+    "tagprefix.livingrock": "Livingrock %s Ore",
+
+    "gtceu.jei.ore_vein.alfheim/dragonstone_peaks": "Alfheim Peaks Dragonstone Vein",
+    "gtceu.jei.ore_vein.alfheim/peak_filler": "Alfheim Peaks Livingrock",
+    "gtceu.jei.ore_vein.alfheim/small_gold": "Alfheim Small Gold Vein",
+    "gtceu.jei.ore_vein.alfheim/deep_filler": "Alfheim Depths Livingrock",
+    "gtceu.jei.ore_vein.alfheim/large_gold": "Alfheim Large Gold Vein",
+    "gtceu.jei.ore_vein.alfheim/small_deep_magic_vein": "Alfheim Depths Small Magic Vein",
+    "gtceu.jei.ore_vein.alfheim/large_deep_magic_vein": "Alfheim Depths Large Magic Vein",
+
+    "gtceu.jei.ore_vein.overworld/malignant_vein": "Malignant Vein",
+    "gtceu.jei.ore_vein.overworld/draconic_vein": "Draconic Vein",
+    "gtceu.jei.ore_vein.overworld/magic_vein": "Magic Vein"
+}

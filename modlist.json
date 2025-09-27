@@ -45,9 +45,9 @@
         "version": "2.5.1+mc1.20.1"
     },
     {
-        "filename": "Applied-Botanics-forge-1.5.0.jar",
+        "filename": "applied-botanics-forge-1.5.1.jar",
         "name": "Applied Botanics",
-        "version": "1.5.0"
+        "version": "1.5.1"
     },
     {
         "filename": "appliedcooking-4.0.0.jar",
@@ -75,9 +75,9 @@
         "version": "21.0.4"
     },
     {
-        "filename": "avaritia_delight-0.3.jar",
+        "filename": "avaritia_delight-0.3.1.jar",
         "name": "Avaritia's Delight",
-        "version": "0.3"
+        "version": "0.3.1"
     },
     {
         "filename": "balm-forge-1.20.1-7.3.35-all.jar",
@@ -310,9 +310,9 @@
         "version": "4.2.6"
     },
     {
-        "filename": "geckolib-forge-1.20.1-4.8.1.jar",
+        "filename": "geckolib-forge-1.20.1-4.8.2.jar",
         "name": "GeckoLib 4",
-        "version": "4.8.1"
+        "version": "4.8.2"
     },
     {
         "filename": "GeckoLibOculusCompat-Forge-1.0.1.jar",
@@ -380,9 +380,9 @@
         "version": "1.20.1-5.3.2"
     },
     {
-        "filename": "jei-1.20.1-forge-15.20.0.113.jar",
+        "filename": "jei-1.20.1-forge-15.20.0.116.jar",
         "name": "Just Enough Items",
-        "version": "15.20.0.113"
+        "version": "15.20.0.116"
     },
     {
         "filename": "Kiwi-1.20.1-Forge-11.9.2.jar",
@@ -408,6 +408,11 @@
         "filename": "kubejs_enderio-forge-1.20.1-0.6.0.jar",
         "name": "KubeJS-EnderIO",
         "version": "1.20.1-0.6.0"
+    },
+    {
+        "filename": "LibX-1.20.1-5.0.14.jar",
+        "name": "LibX",
+        "version": "1.20.1-5.0.14"
     },
     {
         "filename": "lodestone-1.20.1-1.6.4.1.jar",
@@ -470,6 +475,11 @@
         "version": "5.24.4+mc1.20.1"
     },
     {
+        "filename": "modonomicon-1.20.1-forge-1.77.6.jar",
+        "name": "Modonomicon",
+        "version": "1.77.6"
+    },
+    {
         "filename": "MouseTweaks-forge-mc1.20.1-2.25.1.jar",
         "name": "Mouse Tweaks",
         "version": "2.25.1"
@@ -505,6 +515,11 @@
         "version": "5.0.3"
     },
     {
+        "filename": "MythicBotany-1.20.1-4.0.4.jar",
+        "name": "MythicBotany",
+        "version": "1.20.1-4.0.4"
+    },
+    {
         "filename": "NaturesCompass-1.20.1-1.11.2-forge.jar",
         "name": "Nature's Compass",
         "version": "1.20.1-1.11.2-forge"
@@ -525,9 +540,24 @@
         "version": "1.20.1-v2.2.2"
     },
     {
+        "filename": "occultism-1.20.1-1.151.0.jar",
+        "name": "Occultism",
+        "version": "1.151.0"
+    },
+    {
+        "filename": "occultism_kubejs-1.20.1-1.0.0.jar",
+        "name": "Occultism KubeJS",
+        "version": "1.0.0"
+    },
+    {
         "filename": "oculus-mc1.20.1-1.8.0.jar",
         "name": "Oculus",
         "version": "1.8.0"
+    },
+    {
+        "filename": "open-parties-and-claims-forge-1.20.1-0.25.6.jar",
+        "name": "Open Parties and Claims",
+        "version": "0.25.6"
     },
     {
         "filename": "overloadedarmorbar-1.20.1-1.jar",
@@ -630,14 +660,19 @@
         "version": "4.0.0"
     },
     {
-        "filename": "sophisticatedbackpacks-1.20.1-3.24.6.1366.jar",
-        "name": "Sophisticated Backpacks",
-        "version": "3.24.6.1366"
+        "filename": "SmartBrainLib-forge-1.20.1-1.15.jar",
+        "name": "SmartBrainLib",
+        "version": "1.15"
     },
     {
-        "filename": "sophisticatedcore-1.20.1-1.2.92.1159.jar",
+        "filename": "sophisticatedbackpacks-1.20.1-3.24.8.1381.jar",
+        "name": "Sophisticated Backpacks",
+        "version": "3.24.8.1381"
+    },
+    {
+        "filename": "sophisticatedcore-1.20.1-1.2.95.1174.jar",
         "name": "Sophisticated Core",
-        "version": "1.2.92.1159"
+        "version": "1.2.95.1174"
     },
     {
         "filename": "SoLOnion_FORGE_v1.4.5_mc1.20.1.jar",
@@ -693,6 +728,11 @@
         "filename": "waystones-forge-1.20.1-14.1.17.jar",
         "name": "Waystones",
         "version": "14.1.17"
+    },
+    {
+        "filename": "worldedit-mod-7.2.15.jar",
+        "name": "WorldEdit",
+        "version": "7.2.15+6463-5ca4dff"
     },
     {
         "filename": "xnet-1.20-6.1.6.jar",

@@ -7,9 +7,7 @@ List of recipe options, sorted by mod:
 	[[Item Transformation]]
 	[[Reaction Chamber]]
 <ins>Avaritia</ins>
-	[[Crop Extracting]]
 	[End Crafting (7x7)](Table%20Crafting)
-	[Extreme Cooking (9x9)](Extreme%20Cooking)
 	[Exteme Crafting (9x9)](Table%20Crafting)
 	[[Extreme Smithing]]
 	[Nether Crafting (5x5)](Table%20Crafting)

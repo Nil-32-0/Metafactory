@@ -5,7 +5,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.75)
 
         vein.layer("stone")
-        vein.heightRangeTriangle(0, 60)
+        vein.heightRangeUniform(0, 50)
 
         vein.veinedVeinGenerator(generator => generator
             .oreBlock(GTMaterials.get("blazing_quartz"), 2)
@@ -41,7 +41,7 @@ GTCEuServerEvents.oreVeins(event => {
         vein.density(0.85)
 
         vein.layer("deepslate")
-        vein.heightRangeTriangle(-60, 0)
+        vein.heightRangeUniform(-60, -10)
 
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern

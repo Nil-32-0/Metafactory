@@ -8,11 +8,6 @@ In particular, ores that have been removed are:
 | ElementalCraft        | Inert Crystal     |
 | Forestry              | Apatite           |
 | Forestry              | Tin               |
-| Immersive Engineering | Bauxite           |
-| Immersive Engineering | Lead              |
-| Immersive Engineering | Nickel            |
-| Immersive Engineering | Silver            |
-| Immersive Engineering | Uranium           |
 | Malum                 | Blazing Quartz    |
 | Malum                 | Cthonic Gold      |
 | Malum                 | Natural Quartz    |

@@ -75,9 +75,9 @@
         "version": "21.0.4"
     },
     {
-        "filename": "balm-forge-1.20.1-7.3.35-all.jar",
+        "filename": "balm-forge-1.20.1-7.3.36-all.jar",
         "name": "Balm",
-        "version": "7.3.35"
+        "version": "7.3.36"
     },
     {
         "filename": "BetterAdvancements-NeoForge-1.20.1-0.4.2.25.jar",
@@ -355,11 +355,6 @@
         "version": "1.5.2+1.20.4"
     },
     {
-        "filename": "ImmersiveEngineering-1.20.1-10.2.0-183.jar",
-        "name": "Immersive Engineering",
-        "version": "1.20.1-10.2.0-183"
-    },
-    {
         "filename": "inventoryessentials-forge-1.20.1-8.2.12.jar",
         "name": "Inventory Essentials",
         "version": "8.2.12"
@@ -550,7 +545,7 @@
         "version": "1.0.0"
     },
     {
-        "filename": "oculus-mc1.20.1-1.8.0.jar.disabled",
+        "filename": "oculus-mc1.20.1-1.8.0.jar",
         "name": "Oculus",
         "version": "1.8.0"
     },
@@ -670,9 +665,9 @@
         "version": "3.24.8.1386"
     },
     {
-        "filename": "sophisticatedcore-1.20.1-1.2.96.1185.jar",
+        "filename": "sophisticatedcore-1.20.1-1.2.98.1199.jar",
         "name": "Sophisticated Core",
-        "version": "1.2.96.1185"
+        "version": "1.2.98.1199"
     },
     {
         "filename": "SoLOnion_FORGE_v1.4.5_mc1.20.1.jar",

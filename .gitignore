@@ -10,7 +10,6 @@ minecraft/kubejs/startup_scripts/example.js
 /minecraft/local/
 /minecraft/logs/
 /minecraft/modernfix/
-/minecraft/mods/
 /minecraft/patchouli_books/
 /minecraft/saves/
 /minecraft/screenshots/
@@ -45,3 +44,6 @@ minecraft/kubejs/config/probe-settings.json
 !/minecraft/config/mysticalagriculture-common.toml
 
 /minecraft/defaultconfigs/ftb*/
+
+/minecraft/mods/*
+!/minecraft/mods/gtmetx-1.20.1-0.1.0.jar

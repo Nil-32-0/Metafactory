@@ -22,12 +22,14 @@ List of recipe options, sorted by mod:
 <ins>Botania</ins>
 	Botanical Brewery
 	Elven Trade
-	Mana Infusion
+	Mana Pool
+	Mana Infuser
 	Marimorphosis
 	Orechid
 	Orechid Ignem
 	Petal Apothecary
 	Pure Daisy
+	Rune Ritual
 	Runic Altar
 	Terrestrial Agglomeration
 <ins>Draconic Evolution</ins>
@@ -48,6 +50,7 @@ List of recipe options, sorted by mod:
 	Slicing
 	Soul Binding
 <ins>Extended Crafting</ins>
+	Combination Crafting
 	Crafting Tables
 	Ender Crafting
 	Flux Crafting
@@ -185,6 +188,11 @@ List of recipe options, sorted by mod:
 	Natural Altar
 	Offering to the Gods
 	Ritual of the Forest
+<ins>Occultism</ins>
+	Crushing
+	Dimensional Mineshaft
+	Rituals
+	Spirit Fire
 <ins>PneumaticCraft</ins>
 	Amadron Tablet
 	Assembly Line

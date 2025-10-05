@@ -2,21 +2,30 @@
 
 
 const ae2Recipes = {
+    /**
+     * @param {$RecipesEventJS} event
+     */
     initialize(event) {
         this.event = event;
-        this.inscriber.initialize(event);
+        this.inscriber.event = event;
     },
 
+    /**
+     * @param {$ItemStack} output
+     * @param {$ItemStack} input
+     */
     charger (output, input) {this.event.custom({
         type:"ae2:charger",
         ingredient: input,
         result: output
     })},
     inscriber: {
-        initialize(event) {
-            this.event = event;
-        },
-
+        /**
+         * @param {$ItemStack} output
+         * @param {$ItemStack} input1
+         * @param {$ItemStack | null} input2
+         * @param {$ItemStack | null} input3
+         */
         press (output, input1, input2, input3) {
             let inputs = {}
             if (input3 != null) {
@@ -33,6 +42,11 @@ const ae2Recipes = {
                 mode: "press",
                 result: output
         })},
+        /**
+         * @param {$ItemStack} output
+         * @param {$ItemStack} input
+         * @param {$ItemStack} press
+         */
         inscribe (output, input, press) {this.event.custom({
             type: "ae2:inscriber",
             ingredients: {
@@ -43,6 +57,11 @@ const ae2Recipes = {
             result: output
         })}
     },
+    /**
+     * @param {$ItemStack} output
+     * @param {String} fluidTag
+     * @param {$ItemStack[]} inputs
+     */
     transform (output, fluidTag, inputs) {this.event.custom({
         type: "ae2:transform",
         circumstance: {

@@ -1,24 +1,25 @@
 List of recipe options, sorted by mod:
 
 <ins>AE2 (+Addons)</ins>
-	[[Charger]]
-	[[Circuit Slicer]]
-	[[Inscriber]]
-	[[Item Transformation]]
-	[[Reaction Chamber]]
+	[Charger](AE2+addons/Charger.md)
+	[Circuit Slicer](AE2+addons/Circuit%20Slicer.md)
+	[Inscriber](AE2+addons/Inscriber.md)
+	[Item Transformation](AE2+addons/Item%20Transformation.md)
+	[Reaction Chamber](AE2+addons/Reaction%20Chamber.md)
 <ins>Avaritia</ins>
-	[End Crafting (7x7)](Table%20Crafting)
-	[Exteme Crafting (9x9)](Table%20Crafting)
-	[[Extreme Smithing]]
-	[Nether Crafting (5x5)](Table%20Crafting)
-	[[Neutronium Compressor]]
-	[Sculk Crafting (3x3)](Table%20Crafting)
+	[End Crafting (7x7)](Avaritia/Table%20Crafting.md)
+	[Exteme Crafting (9x9)](Avaritia/Table%20Crafting.md)
+	[Extreme Smithing](Avaritia/Extreme%20Smithing.md)
+	[Nether Crafting (5x5)](Avaritia/Table%20Crafting.md)
+	[Neutronium Compressor](Avaritia/Neutronium%20Compressor.md)
+	[Sculk Crafting (3x3)](Avaritia/Table%20Crafting.md)
 <ins>Blood Magic</ins>
-	Alchemical Reaction Chamber (ARC)
-	Alchemy Array
-	Alchemy Table
-	Blood Altar
-	Hellfire Forge
+	[Alchemical Reaction Chamber (ARC)](Blood%20Magic/Alchemical%20Reaction%20Chamber.md)
+	[Alchemy Array](Blood%20Magic/Alchemy%20Array.md)
+	[Alchemy Table](Blood%20Magic/Alchemy%20Table.md)
+	[Blood Altar](Blood%20Magic/Blood%20Altar.md)
+	[Hellfire Forge](Blood%20Magic/Hellfire%20Forge.md)
+	Rituals
 <ins>Botania</ins>
 	Botanical Brewery
 	Elven Trade

@@ -1,7 +1,6 @@
 AE2 Machine
 
 Uses AE/FE to charge items placed within it.
-Custom unlock tier: *LV*
 
 <ins>Recipes</ins>
 Takes 1 item as an input and produces at least 1 item as an output.

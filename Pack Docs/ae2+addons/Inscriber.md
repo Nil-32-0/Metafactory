@@ -1,7 +1,6 @@
 AE2 Machine
 
 Inscribes material(s) together or presses a pattern into a material.
-Custom unlock tier: *MV*
 
 <ins>Recipes</ins>
 Has two modes: Inscribe or Press. In Press, up to three items are combined into one. In Inscribe, a press model presses a second item into a new item.

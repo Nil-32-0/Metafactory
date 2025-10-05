@@ -1,7 +1,6 @@
 Avaritia Crafting Tables
 
 Offers various crafting tables: 3x3 sculk theme, 5x5 nether theme, 7x7 end theme, 9x9 extreme theme.
-Custom unlock tier: *Undetermined*
 
 <ins>Recipes</ins>
 Takes a grid of single items and crafts up to a full stack of output items.

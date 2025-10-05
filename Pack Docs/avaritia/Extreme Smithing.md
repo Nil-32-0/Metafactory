@@ -1,7 +1,6 @@
 Avaritia Smithing Table
 
 Smiths four items together with a template.
-Custom unlock tier: *Undetermined*
 
 <ins>Recipes</ins>
 Takes 1 smithing template and 4 items to create 1 item as an output.

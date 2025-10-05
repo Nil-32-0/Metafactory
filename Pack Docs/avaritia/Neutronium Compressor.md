@@ -1,7 +1,6 @@
 Avaritia Machine
 
 Compresses items significantly.
-Custom unlock tier: *Undetermined*
 
 <ins>Recipes</ins>
 Takes a variable amount of items and some amount of time to produce up to one stack of output items.

@@ -21,18 +21,18 @@ List of recipe options, sorted by mod:
 	[Hellfire Forge](Blood%20Magic/Hellfire%20Forge.md)
 	Rituals
 <ins>Botania</ins>
-	Botanical Brewery
-	Elven Trade
-	Mana Pool
-	Mana Infuser
-	Marimorphosis
-	Orechid
-	Orechid Ignem
-	Petal Apothecary
-	Pure Daisy
-	Rune Ritual
-	Runic Altar
-	Terrestrial Agglomeration
+	[Botanical Brewery](Botania/Botanical%20Brewery.md)
+	[Elven Trade](Botania/Elven%20Trade.md)
+	[Mana Pool](Botania/Mana%20Pool.md)
+	[Mana Infuser](Botania/Mana%20Infuser.md)
+	[Marimorphosis](Botania/Marimorphosis.md)
+	[Orechid](Botania/Orechid.md)
+	[Orechid Ignem](Botania/Orechid.md)
+	[Petal Apothecary](Botania/Petal%20Apothecary.md)
+	[Pure Daisy](Botania/Pure%20Daisy.md)
+	[Rune Ritual](Botania/Rune%20Ritual.md)
+	[Runic Altar](Botania/Runic%20Altar.md)
+	[Terrestrial Agglomeration](Botania/Terrestrial%20Agglomeration.md)
 <ins>Draconic Evolution</ins>
 	Fusion Crafting
 <ins>ElementalCraft</ins>

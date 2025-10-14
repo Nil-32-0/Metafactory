@@ -34,7 +34,7 @@ List of recipe options, sorted by mod:
 	[Runic Altar](Botania/Runic%20Altar.md)
 	[Terrestrial Agglomeration](Botania/Terrestrial%20Agglomeration.md)
 <ins>Draconic Evolution</ins>
-	Fusion Crafting
+	[Fusion Crafting](Draconic%20Evolution/Fusion%20Crafting.md)
 <ins>ElementalCraft</ins>
 	Element Binding
 	Element Infusion

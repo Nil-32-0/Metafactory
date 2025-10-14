@@ -36,14 +36,12 @@ List of recipe options, sorted by mod:
 <ins>Draconic Evolution</ins>
 	[Fusion Crafting](Draconic%20Evolution/Fusion%20Crafting.md)
 <ins>ElementalCraft</ins>
-	Element Binding
-	Element Infusion
-	Grinding
-	Ore Purification
-	Pure Infusion
-	Rune Inscription
-	Sawing
-	Spell Crafting
+	[Element Binding](Elementalcraft/Element%20Binding.md)
+	[Element Infusion](Elementalcraft/Element%20Infusion.md)
+	[Grinding](Elementalcraft/Grinding.md)
+	[Pure Infusion](Elementalcraft/Pure%20Infusion.md)
+	[Rune Inscription](Elementalcraft/Rune%20Inscription.md)
+	[Sawing](Elementalcraft/Sawing.md)
 <ins>EnderIO</ins>
 	Alloy Smelting
 	Primitive Alloy Smelting

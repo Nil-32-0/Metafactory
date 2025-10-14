@@ -1,11 +1,19 @@
-Botania Magic Multiblock
-
-Infuse items together into one with mana.
+#Mod/Botania #Multiblock #RecipeType/Crafting
 
 <ins>Recipes</ins>
-Takes some items and mana and makes output items.
+Infuse items together into one with mana.
+Inputs:
+- 1+ Items
+- Mana
+Outputs:
+- Items
 
-No built-in method available, use custom recipe constructor from `botaniaRecipes` instead:
+No built-in method available, use custom recipe constructor from `BotaniaRecipes` instead:
 ```
-botaniaRecipes.terraPlate(output, inputs, mana)
+BotaniaRecipes.terraPlate(output, [inputs], mana)
 ```
+
+Parameter Types:
+output - `ItemStack`
+inputs - `ItemStack`
+mana - `int`

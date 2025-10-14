@@ -1,14 +1,21 @@
-MythicBotany Multiblock
-
-Stronger version of terrestrial agglomeration plate.
+#Mod/Botania #Mod/MythicBotany #Multiblock #RecipeType/Crafting
 
 <ins>Recipes</ins>
-Takes a number of input items and creates output item(s).
-Consumes mana during operation.
+Stronger version of terrestrial agglomeration plate.
+Inputs:
+- 1+ Items
+- Mana
+Outputs:
+- 1+ Items
 
-No built-in method available, use custom recipe constructor from bloodMagicRecipes instead:
+No built-in method available, use custom recipe constructor from `BotaniaRecipes` instead:
 ```
-botaniaRecipes.manaInfuser(output, inputs[], mana, fromColor, toColor)
+BotaniaRecipes.manaInfuser(output, [inputs], mana, fromColor, toColor)
 ```
 
-`fromColor` and `toColor` can be formatted as either decimal equivalents of color hex codes or as strings containing a hex code.
+Parameter Types:
+output - `ItemStack`
+inputs - `ItemStack`
+mana - `int`
+fromColor - `String`, must be a valid hex code (#XXXXXX), or `int`, must be a decimal equivalent of a hex code
+toColor - `String`, must be a valid hex code (#XXXXXX), or `int`, must be a decimal equivalent of a hex code

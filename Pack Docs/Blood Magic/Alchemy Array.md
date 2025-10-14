@@ -1,12 +1,21 @@
-Blood Magic Recipe Type
-
-Allows performing rituals in-world with ritual arrays.
+#Mod/BloodMagic #RecipeType/Crafting
 
 <ins>Recipes</ins>
-Takes a base item and an addition item and combine them magically.
+Magically combines the two items provided
+Inputs:
+- Base Item
+- Addition Item
+Outputs:
+- Item
 Requires a texture for the circle to be specified.
 
-No built-in method available, use custom recipe constructor from bloodMagicRecipes instead:
+No built-in method available, use custom recipe constructor from `BloodMagicRecipes` instead:
 ```
-bloodMagicRecipes.array(output, base, addition, texture)
+BloodMagicRecipes.array(output, base, addition, texture)
 ```
+
+Parameter Types:
+output - `ItemStack`
+base - `ItemStack`
+addition - `ItemStack`
+texture - `String`, must be a valid resource location of a texture

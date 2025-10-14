@@ -1,15 +1,24 @@
-Advanced AE Machine
-
-Reacts materials together in a fluid.
+#Mod/AE2 #Mod/AdvancedAE #RecipeType/Machine
 
 <ins>Recipes</ins>
-Takes a fluid and up to nine item stacks as inputs and produces output items or an output fluid.
-Requires energy (in FE units).
+Reacts materials together in a fluid.
+Inputs:
+- 1-9\*64 Items
+- Fluid
+- Power
+Outputs (Inclusive Or):
+- 1-9\*64 Items
+- Fluid
 # Currently not functional
 
-Custom recipes for reaction chamber currently do not work.
-No built-in method, use custom recipe constructor from ae2Recipes instead.
+No built-in method, use custom recipe constructor from `AE2Recipes` instead.
 ```
-ae2Recipes.reaction([Item.of("outputItem") | Fluid.of("outputFluid")] inputEnergy, 
-	[Item.of("inputItem")], Fluid.of("inputFluid"))
+AE2Recipes.reaction([outputs], energy, 
+	[inputs], inputFluid)
 ```
+
+Parameter Types:
+outputs - `ItemStack` or `FluidStack`
+energy - `int`
+inputs - `ItemStack`
+inputFluid - `FluidStack`

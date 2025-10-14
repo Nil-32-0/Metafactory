@@ -1,9 +1,12 @@
-Avaritia Smithing Table
-
-Smiths four items together with a template.
+#Mod/Avaritia #RecipeType/Crafting
 
 <ins>Recipes</ins>
-Takes 1 smithing template and 4 items to create 1 item as an output.
+Smiths four items together with a template.
+Inputs:
+- 4 Items
+- Smithing Template (Item)
+Outputs:
+- 1 Item
 
 Built-in method is available.
 Recipe Syntax:
@@ -12,4 +15,7 @@ events.recipes.avaritia.extreme_smithing(output, template, base,
 	[additionTop, additionMiddle, additionBottom])
 ```
 
-Built-in method can also be accessed with `avaritiaRecipes.extreme_smithing()`
+Built-in method can also be accessed with `AvaritiaRecipes.extreme_smithing()`
+
+Parameter Types:
+All are `ItemStack`

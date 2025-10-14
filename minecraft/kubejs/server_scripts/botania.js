@@ -4,10 +4,10 @@
  * Wrapper function to generate a JSON with the variables required by the runes in MythicBotany rune ritual recipes.
  *
  * Forced to use because Rhino prevents creation of custom classes
- * @param {$ItemStack} item The item to be used in the specified position
- * @param {Number} x The x-axis location of the item, relative to the center rune. Positive is to the right
- * @param {Number} z The z-axis location of the item, relative to the center rune. Positive is upwards
- * @param {boolean} consume Whether the item should be consumed or not
+ * @param {$ItemStack} item The Item to be used in the specified position
+ * @param {Number} x The x-axis location of the Item, relative to the center rune. Positive is to the right
+ * @param {Number} z The z-axis location of the Item, relative to the center rune. Positive is upwards
+ * @param {boolean} consume Whether the Item should be consumed or not
  * @return {{consume: boolean, rune: $ItemStack, x: Number, z: Number}}
  */
 function runeConstructor(item, x, z, consume) {
@@ -19,7 +19,7 @@ function runeConstructor(item, x, z, consume) {
     }
 }
 
-const botaniaRecipes = {
+const BotaniaRecipes = {
     /**
      * @param {$RecipesEventJS} event
      */
@@ -31,7 +31,7 @@ const botaniaRecipes = {
 
     /**
      * @param {String} brewID ID Corresponding to a Botania brew
-     * @param {$ItemStack[]} items List of items used in the recipe
+     * @param {$ItemStack[]} items List of Items used in the recipe
      */
     brew (brewID, items) {
         this.event.custom({
@@ -41,8 +41,8 @@ const botaniaRecipes = {
         })
     },
     /**
-     * @param {$ItemStack[]} outputItems List of items produced by the recipe
-     * @param {$ItemStack[]} inputItems List of items input to the recipe
+     * @param {$ItemStack[]} outputItems List of Items produced by the recipe
+     * @param {$ItemStack[]} inputItems List of Items consumed by the recipe
      */
     elvenTrade (outputItems, inputItems) {this.event.custom({
         type: "botania:elven_trade",
@@ -56,14 +56,14 @@ const botaniaRecipes = {
         },
 
         /**
-         * @param {$ItemStack} item Recipe input item
+         * @param {$ItemStack} item Item consumed by the recipe
          */
         inputItem (item) {
             this.recipe.input = item;
             return this;
         },
         /**
-         * @param {$ItemStack[]} items List of valid recipe input items
+         * @param {$ItemStack[]} items List of valid Items that may be consumed by the recipe
          */
         inputItems (items) {
             this.recipe.input = items;
@@ -95,10 +95,10 @@ const botaniaRecipes = {
 
     /**
      * @param {$ItemStack} output Item produced by the recipe
-     * @param {$ItemStack[]} inputs List of items input to the recipe
+     * @param {$ItemStack[]} inputs List of Items consumed by the recipe
      * @param {Number} mana The amount of mana the recipe should consume. A full pool holds 1,000,000 mana
-     * @param {Number | String} fromColor The color used by the effects. Should be formatted as a hex code with "#XXXXXX" or as the decimal equivalent of that number
-     * @param {Number | String} toColor The color used by the effects. Should be formatted the same as fromColor
+     * @param {Number | String} fromColor The start color used by the effects. Should be formatted as a hex code with "#XXXXXX" or as the decimal equivalent of that number
+     * @param {Number | String} toColor The end color used by the effects. Should be formatted the same as fromColor
      */
     manaInfusion (output, inputs, mana, fromColor, toColor) {
         let decFromColor = 0;
@@ -205,8 +205,8 @@ const botaniaRecipes = {
 
     /**
      * @param {$ItemStack} output Item produced by the recipe
-     * @param {$ItemStack[]} inputs List of items required for the recipe
-     * @param {$ItemStack} reagent Item used to finalize recipe and create the output
+     * @param {$ItemStack[]} inputs List of items consumed by the recipe
+     * @param {$ItemStack} reagent Item consumed to finalize recipe and create the output
      */
     apothecary (output, inputs, reagent) {this.event.custom({
         type: "botania:petal_apothecary",
@@ -239,7 +239,7 @@ const botaniaRecipes = {
 
     /**
      * @param {$ItemStack[]} outputs List of items produced by the recipe
-     * @param {$ItemStack[]} inputs List of items required for the recipe
+     * @param {$ItemStack[]} inputs List of items consumed by the recipe
      * @param {$ItemStack} centerItem Item to be placed in the center of the multiblock
      * @param {Number} mana The amount of mana the recipe should consume. A full pool holds 1,000,000 mana
      * @param {Number} duration The recipe duration in ticks, 1 second = 20 ticks
@@ -259,7 +259,7 @@ const botaniaRecipes = {
 
     /**
      * @param {$ItemStack} output Item produced by the recipe
-     * @param {$ItemStack[]} inputs List of items required for the recipe
+     * @param {$ItemStack[]} inputs List of items consumed by the recipe
      * @param {Number} mana The amount of mana the recipe should consume. A full pool holds 1,000,000 mana
      */
     runeAltar (output, inputs, mana) {this.event.custom({
@@ -271,7 +271,7 @@ const botaniaRecipes = {
 
     /**
      * @param {$ItemStack} output Item produced by the recipe
-     * @param {$ItemStack[]} inputs List of items required for the recipe
+     * @param {$ItemStack[]} inputs List of items consumed by the recipe
      * @param {Number} mana The amount of mana the recipe should consume. A full pool holds 1,000,000 mana
      */
     terraPlate (output, inputs, mana) {this.event.custom({

@@ -1,9 +1,12 @@
-ExtendedAE Machine
-
-Cuts provided blocks into circuits.
+#Mod/AE2 #Mod/ExtendedAE #RecipeType/Machine
 
 <ins>Recipes</ins>
-Takes an item and some fluid as an input and produces at least one item as output.
-Requires power.
+Slices blocks into circuits
+Inputs:
+- 1 Item (Block)
+- Fluid
+- Power
+Outputs:
+- 1+ Item
 
 Recipes do not appear modifiable.

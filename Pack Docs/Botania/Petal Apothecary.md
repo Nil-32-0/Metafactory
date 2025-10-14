@@ -1,11 +1,17 @@
-Botania Crafting
-
-Combines items within water.
+#Mod/Botania #RecipeType/Crafting
 
 <ins>Recipes</ins>
-Takes any number of items and a catalyst to create an output item.
+Combines items within water.
+Inputs:
+- 1+ Items
+- Catalyst (Item)
+Outputs:
+- Item
 
-No built-in method available, use custom recipe constructor from botaniaRecipes instead:
+No built-in method available, use custom recipe constructor from `BotaniaRecipes` instead:
 ```
-botaniaRecipes.apothecary(output, inputs[], reagent)
+BotaniaRecipes.apothecary(output, [inputs], reagent)
 ```
+
+Parameter types:
+All are `ItemStack`

@@ -1,11 +1,17 @@
-Botania Multiblock
-
-Trade items with the Elven realm for magical equivalents.
+#Mod/Botania #Multiblock #RecipeType/Crafting
 
 <ins>Recipes</ins>
-Takes any number of items and returns any number of items.
+Trade items with the Elven realm for magical equivalents.
+Inputs:
+- 1+ Items
+- Mana
+Outputs:
+- 1+ Items
 
-No built-in method, use custom recipe constructor from botaniaRecipes instead.
+No built-in method, use custom recipe constructor from `BotaniaRecipes` instead.
 ```
-botaniaRecipes.elvenTrade([outputItems], [inputItems])
+BotaniaRecipes.elvenTrade([outputItems], [inputItems])
 ```
+
+Parameter Types:
+All are `ItemStack`

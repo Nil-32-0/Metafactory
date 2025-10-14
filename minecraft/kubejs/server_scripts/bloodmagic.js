@@ -1,6 +1,6 @@
 // priority: 50
 
-const bloodMagicRecipes = {
+const BloodMagicRecipes = {
     /**
      * @param {$RecipesEventJS} event
      */
@@ -21,8 +21,8 @@ const bloodMagicRecipes = {
 
 
         /**
-         * @param {$ItemStack} item
-         * @param {number} count
+         * @param {$ItemStack} item Item consumed by the recipe
+         * @param {number} count How many items are consumed
          */
         inputItem (item, count) {
             this.recipe.input = item;
@@ -30,14 +30,14 @@ const bloodMagicRecipes = {
             return this;
         },
         /**
-         * @param {$ItemStack} item
+         * @param {$ItemStack} item Item produced by the recipe
          */
         outputItem (item) {
             this.recipe.output = item;
             return this;
         },
         // /**
-        //  * @param {[$ItemStack,number][]} items
+        //  * @param {[$ItemStack,number][]} items List of additional Items produced by the recipe, with chances on each
         //  */
         // TODO: Get this working
         // addedOutputs (items) {
@@ -60,21 +60,22 @@ const bloodMagicRecipes = {
             return this;
         },
         /**
-         * @param {$FluidStackJS} fluid
+         * @param {$FluidStackJS} fluid Fluid consumed by the recipe
          */
         inputFluid (fluid) {
             this.recipe.inputFluid = fluid.toJson();
             return this;
         },
         /**
-         * @param {$FluidStackJS} fluid
+         * @param {$FluidStackJS} fluid Fluid produced by the recipe
          */
         outputFluid (fluid) {
             this.recipe.outputFluid = fluid.toJson();
             return this;
         },
+
         /**
-         * @param {$ItemStack} tool
+         * @param {$ItemStack} tool The alchemical tool used in the recipe
          */
         register (tool) {
             this.recipe.tool = tool;
@@ -83,10 +84,10 @@ const bloodMagicRecipes = {
     },
 
     /**
-     * @param {$ItemStack} output
-     * @param {$ItemStack} baseInput
-     * @param {$ItemStack} additionInput
-     * @param {String} texture
+     * @param {$ItemStack} output Item produced by the recipe
+     * @param {$ItemStack} baseInput Item consumed by the recipe, used first
+     * @param {$ItemStack} additionInput Item consumed by the recipe, used second
+     * @param {String} texture Texture location of texture used by the recipe animation
      */
     array (output, baseInput, additionInput, texture) {this.event.custom({
         type: "bloodmagic:array",
@@ -105,35 +106,35 @@ const bloodMagicRecipes = {
         },
 
         /**
-         * @param {$ItemStack[]} items
+         * @param {$ItemStack[]} items List of Items consumed by the recipe
          */
         inputItems(items) {
             this.recipe.input = items;
             return this;
         },
         /**
-         * @param {$ItemStack} item
+         * @param {$ItemStack} item Item produced by the recipe
          */
         outputItem(item) {
             this.recipe.output = item;
             return this;
         },
         /**
-         * @param {Number} totalLP
+         * @param {Number} totalLP Total LP consumed by the recipe
          */
         syphon (totalLP) {
             this.recipe.syphon = totalLP;
             return this;
         },
         /**
-         * @param {Number} ticks
+         * @param {Number} ticks The recipe duration in ticks, 1 second = 20 ticks
          */
         duration (ticks) {
             this.recipe.ticks = ticks;
             return this;
         },
         /**
-         * @param {Number} level
+         * @param {Number} level Blood orb tier required for the recipe
          */
         upgradeLevel (level) {
             this.recipe.upgradeLevel = level;
@@ -155,42 +156,42 @@ const bloodMagicRecipes = {
         },
 
         /**
-         * @param {$ItemStack} item
+         * @param {$ItemStack} item Item consumed by the recipe
          */
         inputItem (item) {
             this.recipe.input = item;
             return this;
         },
         /**
-         * @param {$ItemStack} item
+         * @param {$ItemStack} item Item produced by the recipe
          */
         outputItem (item) {
             this.recipe.output = item;
             return this;
         },
         /**
-         * @param {Number} totalLP
+         * @param {Number} totalLP Total LP consumed by the recipe
          */
         syphon(totalLP) {
             this.recipe.altarSyphon = totalLP;
             return this;
         },
         /**
-         * @param {Number} rate
+         * @param {Number} rate Rate LP is consumed by the recipe, in LP/tick
          */
         consumeRate (rate) {
             this.recipe.consumptionRate = rate;
             return this;
         },
         /**
-         * @param {Number} rate
+         * @param {Number} rate Rate LP decays during the recipe, in LP/tick
          */
         drainRate (rate) {
             this.recipe.drainRate = rate;
             return this;
         },
         /**
-         * @param {Number} level
+         * @param {Number} level Blood altar tier required for the recipe
          */
         upgradeLevel (level) {
             this.recipe.upgradeLevel = level;
@@ -220,7 +221,7 @@ const bloodMagicRecipes = {
         },
 
         /**
-         * @param {$ItemStack[]} items
+         * @param {$ItemStack[]} items List of Items consumed by the recipe, up to four
          */
         inputItems (items) {
             let index = 0;
@@ -231,21 +232,21 @@ const bloodMagicRecipes = {
             return this;
         },
         /**
-         * @param {$ItemStack} item
+         * @param {$ItemStack} item Item produced by the recipe
          */
         outputItem (item) {
             this.recipe.output = item;
             return this;
         },
         /**
-         * @param {Number} totalDrain
+         * @param {Number} totalDrain Total Demonic Will consumed by the recipe
          */
         drain (totalDrain) {
             this.recipe.drain = totalDrain;
             return this;
         },
         /**
-         * @param {Number} minDrain
+         * @param {Number} minDrain Minimum Demonic Will required for the recipe to begin
          */
         minimumDrain (minDrain) {
             this.recipe.minimumDrain = minDrain;

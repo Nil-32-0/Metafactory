@@ -1,11 +1,20 @@
-Botania Crafting
-
-Crafts items into runes with mana.
+#Mod/Botania #RecipeType/Crafting
 
 <ins>Recipes</ins>
-Takes some items, mana, and a piece of livingrock, and makes output items.
+Crafts items into runes with mana.
+Inputs:
+- 1+ Items
+- Mana
+- Livingrock
+Outputs:
+- 1+ Items
 
-No built-in method available, use custom recipe constructor from `botaniaRecipes` instead:
+No built-in method available, use custom recipe constructor from `BotaniaRecipes` instead:
 ```
-botaniaRecipes.runeAltar(output, inputs, mana)
+BotaniaRecipes.runeAltar(output, [inputs], mana)
 ```
+
+Parameter Types:
+output - `ItemStack`
+inputs - `ItemStack`
+mana - `int`

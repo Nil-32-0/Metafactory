@@ -1,13 +1,22 @@
-Botania Recipe Type
+#Mod/Botania #RecipeType/Machine
 
-Transforms blocks nearby into other types, typically basic stone into ores.
 Also includes Orechid Ignem for Nether recipes
 
 <ins>Recipes</ins>
-Takes blocks as an input and transforms them into other blocks.
+Transforms blocks nearby into other types, typically basic stone into ores.
+Inputs:
+- Block
+- Mana
+Outputs:
+- Block
 
-No built-in method available, use custom recipe constructor from botaniaRecipes instead:
+No built-in method available, use custom recipe constructor from `BotaniaRecipes` instead:
 ```
-botaniaRecipes.orechid(outputID, inputID, weight)
-botaniaRecipes.orechidIgnem(outputID, inputID, weight)
+BotaniaRecipes.orechid(outputID, inputID, weight)
+BotaniaRecipes.orechidIgnem(outputID, inputID, weight)
 ```
+
+Parameter Types:
+outputID - `String`, must be a valid Block ID
+inputID - `String`, must be a valid Block ID
+weight - `int`

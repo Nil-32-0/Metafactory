@@ -1,16 +1,19 @@
-Blood Magic Crafting
-
-Combines items using LP.
+#Mod/BloodMagic #RecipeType/Machine
 
 <ins>Recipes</ins>
-Takes up to six items and a blood orb to create up to one stack of output items.
-Consumes LP to run.
+Combines items using LP.
+Inputs:
+- 1-6 Items
+- Blood Orb
+- LP
+Outputs:
+- 1-64 Items
 
-No built-in method available, use custom recipe constructor from bloodMagicRecipes instead:
+No built-in method available, use custom recipe constructor from `BloodMagicRecipes` instead:
 ```
-bloodMagicRecipes.alchemyTable.inputItems([Item, Item]).ouputItem(Item).register()
+BloodMagicRecipes.alchemyTable.inputItems([Item, Item]).ouputItem(Item).register()
 ```
-Recipe constructor is chainable, but must be ended with .register() to add the recipe. Available methods that can be added:
+Recipe constructor is chainable, but must be ended with `.register()` to add the recipe. Available methods that can be added:
 ```
 .inputItems(Item[]) // Required, at least one item must be provided
 .outputItem(Item) // Required

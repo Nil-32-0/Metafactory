@@ -1,13 +1,17 @@
-Botania Recipe Type
-
-Purifies blocks placed around it
+#Mod/Botania #RecipeType/Machine
 
 <ins>Recipes</ins>
-Takes blocks as an input and transforms them into other blocks.
+Purifies blocks placed around it
+Inputs:
+- Block
+Outputs:
+- Block
 
-No built-in method available, use custom recipe constructor from botaniaRecipes instead:
+No built-in method available, use custom recipe constructor from `BotaniaRecipes` instead:
 ```
-botaniaRecipes.pureDaisy(outputID, inputID)
+BotaniaRecipes.pureDaisy(outputID, inputID)
 ```
 
-Input can be either a block ID or a block tag.
+Parameter Types:
+outputID - `String`, must be a valid Block ID
+inputID - `String`, must be either a valid Block ID or a valid Block Tag formatted as `"#namespace:tag"`

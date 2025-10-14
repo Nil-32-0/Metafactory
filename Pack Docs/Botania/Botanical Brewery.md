@@ -1,11 +1,18 @@
-Botania Crafting
-
-Combines reagents with mana into Brews with certain effects.
+#Mod/Botania #RecipeType/Crafting
 
 <ins>Recipes</ins>
-Takes a number of items and produces a brew. Currently only the existing brews can be made.
+Combines reagents with mana into Brews with certain effects.
+Inputs:
+- 1+ Items
+- Mana
+Outputs:
+- Brew
 
-No built-in method, use custom recipe constructor from botaniaRecipes instead.
+No built-in method, use custom recipe constructor from `BotaniaRecipes` instead.
 ```
-botaniaRecipes.brew("brewID", [ingredients])
+BotaniaRecipes.brew(brewID, [ingredients])
 ```
+
+Parameter Types:
+brewID - `String`, must be valid Botania Brew
+ingredients - `ItemStack`

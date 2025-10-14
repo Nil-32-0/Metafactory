@@ -1,7 +1,7 @@
 // priority: 50
 
 
-const ae2Recipes = {
+const AE2Recipes = {
     /**
      * @param {$RecipesEventJS} event
      */
@@ -11,8 +11,8 @@ const ae2Recipes = {
     },
 
     /**
-     * @param {$ItemStack} output
-     * @param {$ItemStack} input
+     * @param {$ItemStack} output Item produced by the recipe
+     * @param {$ItemStack} input Item consumed by the recipe
      */
     charger (output, input) {this.event.custom({
         type:"ae2:charger",
@@ -21,10 +21,10 @@ const ae2Recipes = {
     })},
     inscriber: {
         /**
-         * @param {$ItemStack} output
-         * @param {$ItemStack} input1
-         * @param {$ItemStack | null} input2
-         * @param {$ItemStack | null} input3
+         * @param {$ItemStack} output Item produced by the recipe
+         * @param {$ItemStack} input1 Item consumed by the recipe, in the center slot
+         * @param {$ItemStack | null} input2 Optional Item consumed by the recipe, in the top slot
+         * @param {$ItemStack | null} input3 Optional Item consumed by the recipe, in the bottom slot
          */
         press (output, input1, input2, input3) {
             let inputs = {}
@@ -43,9 +43,9 @@ const ae2Recipes = {
                 result: output
         })},
         /**
-         * @param {$ItemStack} output
-         * @param {$ItemStack} input
-         * @param {$ItemStack} press
+         * @param {$ItemStack} output Item produced by the recipe
+         * @param {$ItemStack} input Item consumed by the recipe, in the center slot
+         * @param {$ItemStack} press Item required for the recipe, in the top slot. Not consumed
          */
         inscribe (output, input, press) {this.event.custom({
             type: "ae2:inscriber",
@@ -58,9 +58,9 @@ const ae2Recipes = {
         })}
     },
     /**
-     * @param {$ItemStack} output
-     * @param {String} fluidTag
-     * @param {$ItemStack[]} inputs
+     * @param {$ItemStack} output Item produced by the recipe
+     * @param {String} fluidTag Tag of the Fluid the recipe takes place in
+     * @param {$ItemStack[]} inputs List of Items consumed by the recipe
      */
     transform (output, fluidTag, inputs) {this.event.custom({
         type: "ae2:transform",
@@ -73,6 +73,12 @@ const ae2Recipes = {
     })},
 
     // Does not work at the moment
+    // /**
+    // * @param {$ItemStack} output Item produced by the recipe
+    // * @param {Number} inputEnergy Amount of energy consumed by the recipe
+    // * @param {$ItemStack[]} inputs List of Items consumed by the recipe
+    // * @param {$FluidStack} inputFluid Fluid consumed by the recipe
+    // */
     // reaction (output, inputEnergy, inputs, inputFluid) {
     //     let inputs_parsed = [];
     //     inputs.forEach(input => {

@@ -1,13 +1,22 @@
-AE2 Recipe Type
+#Mod/AE2 #RecipeType/Crafting
 
-Throwing items into water together or exploding items to create new ones.
-Due to Lychee being present, single-item transformations in liquids or through explosions should not be performed with this recipe type. See [[Item Entity inside a Block]] or [[Item Exploding]] instead.
+Due to Lychee being present, single-item transformations in liquids or through explosions should not be performed with this recipe type. See [Item Entity Inside A Block](Lychee/Item%20Entity%20Inside%20A%20Block.md) or [Item Exploding](Lychee/Item%20Exploding.md) instead.
 While any number of items can be used as inputs, more than three items begins cutting off elements of the recipe display.
 
 <ins>Recipes</ins>
-Takes any number of items and produces an output when they are thrown into a fluid.
+Transforms items when they are thrown into water together
+Inputs:
+- 1+ Items
+- Fluid (In-world), not consumed
+Outputs:
+- 1+ Items
 
-No built-in method, use custom recipe constructor from ae2Recipes instead.
+No built-in method, use custom recipe constructor from `AE2Recipes` instead.
 ```
-ae2Recipes.transform(Item.of("output"), "fluidTag", [Item.of("inputItem")])
+AE2Recipes.transform(output, fluidTag, [inputs])
 ```
+
+Parameter Types:
+output - `ItemStack`
+fluidTag - `String`, must be a valid Fluid Tag
+inputs - `ItemStack`

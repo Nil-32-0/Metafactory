@@ -1,22 +1,31 @@
 // priority: 50
 
 
-const ae2Recipes = {
+const AE2Recipes = {
+    /**
+     * @param {$RecipesEventJS} event
+     */
     initialize(event) {
         this.event = event;
-        this.inscriber.initialize(event);
+        this.inscriber.event = event;
     },
 
+    /**
+     * @param {$ItemStack} output Item produced by the recipe
+     * @param {$ItemStack} input Item consumed by the recipe
+     */
     charger (output, input) {this.event.custom({
         type:"ae2:charger",
         ingredient: input,
         result: output
     })},
     inscriber: {
-        initialize(event) {
-            this.event = event;
-        },
-
+        /**
+         * @param {$ItemStack} output Item produced by the recipe
+         * @param {$ItemStack} input1 Item consumed by the recipe, in the center slot
+         * @param {$ItemStack | null} input2 Optional Item consumed by the recipe, in the top slot
+         * @param {$ItemStack | null} input3 Optional Item consumed by the recipe, in the bottom slot
+         */
         press (output, input1, input2, input3) {
             let inputs = {}
             if (input3 != null) {
@@ -33,6 +42,11 @@ const ae2Recipes = {
                 mode: "press",
                 result: output
         })},
+        /**
+         * @param {$ItemStack} output Item produced by the recipe
+         * @param {$ItemStack} input Item consumed by the recipe, in the center slot
+         * @param {$ItemStack} press Item required for the recipe, in the top slot. Not consumed
+         */
         inscribe (output, input, press) {this.event.custom({
             type: "ae2:inscriber",
             ingredients: {
@@ -43,6 +57,11 @@ const ae2Recipes = {
             result: output
         })}
     },
+    /**
+     * @param {$ItemStack} output Item produced by the recipe
+     * @param {string} fluidTag Tag of the Fluid the recipe takes place in
+     * @param {$ItemStack[]} inputs List of Items consumed by the recipe
+     */
     transform (output, fluidTag, inputs) {this.event.custom({
         type: "ae2:transform",
         circumstance: {
@@ -54,6 +73,12 @@ const ae2Recipes = {
     })},
 
     // Does not work at the moment
+    // /**
+    // * @param {$ItemStack} output Item produced by the recipe
+    // * @param {Number} inputEnergy Amount of energy consumed by the recipe
+    // * @param {$ItemStack[]} inputs List of Items consumed by the recipe
+    // * @param {$FluidStack} inputFluid Fluid consumed by the recipe
+    // */
     // reaction (output, inputEnergy, inputs, inputFluid) {
     //     let inputs_parsed = [];
     //     inputs.forEach(input => {

@@ -1,16 +1,25 @@
-AE2 Machine
-
-Inscribes material(s) together or presses a pattern into a material.
-Custom unlock tier: *MV*
+#Mod/AE2 #RecipeType/Machine
 
 <ins>Recipes</ins>
-Has two modes: Inscribe or Press. In Press, up to three items are combined into one. In Inscribe, a press model presses a second item into a new item.
-Consumes power.
+Has two modes: Inscribe or Press.
+Input (Press):
+- 1-3 Items
+- Power
+Input (Inscribe):
+- 1 Item
+- 1 Press (Item), not consumed
+- Power
+Output:
+- 1 Item
 
-No built-in method, use custom recipe constructors from ae2Recipes instead.
+No built-in method, use custom recipe constructors from `AE2Recipes` instead.
 Recipe Syntax:
 ```
-ae2Recipes.inscriber.inscribe(Item.of("output"),Item.of("input"),Item.of("press")) 
-	// Up to three input items, ordered middle - top - bottom
-ae2Recipes.inscriber.press(Item.of("outputItem"), Item.of("inputItem1"))
+AE2Recipes.inscriber.inscribe(output, input, press) 
+AE2Recipes.inscriber.press(output, middle, top, bottom)
 ```
+
+In press mode, the top and bottom parameters are optional.
+
+Parameter Types:
+All are `ItemStack`

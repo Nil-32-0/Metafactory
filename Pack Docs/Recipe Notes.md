@@ -43,11 +43,7 @@ List of recipe options, sorted by mod:
 	[Rune Inscription](Elementalcraft/Rune%20Inscription.md)
 	[Sawing](Elementalcraft/Sawing.md)
 <ins>EnderIO</ins>
-	Alloy Smelting
-	Primitive Alloy Smelting
-	SAG Mill
-	Slicing
-	Soul Binding
+	For all recipes, see [here](https://github.com/AlmostReliable/kubejs-enderio/wiki/Recipes060)
 <ins>Extended Crafting</ins>
 	Combination Crafting
 	Crafting Tables
@@ -134,21 +130,6 @@ List of recipe options, sorted by mod:
 <ins>Hostile Neural Networks</ins>
 	Loot Fabricator
 	Simulation Chamber
-<ins>Immersive Engineering</ins>
-	Alloy Kiln
-	Arc Furnace
-	Blast Furnace
-	Bottling Machine
-	Coke Oven
-	Crusher
-	Engineer's Workbench
-	Garden Cloche
-	Industrial Fermenter
-	Industrial Squeezer
-	Metal Press
-	Mixer
-	Refinery
-	Sawmill
 <ins>Lychee</ins>
 	Advanced Shaped Crafting
 	Anvil Crafting
@@ -164,12 +145,11 @@ List of recipe options, sorted by mod:
 	Random Block Ticking
 	Use Item on a Block
 <ins>Malum</ins>
-	Runeworking
-	Spirit Focusing
-	Spirit Infusion
-	Spirit Rites
-	The Unchained Rite
-	The Weeping Well
+	[Runeworking](Malum/Runeworking.md)
+	[Spirit Focusing](Malum/Spirit%20Focusing.md)
+	[Spirit Infusion](Malum/Spirit%20Infusion.md)
+	[The Unchained Rite](Malum/Unchained%20Rite.md)
+	[The Weeping Well](Malum/Weeping%20Well.md)
 <ins>Mana and Artifice</ins>
 	Crushing
 	Eldrin Altar

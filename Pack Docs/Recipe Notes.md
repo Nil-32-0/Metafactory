@@ -1,54 +1,49 @@
 List of recipe options, sorted by mod:
 
 <ins>AE2 (+Addons)</ins>
-	[[Charger]]
-	[[Circuit Slicer]]
-	[[Inscriber]]
-	[[Item Transformation]]
-	[[Reaction Chamber]]
+	[Charger](AE2+addons/Charger.md)
+	[Circuit Slicer](AE2+addons/Circuit%20Slicer.md)
+	[Inscriber](AE2+addons/Inscriber.md)
+	[Item Transformation](AE2+addons/Item%20Transformation.md)
+	[Reaction Chamber](AE2+addons/Reaction%20Chamber.md)
 <ins>Avaritia</ins>
-	[End Crafting (7x7)](Table%20Crafting)
-	[Exteme Crafting (9x9)](Table%20Crafting)
-	[[Extreme Smithing]]
-	[Nether Crafting (5x5)](Table%20Crafting)
-	[[Neutronium Compressor]]
-	[Sculk Crafting (3x3)](Table%20Crafting)
+	[End Crafting (7x7)](Avaritia/Table%20Crafting.md)
+	[Exteme Crafting (9x9)](Avaritia/Table%20Crafting.md)
+	[Extreme Smithing](Avaritia/Extreme%20Smithing.md)
+	[Nether Crafting (5x5)](Avaritia/Table%20Crafting.md)
+	[Neutronium Compressor](Avaritia/Neutronium%20Compressor.md)
+	[Sculk Crafting (3x3)](Avaritia/Table%20Crafting.md)
 <ins>Blood Magic</ins>
-	Alchemical Reaction Chamber (ARC)
-	Alchemy Array
-	Alchemy Table
-	Blood Altar
-	Hellfire Forge
+	[Alchemical Reaction Chamber (ARC)](Blood%20Magic/Alchemical%20Reaction%20Chamber.md)
+	[Alchemy Array](Blood%20Magic/Alchemy%20Array.md)
+	[Alchemy Table](Blood%20Magic/Alchemy%20Table.md)
+	[Blood Altar](Blood%20Magic/Blood%20Altar.md)
+	[Hellfire Forge](Blood%20Magic/Hellfire%20Forge.md)
+	Rituals
 <ins>Botania</ins>
-	Botanical Brewery
-	Elven Trade
-	Mana Pool
-	Mana Infuser
-	Marimorphosis
-	Orechid
-	Orechid Ignem
-	Petal Apothecary
-	Pure Daisy
-	Rune Ritual
-	Runic Altar
-	Terrestrial Agglomeration
+	[Botanical Brewery](Botania/Botanical%20Brewery.md)
+	[Elven Trade](Botania/Elven%20Trade.md)
+	[Mana Pool](Botania/Mana%20Pool.md)
+	[Mana Infuser](Botania/Mana%20Infuser.md)
+	[Marimorphosis](Botania/Marimorphosis.md)
+	[Orechid](Botania/Orechid.md)
+	[Orechid Ignem](Botania/Orechid.md)
+	[Petal Apothecary](Botania/Petal%20Apothecary.md)
+	[Pure Daisy](Botania/Pure%20Daisy.md)
+	[Rune Ritual](Botania/Rune%20Ritual.md)
+	[Runic Altar](Botania/Runic%20Altar.md)
+	[Terrestrial Agglomeration](Botania/Terrestrial%20Agglomeration.md)
 <ins>Draconic Evolution</ins>
-	Fusion Crafting
+	[Fusion Crafting](Draconic%20Evolution/Fusion%20Crafting.md)
 <ins>ElementalCraft</ins>
-	Element Binding
-	Element Infusion
-	Grinding
-	Ore Purification
-	Pure Infusion
-	Rune Inscription
-	Sawing
-	Spell Crafting
+	[Element Binding](Elementalcraft/Element%20Binding.md)
+	[Element Infusion](Elementalcraft/Element%20Infusion.md)
+	[Grinding](Elementalcraft/Grinding.md)
+	[Pure Infusion](Elementalcraft/Pure%20Infusion.md)
+	[Rune Inscription](Elementalcraft/Rune%20Inscription.md)
+	[Sawing](Elementalcraft/Sawing.md)
 <ins>EnderIO</ins>
-	Alloy Smelting
-	Primitive Alloy Smelting
-	SAG Mill
-	Slicing
-	Soul Binding
+	For all recipes, see [here](https://github.com/AlmostReliable/kubejs-enderio/wiki/Recipes060)
 <ins>Extended Crafting</ins>
 	Combination Crafting
 	Crafting Tables
@@ -135,21 +130,6 @@ List of recipe options, sorted by mod:
 <ins>Hostile Neural Networks</ins>
 	Loot Fabricator
 	Simulation Chamber
-<ins>Immersive Engineering</ins>
-	Alloy Kiln
-	Arc Furnace
-	Blast Furnace
-	Bottling Machine
-	Coke Oven
-	Crusher
-	Engineer's Workbench
-	Garden Cloche
-	Industrial Fermenter
-	Industrial Squeezer
-	Metal Press
-	Mixer
-	Refinery
-	Sawmill
 <ins>Lychee</ins>
 	Advanced Shaped Crafting
 	Anvil Crafting
@@ -165,12 +145,11 @@ List of recipe options, sorted by mod:
 	Random Block Ticking
 	Use Item on a Block
 <ins>Malum</ins>
-	Runeworking
-	Spirit Focusing
-	Spirit Infusion
-	Spirit Rites
-	The Unchained Rite
-	The Weeping Well
+	[Runeworking](Malum/Runeworking.md)
+	[Spirit Focusing](Malum/Spirit%20Focusing.md)
+	[Spirit Infusion](Malum/Spirit%20Infusion.md)
+	[The Unchained Rite](Malum/Unchained%20Rite.md)
+	[The Weeping Well](Malum/Weeping%20Well.md)
 <ins>Mana and Artifice</ins>
 	Crushing
 	Eldrin Altar
@@ -181,18 +160,17 @@ List of recipe options, sorted by mod:
 	Runic Anvil
 	Transmutation
 <ins>Mystical Agriculture</ins>
-	Awakening
-	Infusion
+	[Awakening](Mystical%20Agriculture/Awakening.md)
+	[Infusion](Mystical%20Agriculture/Infusion.md)
 <ins>Nature's Aura</ins>
-	Altar of Birthing
-	Natural Altar
-	Offering to the Gods
-	Ritual of the Forest
+	[Altar of Birthing](Natures%20Aura/Birthing%20Altar.md)
+	[Natural Altar](Natures%20Aura/Natural%20Altar.md)
+	[Offering to the Gods](Natures%20Aura/Gods%20Offering.md)
+	[Ritual of the Forest](Natures%20Aura/Forest%20Ritual.md)
 <ins>Occultism</ins>
-	Crushing
-	Dimensional Mineshaft
-	Rituals
-	Spirit Fire
+	[Crushing](Occultism/Crushing.md)
+	[Dimensional Mineshaft](Occultism/Dimensional%20Mineshaft.md)
+	[Spirit Fire](Occultism/Spirit%20Fire.md)
 <ins>PneumaticCraft</ins>
 	Amadron Tablet
 	Assembly Line

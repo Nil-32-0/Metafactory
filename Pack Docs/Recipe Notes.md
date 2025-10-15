@@ -160,18 +160,17 @@ List of recipe options, sorted by mod:
 	Runic Anvil
 	Transmutation
 <ins>Mystical Agriculture</ins>
-	Awakening
-	Infusion
+	[Awakening](Mystical%20Agriculture/Awakening.md)
+	[Infusion](Mystical%20Agriculture/Infusion.md)
 <ins>Nature's Aura</ins>
-	Altar of Birthing
-	Natural Altar
-	Offering to the Gods
-	Ritual of the Forest
+	[Altar of Birthing](Natures%20Aura/Birthing%20Altar.md)
+	[Natural Altar](Natures%20Aura/Natural%20Altar.md)
+	[Offering to the Gods](Natures%20Aura/Gods%20Offering.md)
+	[Ritual of the Forest](Natures%20Aura/Forest%20Ritual.md)
 <ins>Occultism</ins>
-	Crushing
-	Dimensional Mineshaft
-	Rituals
-	Spirit Fire
+	[Crushing](Occultism/Crushing.md)
+	[Dimensional Mineshaft](Occultism/Dimensional%20Mineshaft.md)
+	[Spirit Fire](Occultism/Spirit%20Fire.md)
 <ins>PneumaticCraft</ins>
 	Amadron Tablet
 	Assembly Line

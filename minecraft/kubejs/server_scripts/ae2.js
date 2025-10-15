@@ -59,7 +59,7 @@ const AE2Recipes = {
     },
     /**
      * @param {$ItemStack} output Item produced by the recipe
-     * @param {String} fluidTag Tag of the Fluid the recipe takes place in
+     * @param {string} fluidTag Tag of the Fluid the recipe takes place in
      * @param {$ItemStack[]} inputs List of Items consumed by the recipe
      */
     transform (output, fluidTag, inputs) {this.event.custom({

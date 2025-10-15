@@ -9,14 +9,14 @@ const AvaritiaRecipes = {
     },
 
     /**
-     * @param {Number} tier Crafting table tier required for the recipe
+     * @param {number} tier Crafting table tier required for the recipe
      * @param {$ItemStack} output Item produced by the recipe
-     * @param {String[]} pattern Pattern of characters representing Items used in the recipe
-     * @param {{[dict_key: String]: $ItemStack}} key A mapping of which characters in the pattern represent which Item
+     * @param {string[]} pattern Pattern of characters representing Items used in the recipe
+     * @param {{[dict_key: string]: $ItemStack}} key A mapping of which characters in the pattern represent which Item
      */
     shaped_table (tier, output, pattern, key) {this.event.recipes.avaritia.shaped_table(tier, output, pattern, key)},
     /**
-     * @param {Number} tier Crafting table tier required for the recipe
+     * @param {number} tier Crafting table tier required for the recipe
      * @param {$ItemStack} output Item produced by the recipe
      * @param {$ItemStack[]} ingredients List of Items consumed by the recipe
      */
@@ -31,8 +31,8 @@ const AvaritiaRecipes = {
     /**
      * @param {$ItemStack} output Item produced by the recipe
      * @param {$ItemStack} input Item consumd by the recipe
-     * @param {Number} inputCount Number of items consumed
-     * @param {Number} time Duration of the recipe in ticks
+     * @param {number} inputCount Number of items consumed
+     * @param {number} time Duration of the recipe in ticks
      */
     compressor (output, input, inputCount, time) {this.event.recipes.avaritia.compressor(input, output, inputCount, time)}
 }

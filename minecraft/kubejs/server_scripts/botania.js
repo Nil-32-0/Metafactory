@@ -5,10 +5,10 @@
  *
  * Forced to use because Rhino prevents creation of custom classes
  * @param {$ItemStack} item The Item to be used in the specified position
- * @param {Number} x The x-axis location of the Item, relative to the center rune. Positive is to the right
- * @param {Number} z The z-axis location of the Item, relative to the center rune. Positive is upwards
+ * @param {number} x The x-axis location of the Item, relative to the center rune. Positive is to the right
+ * @param {number} z The z-axis location of the Item, relative to the center rune. Positive is upwards
  * @param {boolean} consume Whether the Item should be consumed or not
- * @return {{consume: boolean, rune: $ItemStack, x: Number, z: Number}}
+ * @return {{consume: boolean, rune: $ItemStack, x: number, z: number}}
  */
 function runeConstructor(item, x, z, consume) {
     return {
@@ -30,7 +30,7 @@ const BotaniaRecipes = {
     },
 
     /**
-     * @param {String} brewID ID Corresponding to a Botania brew
+     * @param {string} brewID ID Corresponding to a Botania brew
      * @param {$ItemStack[]} items List of Items used in the recipe
      */
     brew (brewID, items) {
@@ -77,7 +77,7 @@ const BotaniaRecipes = {
             return this;
         },
         /**
-         * @param {String} blockID ID of the block to be used as a catalyst under the mana pool
+         * @param {string} blockID ID of the block to be used as a catalyst under the mana pool
          */
         catalyst (blockID) {
             this.recipe.catalyst = {type: "block", block: blockID};
@@ -85,7 +85,7 @@ const BotaniaRecipes = {
         },
 
         /**
-         * @param {Number} mana The amount of mana the recipe should consume. A full pool holds 1,000,000 mana
+         * @param {number} mana The amount of mana the recipe should consume. A full pool holds 1,000,000 mana
          */
         register (mana) {
             this.recipe.mana = mana;
@@ -96,9 +96,9 @@ const BotaniaRecipes = {
     /**
      * @param {$ItemStack} output Item produced by the recipe
      * @param {$ItemStack[]} inputs List of Items consumed by the recipe
-     * @param {Number} mana The amount of mana the recipe should consume. A full pool holds 1,000,000 mana
-     * @param {Number | String} fromColor The start color used by the effects. Should be formatted as a hex code with "#XXXXXX" or as the decimal equivalent of that number
-     * @param {Number | String} toColor The end color used by the effects. Should be formatted the same as fromColor
+     * @param {number} mana The amount of mana the recipe should consume. A full pool holds 1,000,000 mana
+     * @param {number | string} fromColor The start color used by the effects. Should be formatted as a hex code with "#XXXXXX" or as the decimal equivalent of that number
+     * @param {number | string} toColor The end color used by the effects. Should be formatted the same as fromColor
      */
     manaInfusion (output, inputs, mana, fromColor, toColor) {
         let decFromColor = 0;
@@ -137,36 +137,36 @@ const BotaniaRecipes = {
         },
 
         /**
-         * @param {String} blockID ID of the block to be produced
+         * @param {string} blockID ID of the block to be produced
          */
         outputBlock (blockID) {
             this.recipe.output = {type: "block", block: blockID};
             return this;
         },
         /**
-         * @param {String} blockID ID of the input block
+         * @param {string} blockID ID of the input block
          */
         inputBlock (blockID) {
             this.recipe.input = {type: "block", block: blockID};
             return this;
         },
         /**
-         * @param {String} blockTag Block tag that will determine accepted input blocks
+         * @param {string} blockTag Block tag that will determine accepted input blocks
          */
         inputBlocks (blockTag) {
             this.recipe.input = {type: "tag", tag: blockTag};
             return this;
         },
         /**
-         * @param {Number} weight Integer chance of being chosen during generation
+         * @param {number} weight Integer chance of being chosen during generation
          */
         weight (weight) {
             this.recipe.weight = weight;
             return this;
         },
         /**
-         * @param {Number} bonusWeight Integer increase in weight when in the bonus biomes
-         * @param {String} biomeTag Biome tag that determines which biomes give extra weight
+         * @param {number} bonusWeight Integer increase in weight when in the bonus biomes
+         * @param {string} biomeTag Biome tag that determines which biomes give extra weight
          */
         biomeBonus (bonusWeight, biomeTag) {
             this.recipe.biome_bonus = bonusWeight;
@@ -180,9 +180,9 @@ const BotaniaRecipes = {
     },
 
     /**
-     * @param {String} outputID Block ID of the block produced
-     * @param {String} inputID Block ID of the input block
-     * @param {Number} weight Integer chance of being chosen during generation
+     * @param {string} outputID Block ID of the block produced
+     * @param {string} inputID Block ID of the input block
+     * @param {number} weight Integer chance of being chosen during generation
      */
     orechid (outputID, inputID, weight) {this.event.custom({
         type: "botania:orechid",
@@ -192,9 +192,9 @@ const BotaniaRecipes = {
     })},
 
     /**
-     * @param {String} outputID Block ID of the block produced
-     * @param {String} inputID Block ID of the input block
-     * @param {Number} weight Integer chance of being chosen during generation
+     * @param {string} outputID Block ID of the block produced
+     * @param {string} inputID Block ID of the input block
+     * @param {number} weight Integer chance of being chosen during generation
      */
     orechidIgnem (outputID, inputID, weight) {this.event.custom({
         type: "botania:orechid_ignem",
@@ -216,8 +216,8 @@ const BotaniaRecipes = {
     })},
 
     /**
-     * @param {String} outputID Block ID of the block produced
-     * @param {String} inputID Block ID of the input block
+     * @param {string} outputID Block ID of the block produced
+     * @param {string} inputID Block ID of the input block
      */
     pureDaisy (outputID, inputID) {
         let recipe = {
@@ -241,9 +241,9 @@ const BotaniaRecipes = {
      * @param {$ItemStack[]} outputs List of items produced by the recipe
      * @param {$ItemStack[]} inputs List of items consumed by the recipe
      * @param {$ItemStack} centerItem Item to be placed in the center of the multiblock
-     * @param {Number} mana The amount of mana the recipe should consume. A full pool holds 1,000,000 mana
-     * @param {Number} duration The recipe duration in ticks, 1 second = 20 ticks
-     * @param {{consume: boolean, rune: $ItemStack, x: Number, z: Number}[]} runeLayout A list of 'rune' JSONs, specify with runeContructor
+     * @param {number} mana The amount of mana the recipe should consume. A full pool holds 1,000,000 mana
+     * @param {number} duration The recipe duration in ticks, 1 second = 20 ticks
+     * @param {{consume: boolean, rune: $ItemStack, x: number, z: number}[]} runeLayout A list of 'rune' JSONs, specify with runeContructor
      */
     runeRitual (outputs, inputs, centerItem, mana, duration, runeLayout) {
         this.event.custom({
@@ -260,7 +260,7 @@ const BotaniaRecipes = {
     /**
      * @param {$ItemStack} output Item produced by the recipe
      * @param {$ItemStack[]} inputs List of items consumed by the recipe
-     * @param {Number} mana The amount of mana the recipe should consume. A full pool holds 1,000,000 mana
+     * @param {number} mana The amount of mana the recipe should consume. A full pool holds 1,000,000 mana
      */
     runeAltar (output, inputs, mana) {this.event.custom({
         type: "botania:runic_altar",
@@ -272,7 +272,7 @@ const BotaniaRecipes = {
     /**
      * @param {$ItemStack} output Item produced by the recipe
      * @param {$ItemStack[]} inputs List of items consumed by the recipe
-     * @param {Number} mana The amount of mana the recipe should consume. A full pool holds 1,000,000 mana
+     * @param {number} mana The amount of mana the recipe should consume. A full pool holds 1,000,000 mana
      */
     terraPlate (output, inputs, mana) {this.event.custom({
         type: "botania:terra_plate",

@@ -53,7 +53,7 @@ const BloodMagicRecipes = {
         //     return this;
         // },
         /**
-         * @param {bool} bool
+         * @param {boolean} bool
          */
         consumeIngredient (bool) {
             this.recipe.consumeingredient = bool;
@@ -87,7 +87,7 @@ const BloodMagicRecipes = {
      * @param {$ItemStack} output Item produced by the recipe
      * @param {$ItemStack} baseInput Item consumed by the recipe, used first
      * @param {$ItemStack} additionInput Item consumed by the recipe, used second
-     * @param {String} texture Texture location of texture used by the recipe animation
+     * @param {string} texture Texture location of texture used by the recipe animation
      */
     array (output, baseInput, additionInput, texture) {this.event.custom({
         type: "bloodmagic:array",
@@ -120,21 +120,21 @@ const BloodMagicRecipes = {
             return this;
         },
         /**
-         * @param {Number} totalLP Total LP consumed by the recipe
+         * @param {number} totalLP Total LP consumed by the recipe
          */
         syphon (totalLP) {
             this.recipe.syphon = totalLP;
             return this;
         },
         /**
-         * @param {Number} ticks The recipe duration in ticks, 1 second = 20 ticks
+         * @param {number} ticks The recipe duration in ticks, 1 second = 20 ticks
          */
         duration (ticks) {
             this.recipe.ticks = ticks;
             return this;
         },
         /**
-         * @param {Number} level Blood orb tier required for the recipe
+         * @param {number} level Blood orb tier required for the recipe
          */
         upgradeLevel (level) {
             this.recipe.upgradeLevel = level;
@@ -170,28 +170,28 @@ const BloodMagicRecipes = {
             return this;
         },
         /**
-         * @param {Number} totalLP Total LP consumed by the recipe
+         * @param {number} totalLP Total LP consumed by the recipe
          */
         syphon(totalLP) {
             this.recipe.altarSyphon = totalLP;
             return this;
         },
         /**
-         * @param {Number} rate Rate LP is consumed by the recipe, in LP/tick
+         * @param {number} rate Rate LP is consumed by the recipe, in LP/tick
          */
         consumeRate (rate) {
             this.recipe.consumptionRate = rate;
             return this;
         },
         /**
-         * @param {Number} rate Rate LP decays during the recipe, in LP/tick
+         * @param {number} rate Rate LP decays during the recipe, in LP/tick
          */
         drainRate (rate) {
             this.recipe.drainRate = rate;
             return this;
         },
         /**
-         * @param {Number} level Blood altar tier required for the recipe
+         * @param {number} level Blood altar tier required for the recipe
          */
         upgradeLevel (level) {
             this.recipe.upgradeLevel = level;
@@ -239,14 +239,14 @@ const BloodMagicRecipes = {
             return this;
         },
         /**
-         * @param {Number} totalDrain Total Demonic Will consumed by the recipe
+         * @param {number} totalDrain Total Demonic Will consumed by the recipe
          */
         drain (totalDrain) {
             this.recipe.drain = totalDrain;
             return this;
         },
         /**
-         * @param {Number} minDrain Minimum Demonic Will required for the recipe to begin
+         * @param {number} minDrain Minimum Demonic Will required for the recipe to begin
          */
         minimumDrain (minDrain) {
             this.recipe.minimumDrain = minDrain;

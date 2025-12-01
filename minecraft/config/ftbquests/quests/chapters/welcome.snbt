@@ -1,0 +1,21 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welcome"
+	group: ""
+	id: "18082E1F208E3CE9"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		description: ["Welcome to Metafactory! If you need help, follow the quests!"]
+		id: "19AE02F1C0968952"
+		tasks: [{
+			id: "56C084958A72F5A0"
+			title: "Welcome!"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "Welcome"
+}

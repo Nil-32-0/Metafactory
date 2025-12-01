@@ -9,6 +9,8 @@ ServerEvents.recipes(event => {
             event.remove({type: "gtceu:alloy_smelter", output: "gtceu:drenched_iron_nugget", input: "gtceu:drenched_iron_block"});
             event.remove({type: "gtceu:arc_furnace", output: "gtceu:drenched_iron_ingot", input: "gtceu:drenched_iron_block"});
 
+        event.remove({output: "gtceu:compressed_coke_clay"});
+
     // AE2 recipe removals
         event.remove({output:"ae2:inscriber"});
 

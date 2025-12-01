@@ -1,0 +1,662 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "getting_going"
+	group: "6299F820C0605FD9"
+	icon: "minecraft:oak_log"
+	id: "5B00392230959EA9"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "5BBC701A513B4FE1"
+			tasks: [{
+				count: 8L
+				id: "358557BBDAD11F4B"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "Any #minecraft:logs"
+				type: "item"
+			}]
+			title: "Basic Supplies"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5BBC701A513B4FE1"]
+			description: ["Create a few Tinkers Construct tables and make yourself a pickaxe"]
+			id: "464FC8953FB5E167"
+			tasks: [
+				{
+					id: "43179B413E491671"
+					item: "tconstruct:part_builder"
+					type: "item"
+				}
+				{
+					id: "4C7F0596E8957040"
+					item: "tconstruct:tinker_station"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "4EED4C5FB0F5E8BD"
+					item: { Count: 9, id: "tconstruct:pattern" }
+					type: "item"
+				}
+				{
+					id: "390601B755B9F00F"
+					item: {
+						Count: 1
+						id: "tconstruct:pickaxe"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: true
+					type: "item"
+					weak_nbt_match: true
+				}
+			]
+			title: "Tinkers"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["464FC8953FB5E167"]
+			description: ["Collect some stone and make yourself a better pickaxe head. You'll need a mining tier of at least Stone."]
+			id: "6ACACFFCA8C8616D"
+			tasks: [{
+				count: 32L
+				id: "2FE052B36E8F1993"
+				item: { Count: 32, id: "minecraft:cobblestone" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6ACACFFCA8C8616D"]
+			description: ["To enter the Steam age, you'll need some Bronze. Find a Copper vein and a Tin vein and collect some of each."]
+			id: "0C66130892BE0655"
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					count: 24L
+					id: "6ACF95369FA44534"
+					item: { Count: 24, id: "minecraft:copper_ingot" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "0EF49988257D9CC9"
+					item: { Count: 8, id: "gtceu:tin_ingot" }
+					type: "item"
+				}
+			]
+			title: "Bronze Ingredients"
+			x: 7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6ACACFFCA8C8616D"]
+			description: [
+				"To begin working on more complex machines, you'll need some better tools. Collect some Iron now that you can use to make them."
+				""
+				"(Collecting enough to finish this quest will give you enough to make a full set of wrought iron tools, plus the iron tools required to make wrought iron.)"
+			]
+			id: "00BA8FBB77443974"
+			tasks: [{
+				count: 56L
+				id: "2F413F418A9565A8"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			title: "Preparing for tools"
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["00BA8FBB77443974"]
+			description: ["Make each of the tools you'll need to really start making some more complex machines. You can either use Iron or make Wrought Iron once you have the first couple of tools."]
+			hide_until_deps_complete: false
+			id: "04926513C192D2FB"
+			shape: "gear"
+			size: 1.25d
+			tasks: [
+				{
+					id: "6F99C2CCAF4127F9"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:iron_hammer"
+									tag: {
+										Damage: 0
+										DisallowContainerItem: 0b
+										GT.Behaviours: { }
+										GT.Tool: {
+											DefaultEnchantments: [ ]
+											HarvestLevel: 2
+											MaxDamage: 255
+											ToolSpeed: 6.0f
+										}
+										HideFlags: 2
+									}
+								}
+								{
+									Count: 1b
+									id: "gtceu:wrought_iron_hammer"
+									tag: {
+										Damage: 0
+										DisallowContainerItem: 0b
+										GT.Behaviours: { }
+										GT.Tool: {
+											DefaultEnchantments: [ ]
+											HarvestLevel: 2
+											MaxDamage: 383
+											ToolSpeed: 6.0f
+										}
+										HideFlags: 2
+									}
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7AD34DC6EECFC7EA"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:iron_file"
+									tag: {
+										Damage: 0
+										DisallowContainerItem: 0b
+										GT.Behaviours: { }
+										GT.Tool: {
+											DefaultEnchantments: [ ]
+											MaxDamage: 255
+										}
+										HideFlags: 2
+									}
+								}
+								{
+									Count: 1b
+									id: "gtceu:wrought_iron_file"
+									tag: {
+										Damage: 0
+										DisallowContainerItem: 0b
+										GT.Behaviours: { }
+										GT.Tool: {
+											DefaultEnchantments: [ ]
+											MaxDamage: 383
+										}
+										HideFlags: 2
+									}
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "693F3F6EF71704DC"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:iron_saw"
+									tag: {
+										Damage: 0
+										DisallowContainerItem: 0b
+										GT.Behaviours: {
+											HarvestIce: 1b
+										}
+										GT.Tool: {
+											DefaultEnchantments: [ ]
+											MaxDamage: 255
+										}
+										HideFlags: 2
+									}
+								}
+								{
+									Count: 1b
+									id: "gtceu:wrought_iron_saw"
+									tag: {
+										Damage: 0
+										DisallowContainerItem: 0b
+										GT.Behaviours: {
+											HarvestIce: 1b
+										}
+										GT.Tool: {
+											DefaultEnchantments: [ ]
+											MaxDamage: 383
+										}
+										HideFlags: 2
+									}
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3F8967305042CF2B"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:iron_screwdriver"
+									tag: {
+										Damage: 0
+										DisallowContainerItem: 0b
+										GT.Behaviours: { }
+										GT.Tool: {
+											AttackDamage: 1.0f
+											AttackSpeed: 3.0f
+											DefaultEnchantments: [ ]
+											MaxDamage: 255
+										}
+										HideFlags: 2
+									}
+								}
+								{
+									Count: 1b
+									id: "gtceu:wrought_iron_screwdriver"
+									tag: {
+										Damage: 0
+										DisallowContainerItem: 0b
+										GT.Behaviours: { }
+										GT.Tool: {
+											AttackDamage: 1.0f
+											AttackSpeed: 2.8f
+											DefaultEnchantments: [ ]
+											MaxDamage: 383
+										}
+										HideFlags: 2
+									}
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4DC2953F30FF17C9"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:iron_wrench"
+									tag: {
+										Damage: 0
+										DisallowContainerItem: 0b
+										GT.Behaviours: {
+											Mode: 2b
+										}
+										GT.Tool: {
+											DefaultEnchantments: [ ]
+											HarvestLevel: 2
+											MaxDamage: 255
+											ToolSpeed: 6.0f
+										}
+										HideFlags: 2
+									}
+								}
+								{
+									Count: 1b
+									id: "gtceu:wrought_iron_wrench"
+									tag: {
+										Damage: 0
+										DisallowContainerItem: 0b
+										GT.Behaviours: {
+											Mode: 2b
+										}
+										GT.Tool: {
+											AttackDamage: 3.0f
+											AttackSpeed: -3.0f
+											DefaultEnchantments: [ ]
+											HarvestLevel: 2
+											MaxDamage: 383
+											ToolSpeed: 6.0f
+										}
+										HideFlags: 2
+									}
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "23CB87C9FE17DC34"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:iron_wire_cutter"
+									tag: {
+										Damage: 0
+										DisallowContainerItem: 0b
+										GT.Behaviours: { }
+										GT.Tool: {
+											DefaultEnchantments: [ ]
+											HarvestLevel: 2
+											MaxDamage: 255
+											ToolSpeed: 6.0f
+										}
+										HideFlags: 2
+									}
+								}
+								{
+									Count: 1b
+									id: "gtceu:wrought_iron_wire_cutter"
+									tag: {
+										Damage: 0
+										DisallowContainerItem: 0b
+										GT.Behaviours: { }
+										GT.Tool: {
+											DefaultEnchantments: [ ]
+											HarvestLevel: 2
+											MaxDamage: 383
+											ToolSpeed: 6.0f
+										}
+										HideFlags: 2
+									}
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "55253ADC4FC8AD7A"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:iron_crowbar"
+									tag: {
+										Damage: 0
+										DisallowContainerItem: 0b
+										GT.Behaviours: { }
+										GT.Tool: {
+											DefaultEnchantments: [ ]
+											HarvestLevel: 2
+											MaxDamage: 255
+											ToolSpeed: 6.0f
+										}
+										HideFlags: 2
+									}
+								}
+								{
+									Count: 1b
+									id: "gtceu:wrought_iron_crowbar"
+									tag: {
+										Damage: 0
+										DisallowContainerItem: 0b
+										GT.Behaviours: { }
+										GT.Tool: {
+											AttackDamage: 4.0f
+											AttackSpeed: -2.6000001f
+											DefaultEnchantments: [ ]
+											HarvestLevel: 2
+											MaxDamage: 383
+											ToolSpeed: 6.0f
+										}
+										HideFlags: 2
+									}
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Tool Suite"
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["04926513C192D2FB"]
+			description: ["Once you have a saw, you can cut up some Iron into nuggets. Putting those nuggets back into a furnace will give you Wrought Iron nuggets."]
+			id: "2BA8296B756A0D00"
+			optional: true
+			shape: "diamond"
+			tasks: [
+				{
+					id: "2EFEE133FAA6790B"
+					item: {
+						Count: 1
+						id: "gtceu:iron_saw"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								HarvestIce: 1b
+							}
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								MaxDamage: 255
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 324L
+					id: "031FF17ED3F6683A"
+					item: "minecraft:iron_nugget"
+					type: "item"
+				}
+				{
+					id: "039EE05D84E89CAD"
+					item: "gtceu:wrought_iron_nugget"
+					type: "item"
+				}
+			]
+			title: "Wrought Nuggets"
+			x: 8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2BA8296B756A0D00"]
+			description: [
+				"By crushing the Wrought Iron nuggets with a mortar, you can make Wrought Iron dust, which can be smelted one more time to give you Wrought Iron ingots, a better tool material than normal Iron is."
+				""
+				"The 3 mortars are for Iron mortars, using better mortars will decrease this number while worse mortars will increase it."
+			]
+			id: "578EB84C5FDF0D59"
+			optional: true
+			shape: "diamond"
+			tasks: [
+				{
+					count: 3L
+					id: "0B9C684E4BF2187C"
+					item: {
+						Count: 1
+						id: "gtceu:iron_mortar"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								DefaultEnchantments: [ ]
+								MaxDamage: 255
+							}
+							HideFlags: 2
+						}
+					}
+					title: "3x Iron Mortar"
+					type: "item"
+				}
+				{
+					id: "4BE59298F19F7B48"
+					item: "gtceu:tiny_wrought_iron_dust"
+					type: "item"
+				}
+				{
+					count: 36L
+					id: "0A104BF24F6411FC"
+					item: "gtceu:wrought_iron_ingot"
+					type: "item"
+				}
+			]
+			title: "Wrought Ingots"
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["04926513C192D2FB"]
+			description: ["You'll need a brick wooden form to begin making Coke Oven Bricks, so you should make one now."]
+			id: "79819FF70803D52B"
+			tasks: [
+				{
+					id: "3D50FF602DD613AF"
+					item: "gtceu:empty_wooden_form"
+					type: "item"
+				}
+				{
+					id: "556D99B7D32FD8C8"
+					item: {
+						Count: 1
+						id: "gtceu:flint_knife"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								AttackDamage: 1.0f
+								AttackSpeed: 3.0f
+								DefaultEnchantments: [ ]
+								MaxDamage: 63
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "12B365B93BFF6154"
+					item: "gtceu:brick_wooden_form"
+					type: "item"
+				}
+			]
+			title: "Coke Oven Tools"
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["79819FF70803D52B"]
+			description: ["Collect a bunch of clay for the coke oven."]
+			id: "764B9C92508B492A"
+			tasks: [{
+				count: 87L
+				id: "08813B80F42D7D94"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			title: "Clay"
+			x: 14.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["79819FF70803D52B"]
+			description: ["Collect a bunch of sand for the coke oven."]
+			id: "7183E371A447EC97"
+			tasks: [{
+				count: 145L
+				id: "3F777185EAF5A97B"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:sand"
+					}
+				}
+				title: "Any #minecraft:sand"
+				type: "item"
+			}]
+			title: "Sand"
+			x: 14.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"7183E371A447EC97"
+				"764B9C92508B492A"
+			]
+			description: ["Craft that clay and sand into Compressed Coke Bricks, then bake them to make some Coke Oven Bricks."]
+			id: "48664BD1907A938B"
+			tasks: [
+				{
+					count: 116L
+					id: "6B4827AE334BA9B0"
+					item: { Count: 116, id: "gtceu:compressed_coke_clay" }
+					type: "item"
+				}
+				{
+					count: 116L
+					id: "46A714B4E79191E8"
+					item: { Count: 116, id: "gtceu:coke_oven_brick" }
+					type: "item"
+				}
+			]
+			x: 16.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["48664BD1907A938B"]
+			description: ["Make your first Coke Oven."]
+			id: "5F8F9CD10C775007"
+			tasks: [
+				{
+					count: 25L
+					id: "71924B9CD7FE679C"
+					item: { Count: 25, id: "gtceu:coke_oven_bricks" }
+					type: "item"
+				}
+				{
+					id: "303C83C2C4E65A55"
+					item: "gtceu:coke_oven"
+					type: "item"
+				}
+			]
+			title: "Your First Coke Oven"
+			x: 18.0d
+			y: 1.5d
+		}
+	]
+	title: "Getting Going"
+}

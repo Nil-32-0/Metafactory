@@ -1,11 +1,11 @@
 There are certain utilities available when writing code:
 ```
-Item.of("itemID") -> ItemStack
+Ingredient.of("itemID") -> Ingredient
 Fluid.of("fluidID") -> FluidStack
 ```
 Can also be used as
 ```
-Item.of("itemID", count)
+Ingredient.of("itemID", count)
 Fluid.of("fluidID", count)
 ```
 

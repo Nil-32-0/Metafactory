@@ -38,6 +38,7 @@ minecraft/kubejs/config/probe-settings.json
 /minecraft/config/apotheosis/*
 !/minecraft/config/apotheosis/apotheosis.cfg
 !/minecraft/config/apotheosis/garden.cfg
+!/minecraft/config/ftbquests/quests/
 
 !/minecraft/config/extendedcrafting-common.toml
 !/minecraft/config/gtceu.yaml

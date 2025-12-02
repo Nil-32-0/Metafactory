@@ -10,6 +10,7 @@
 		{
 			description: ["Welcome to Metafactory! If you've never played with GregTech before, follow the quests!"]
 			id: "19AE02F1C0968952"
+			shape: "hexagon"
 			tasks: [{
 				id: "56C084958A72F5A0"
 				title: "Welcome!"
@@ -20,8 +21,17 @@
 		}
 		{
 			dependencies: ["19AE02F1C0968952"]
-			description: ["Most quests will be circles, indicating they must be completed to progress. Diamond quests are optional, but usually will offer some benefit over ignoring them. The larger, gear-shaped quests are important quests that will usually be required for the next chapter to unlock."]
+			description: [
+				"Most quests will be circles, indicating they must be completed to progress."
+				""
+				"The larger, gear-shaped quests are important, and usually are required to unlock the next chapter."
+				"{@pagebreak}"
+				"Diamond quests are optional, but there is usually some benefit to completing them."
+				""
+				"Hexagonal quests such as this one are purely informational, but should be read if you are unfamiliar with GregTech, or with this pack!"
+			]
 			id: "33B2EA3A525F0C2D"
+			shape: "hexagon"
 			tasks: [{
 				id: "4D23F22053B2DD71"
 				title: "About the questbook"

@@ -82,7 +82,7 @@
 		}
 		{
 			dependencies: ["6ACACFFCA8C8616D"]
-			description: ["To enter the Steam age, you'll need some Bronze. Find a Copper vein and a Tin vein and collect some of each."]
+			description: ["To enter the Steam age, you'll need some Bronze. Find a couple ore veins with Copper and Tin and collect some of each."]
 			id: "0C66130892BE0655"
 			shape: "gear"
 			size: 1.5d
@@ -671,6 +671,25 @@
 			title: "Creosote"
 			x: 20.0d
 			y: 1.5d
+		}
+		{
+			dependencies: ["6ACACFFCA8C8616D"]
+			description: [
+				"GregTech modifies world generation in a major way: ores only generate in massive veins. Some of these veins will generate 'surface indicators', circles of Surface Rock blocks that are located directly above the vein. Even if you can't find a surface indicator, the veins are large enough that they can be found easily enough."
+				""
+				"Another feature built into GregTech is the ability to prospect veins. By right-clicking on a surface rock or on an ore in the vein, the vein is 'prospected' and saved. Built into the world map is the ability to view what veins have been discovered in any location, accessed by toggling the button in the bottom left."
+				"{@pagebreak}"
+				"By looking at the recipes for a Raw ore, the veins that the ore spawns in can be displayed within the \"Ore Vein Diagram\" tab. Also displayed in this tab for each vein is the dimension the vein spawns in, the y-values it will spawn at, and how likely it is to spawn relative to other veins in its dimension."
+			]
+			id: "60EBF66D6CB54C37"
+			shape: "hexagon"
+			tasks: [{
+				id: "3FBD332C26E5CBB5"
+				title: "About Ores..."
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 0.0d
 		}
 	]
 	title: "Getting Going"

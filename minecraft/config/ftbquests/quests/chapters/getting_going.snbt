@@ -657,6 +657,21 @@
 			x: 18.0d
 			y: 1.5d
 		}
+		{
+			dependencies: ["5F8F9CD10C775007"]
+			description: ["Make some Coke in your Coke Oven, and collect the Creosote produced."]
+			id: "7AB510471199F628"
+			shape: "gear"
+			size: 1.25d
+			tasks: [{
+				id: "4F860928060CD354"
+				item: "gtceu:creosote_bucket"
+				type: "item"
+			}]
+			title: "Creosote"
+			x: 20.0d
+			y: 1.5d
+		}
 	]
 	title: "Getting Going"
 }

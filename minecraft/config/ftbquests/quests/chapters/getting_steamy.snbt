@@ -1,0 +1,422 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "getting_steamy"
+	group: "6299F820C0605FD9"
+	icon: "gtceu:lp_steam_solid_boiler"
+	id: "63609C71C7A6F5D5"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"0C66130892BE0655"
+				"04926513C192D2FB"
+			]
+			id: "6FFF32581DA809A0"
+			tasks: [
+				{
+					id: "60EE305880F71E8A"
+					item: "gtceu:bronze_dust"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "1B7397E9F32FD215"
+					item: "gtceu:bronze_ingot"
+					type: "item"
+				}
+			]
+			title: "Bronze"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7AB510471199F628"]
+			description: [
+				"Using some Creosote from your Coke Oven, make a few batches of treated wood."
+				""
+				"While working on that, you should gather some additional materials you'll need."
+			]
+			icon: "gtceu:treated_wood_planks"
+			id: "11F74877324486DA"
+			tasks: [
+				{
+					count: 32L
+					id: "046B6CB06F177841"
+					item: "gtceu:treated_wood_planks"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "19810DC6FB6BED86"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "7A1219F8E5864593"
+					item: "minecraft:cobblestone_slab"
+					type: "item"
+				}
+				{
+					count: 15L
+					id: "145EBBC0BDC1DEF6"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:planks"
+						}
+					}
+					title: "Any #minecraft:planks"
+					type: "item"
+				}
+			]
+			title: "Primitive Pump Ingredients"
+			x: 2.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"0D760AFF51865ABC"
+				"79E8C505FD0FF69F"
+				"7A01CF63FBFB9F27"
+				"05F4DE50695023EB"
+			]
+			description: ["Make and build the Primitive Pump, a multiblock that will automatically produce water for you. The biome you place this in determines how much water it produces, so you may want to try several."]
+			id: "68C2E358CD954AB9"
+			tasks: [
+				{
+					id: "55A082A54BE27AC6"
+					item: "gtceu:primitive_pump"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "34068BD086428CC9"
+					item: "gtceu:treated_wood_frame"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "21D10295E7798778"
+					item: "gtceu:pump_deck"
+					type: "item"
+				}
+				{
+					id: "36C1DDEC165B0B0C"
+					item: "gtceu:pump_hatch"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["11F74877324486DA"]
+			description: ["Make some fluid pipes for the Primitive Pump. You may want to craft some extra so that you can move the water it produces."]
+			id: "05F4DE50695023EB"
+			tasks: [
+				{
+					count: 2L
+					id: "051A0AD84C8E042E"
+					item: "gtceu:wood_large_fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "56F816CFBAAEB182"
+					item: "gtceu:wood_normal_fluid_pipe"
+					type: "item"
+				}
+			]
+			title: "Wood Fluid Pipes"
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"0D760AFF51865ABC"
+				"421832B28125E303"
+			]
+			description: ["The Primitive Pump needs an Iron rotor to extract water. Craft one."]
+			id: "79E8C505FD0FF69F"
+			tasks: [{
+				id: "7611E918C2736753"
+				item: "gtceu:iron_rotor"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["11F74877324486DA"]
+			description: ["Make the various rings and screws needed for the Primitive Pump and its parts."]
+			id: "0D760AFF51865ABC"
+			tasks: [
+				{
+					count: 4L
+					id: "4339A23D9C260E62"
+					item: "gtceu:iron_ring"
+					type: "item"
+				}
+				{
+					count: 13L
+					id: "7820B93EC328E34C"
+					item: "gtceu:iron_screw"
+					type: "item"
+				}
+			]
+			title: "Rings and Screws"
+			x: 5.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["11F74877324486DA"]
+			description: ["Make a few plates for the Iron rotor."]
+			id: "421832B28125E303"
+			tasks: [{
+				count: 4L
+				id: "5AED564F112478A6"
+				item: "gtceu:iron_plate"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["11F74877324486DA"]
+			id: "7A01CF63FBFB9F27"
+			tasks: [{
+				count: 40L
+				id: "06429A9F1C98C8CF"
+				item: "gtceu:treated_wood_rod"
+				type: "item"
+			}]
+			title: "Treated Wood Sticks"
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6FFF32581DA809A0"]
+			description: ["Take some of your bronze and make a simple Steam Boiler."]
+			id: "37CC4F5A01ACC3DE"
+			tasks: [{
+				id: "2FC6DBC9035D6FB2"
+				item: "gtceu:lp_steam_solid_boiler"
+				type: "item"
+			}]
+			title: "First Boiler"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"37CC4F5A01ACC3DE"
+				"68C2E358CD954AB9"
+			]
+			description: ["Once you hook your boiler up to the Primitive Pump, you'll need something other than Wooden Fluid Pipes to transport the Steam. Make some Bronze Fluid Pipes, which can handle higher temperatures, so you can feed your Steam-powered machines."]
+			id: "7DD3529FAC3CDDC1"
+			tasks: [{
+				count: 8L
+				id: "24B6093CF6117ECC"
+				item: "gtceu:bronze_small_fluid_pipe"
+				type: "item"
+			}]
+			title: "Steam Transport"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7DD3529FAC3CDDC1"]
+			description: ["Make a Bricked Bronze Casing, the core component of some early steam machines."]
+			id: "18C445CE33C200D5"
+			tasks: [{
+				id: "7E42C8BFD10E4C3C"
+				item: "gtceu:bronze_brick_casing"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7DD3529FAC3CDDC1"]
+			description: ["Make a Bronze Machine Casing, the core component of some early steam machines."]
+			id: "3944E40BFBE4A7CF"
+			tasks: [{
+				id: "7AF84AC72A5A1EE8"
+				item: "gtceu:bronze_machine_casing"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["18C445CE33C200D5"]
+			description: ["Make an Alloy Smelter, to more easily make alloys such as Bronze."]
+			id: "13E191AE506CD6C9"
+			tasks: [{
+				id: "22C70DF3BA237F81"
+				item: "gtceu:lp_steam_alloy_smelter"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["18C445CE33C200D5"]
+			description: ["A more convenient option for smelting things."]
+			id: "142770FC066542F7"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "68347D3384B640BF"
+				item: "gtceu:lp_steam_furnace"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3944E40BFBE4A7CF"]
+			description: ["Make an Extractor, to extract Rubber Dust from Stick Resin."]
+			id: "1B919A9F3E8204B0"
+			tasks: [{
+				id: "69BFB5E95247269B"
+				item: "gtceu:lp_steam_extractor"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3944E40BFBE4A7CF"]
+			description: ["Make a Compressor, which is needed to compress Firebricks."]
+			id: "3DDAAD141547DD2C"
+			tasks: [{
+				id: "2EDFD00DDB4B05CC"
+				item: "gtceu:lp_steam_compressor"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3944E40BFBE4A7CF"]
+			description: ["Make a Macerator, which can be used to increase ore yields or crush items without needing a mortar."]
+			id: "29B1D300EAED4710"
+			tasks: [{
+				id: "4B3389C9A72648E7"
+				item: "gtceu:lp_steam_macerator"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["29B1D300EAED4710"]
+			description: ["Now that you have a macerator to grind stuff up, gather a bunch of clay. "]
+			id: "3A19DF49C54BB267"
+			tasks: [{
+				count: 132L
+				id: "2C84BC8EBDB79715"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			title: "Blasting Clay"
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3A19DF49C54BB267"]
+			description: ["Smelt half that clay into bricks, then chuck it all into the macerator. Take the resulting dusts and combine them into fireclay."]
+			id: "3FF1E85214A333DB"
+			tasks: [
+				{
+					id: "232FECBBD63636F0"
+					item: "minecraft:brick"
+					type: "item"
+				}
+				{
+					count: 66L
+					id: "4750ED798316805F"
+					item: "gtceu:brick_dust"
+					type: "item"
+				}
+				{
+					count: 66L
+					id: "55B411CF002E1563"
+					item: "gtceu:clay_dust"
+					type: "item"
+				}
+				{
+					count: 132L
+					id: "2876876D7E65AC63"
+					item: "gtceu:fireclay_dust"
+					type: "item"
+				}
+			]
+			title: "Fireclay Ingredients"
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"3DDAAD141547DD2C"
+				"3FF1E85214A333DB"
+			]
+			description: ["Using your new Compressor, make a bunch of Compressed Fireclay and then cook it all. "]
+			id: "19B088923CD57694"
+			tasks: [
+				{
+					id: "57ECA54549B0A153"
+					item: "gtceu:compressed_fireclay"
+					type: "item"
+				}
+				{
+					count: 132L
+					id: "3255E6E3492CAF0E"
+					item: "gtceu:firebrick"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["19B088923CD57694"]
+			description: ["Using your firebrick, make a Primitive Blast Furnace and the required Firebricks to build it. Then choose a location and set it up. You may want to make some additional furnaces, as you will need a large quantity of Steel."]
+			icon: "gtceu:primitive_blast_furnace"
+			id: "11F4E6EB63BEFC26"
+			require_sequential_tasks: true
+			tasks: [
+				{
+					id: "374BA11197197548"
+					item: "gtceu:primitive_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "20F7F6184868BCA2"
+					item: "gtceu:firebricks"
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["11F4E6EB63BEFC26"]
+			id: "56A3A23219DE60A6"
+			tasks: [{
+				count: 128L
+				id: "279F255D1E249CEC"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 4.0d
+		}
+	]
+	title: "Getting Steamy"
+}

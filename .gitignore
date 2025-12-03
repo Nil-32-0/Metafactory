@@ -34,6 +34,8 @@ minecraft/kubejs/config/probe-settings.json
 
 # Included config files
 /minecraft/config/*
+!/minecraft/config/almostunified/duplicates.json
+!/minecraft/config/almostunified/unify.json
 !/minecraft/config/apotheosis/
 /minecraft/config/apotheosis/*
 !/minecraft/config/apotheosis/apotheosis.cfg

@@ -10,6 +10,7 @@ ServerEvents.recipes(event => {
             event.remove({type: "gtceu:arc_furnace", output: "gtceu:drenched_iron_ingot", input: "gtceu:drenched_iron_block"});
 
         event.remove({output: "gtceu:compressed_coke_clay"});
+        event.remove({id: "gtceu:shapeless/dust_bronze"});
 
     // AE2 recipe removals
         event.remove({output:"ae2:inscriber"});
@@ -23,6 +24,7 @@ ServerEvents.recipes(event => {
 
     // Forestry recipe removals
         event.remove({output: "forestry:fabricator"});
+        event.remove({id: "forestry:ingot_bronze_alloying"});
 
     // Malum recipe removals
         event.remove({type: "smelting", output: "malum:arcane_charcoal"});

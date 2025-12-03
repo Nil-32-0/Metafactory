@@ -6,6 +6,7 @@
 	icon: "minecraft:oak_log"
 	id: "5B00392230959EA9"
 	order_index: 0
+	progression_mode: "flexible"
 	quest_links: [ ]
 	quests: [
 		{
@@ -47,20 +48,6 @@
 					id: "4EED4C5FB0F5E8BD"
 					item: { Count: 9, id: "tconstruct:pattern" }
 					type: "item"
-				}
-				{
-					id: "390601B755B9F00F"
-					item: {
-						Count: 1
-						id: "tconstruct:pickaxe"
-						tag: {
-							Damage: 0
-							tic_broken: 0b
-						}
-					}
-					match_nbt: true
-					type: "item"
-					weak_nbt_match: true
 				}
 			]
 			title: "Tinkers"
@@ -449,6 +436,7 @@
 		}
 		{
 			dependencies: ["04926513C192D2FB"]
+			dependency_requirement: "all_started"
 			description: ["Once you have a saw, you can cut up some Iron into nuggets. Putting those nuggets back into a furnace will give you Wrought Iron nuggets."]
 			id: "2BA8296B756A0D00"
 			optional: true
@@ -581,6 +569,7 @@
 			dependencies: ["79819FF70803D52B"]
 			description: ["Collect a bunch of clay for the coke oven."]
 			id: "764B9C92508B492A"
+			progression_mode: "linear"
 			tasks: [{
 				count: 87L
 				id: "08813B80F42D7D94"
@@ -595,6 +584,7 @@
 			dependencies: ["79819FF70803D52B"]
 			description: ["Collect a bunch of sand for the coke oven."]
 			id: "7183E371A447EC97"
+			progression_mode: "linear"
 			tasks: [{
 				count: 145L
 				id: "3F777185EAF5A97B"
@@ -640,16 +630,17 @@
 			dependencies: ["48664BD1907A938B"]
 			description: ["Make your first Coke Oven."]
 			id: "5F8F9CD10C775007"
+			require_sequential_tasks: true
 			tasks: [
-				{
-					count: 25L
-					id: "71924B9CD7FE679C"
-					item: { Count: 25, id: "gtceu:coke_oven_bricks" }
-					type: "item"
-				}
 				{
 					id: "303C83C2C4E65A55"
 					item: "gtceu:coke_oven"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "6C6D474955B9A244"
+					item: "gtceu:coke_oven_bricks"
 					type: "item"
 				}
 			]

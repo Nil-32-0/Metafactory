@@ -6,9 +6,9 @@ const malumRecipes = {
     },
 
     /**
-     * @param {$ItemStack} output Item produced by the recipe
-     * @param {$ItemStack} base Base Item consumed by the recipe
-     * @param {$ItemStack} addition Additional Item consumed by the recipe
+     * @param {$Ingredient} output Item produced by the recipe
+     * @param {$Ingredient} base Base Item consumed by the recipe
+     * @param {$Ingredient} addition Additional Item consumed by the recipe
      */
     runework (output, base, addition) {this.event.custom({
         type: "malum:runeworking",
@@ -18,8 +18,8 @@ const malumRecipes = {
     })},
 
     /**
-     * @param {$ItemStack} output Item produced by the recipe
-     * @param {$ItemStack} focus Item used by the recipe as the focus (not consumed)
+     * @param {$Ingredient} output Item produced by the recipe
+     * @param {$Ingredient} focus Item used by the recipe as the focus (not consumed)
      * @param {number} focusDamage Durability lost on the focus (if the focus has durability)
      * @param {["aerial" | "aqueous" | "arcane" | "earthen" | "eldritch" | "infernal" | "sacred" | "wicked",
      *              number][]} spirits List of spirit types and counts to be consumed in the recipe
@@ -41,9 +41,9 @@ const malumRecipes = {
     },
 
     /**
-     * @param {$ItemStack} output Item produced by the recipe
-     * @param {$ItemStack} focus Item consumed as the focus of the recipe
-     * @param {$ItemStack[]} additions List of Items consumed as additions to the recipe
+     * @param {$Ingredient} output Item produced by the recipe
+     * @param {$Ingredient} focus Item consumed as the focus of the recipe
+     * @param {$Ingredient[]} additions List of Items consumed as additions to the recipe
      * @param {["aerial" | "aqueous" | "arcane" | "earthen" | "eldritch" | "infernal" | "sacred" | "wicked",
      *              number][]} spirits List of spirit types and counts to be consumed in the recipe
      */
@@ -62,8 +62,8 @@ const malumRecipes = {
     },
 
     /**
-     * @param {$ItemStack} output Item produced by the recipe. Must have a Block equivalent
-     * @param {$ItemStack} input Item consumed by the recipe. Must have a Block equivalent
+     * @param {$Ingredient} output Item produced by the recipe. Must have a Block equivalent
+     * @param {$Ingredient} input Item consumed by the recipe. Must have a Block equivalent
      */
     unchainedRite (output, input) {this.event.custom({
         type: "malum:spirit_transmutation",
@@ -72,8 +72,8 @@ const malumRecipes = {
     })},
 
     /**
-     * @param {$ItemStack} output Item produced by the recipe
-     * @param {$ItemStack} input Item consumed by the recipe
+     * @param {$Ingredient} output Item produced by the recipe
+     * @param {$Ingredient} input Item consumed by the recipe
      */
     weepingWell (output, input) {this.event.custom({
         type: "malum:favor_of_the_void",

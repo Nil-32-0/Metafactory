@@ -1,0 +1,176 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "getting_electric"
+	group: "6299F820C0605FD9"
+	id: "37F40462C0DF70D5"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["56A3A23219DE60A6"]
+			description: ["With some of your steel, make a Casting Mold (Ball)."]
+			id: "3F44F7ACA1C91E47"
+			tasks: [{
+				id: "7D2D6567413BE28D"
+				item: "gtceu:ball_casting_mold"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: ["By crushing sand and gravel, then combining the results, you can make a dust that will melt into a clear glass."]
+			id: "6F0A10DFD28EA13A"
+			tasks: [{
+				id: "13FA05260C895C45"
+				item: "gtceu:glass_dust"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"6F0A10DFD28EA13A"
+				"3F44F7ACA1C91E47"
+				"13E191AE506CD6C9"
+			]
+			description: ["Smelt your glass dust in the alloy smelter along with the Casting Mold (Ball) to produce a Glass Tube, a major component of the Vacuum Tube."]
+			id: "42ACCCC7D1624F7A"
+			tasks: [{
+				id: "44DB1D480BA9E5C1"
+				item: "gtceu:glass_tube"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0C66130892BE0655"
+				"04926513C192D2FB"
+			]
+			description: ["By snipping some parts off a Copper plate with your wire cutters, you can make Copper wires."]
+			id: "0B8539C8842DA836"
+			tasks: [{
+				count: 3L
+				id: "5A98DCC74E4D6494"
+				item: "gtceu:copper_single_wire"
+				type: "item"
+			}]
+			title: "Copper Wire"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["56A3A23219DE60A6"]
+			description: ["Filing down and then cutting a Steel Ingot will give you a couple Steel Bolts."]
+			id: "7ED99E6C206D78A9"
+			tasks: [{
+				count: 2L
+				id: "452EF6A9419F468E"
+				item: "gtceu:steel_bolt"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7ED99E6C206D78A9"
+				"42ACCCC7D1624F7A"
+				"0B8539C8842DA836"
+			]
+			description: ["Make your first electrical component, the Vacuum Tube, out of the parts you just made."]
+			id: "244EDDAFA01C5FBE"
+			tasks: [{
+				id: "419D3BCAE47A0A53"
+				item: "gtceu:vacuum_tube"
+				type: "item"
+			}]
+			title: "Mostly just a Crafting Ingredient"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"3DDAAD141547DD2C"
+				"29B1D300EAED4710"
+			]
+			description: ["By crushing wood in the macerator and compressing the dust produced, you can make a Wood Plank."]
+			id: "342F13ACBFB034CE"
+			tasks: [{
+				id: "025EFE4E921D6AA5"
+				item: "gtceu:wood_plate"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"7D6DE67593111C03"
+				"342F13ACBFB034CE"
+			]
+			description: ["Slather some Sticky Resin on a Wood Plank to create a simple circuit board."]
+			id: "02199D60942045C4"
+			tasks: [{
+				id: "191E33328C528F40"
+				item: "gtceu:resin_circuit_board"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"0B8539C8842DA836"
+				"02199D60942045C4"
+			]
+			description: ["By layering copper wires onto a circuit board you can make a Printed Circuit Board, the perfect base for something slightly more complicated."]
+			id: "6D11AC5DC6210FC1"
+			tasks: [{
+				id: "0AE8A89B46C2D87C"
+				item: "gtceu:resin_printed_circuit_board"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"0B8539C8842DA836"
+				"7D6DE67593111C03"
+			]
+			description: ["By combining several ingredients, you can create a Resistor, a vital component of circuits."]
+			id: "578F0B9AF1506C5B"
+			tasks: [{
+				id: "29E82B539D7EC874"
+				item: "gtceu:resistor"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"244EDDAFA01C5FBE"
+				"2DD70A7E07B32273"
+				"6D11AC5DC6210FC1"
+				"578F0B9AF1506C5B"
+			]
+			description: ["By wiring a few vacuum tubes together with some resistors, you can make your first basic electronic circuit, the first of many."]
+			id: "3D461D68E9B40386"
+			tasks: [{
+				id: "55FCAF3686AFDD82"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			title: "The First of Many"
+			x: 6.0d
+			y: 2.0d
+		}
+	]
+	title: "Sparkies"
+}

@@ -5,43 +5,48 @@
 		- [ ] New Veins
 - [ ] New Circuits
 	- [ ] Vacum Tube
+		- [x] Item
 		- [x] Texture
 		- [ ] Recipe
 	- [ ] NAND Chip
+		- [x] Item
 		- [x] Texture
 		- [ ] Recipe
 	- [ ] Microchip
+		- [x] Item
 		- [x] Texture
 		- [ ] Recipe
 	- [ ] Aether Tube
+		- [x] Item
 		- [ ] Texture
 		- [ ] Recipe
 	- [ ] MANA Chip
+		- [x] Item
 		- [ ] Texture
 		- [ ] Recipe
 
 | Circuit Theme    | Processor/Basic | Proc. Assembly/Good | Supercomputer/Advanced | Mainframe | Zettacomputer | Matryoshka Core |
 | ---------------- | --------------- | ------------------- | ---------------------- | --------- | ------------- | --------------- |
-| Electronic       | T               | T                   | N/A                    | N/A       | N/A           | N/A             |
-| Arcane           |                 |                     | N/A                    | N/A       | N/A           | N/A             |
-| Integrated       | T               | T                   | T                      | N/A       | N/A           | N/A             |
-| Mystic           |                 |                     |                        | N/A       | N/A           | N/A             |
-| Micro            | T               | T                   | T                      | T         |               |                 |
-| Sorcerous        |                 |                     |                        |           |               |                 |
-| Nano             | T               | T                   | T                      | T         |               |                 |
-| Orphic           |                 |                     |                        |           |               |                 |
-| Quantum          | T               | T                   | T                      | T         |               |                 |
-| Enigmatic        |                 |                     |                        |           |               |                 |
-| Crystal          | T               | T                   | T                      | T         |               |                 |
-| Philosopher's    |                 |                     |                        |           |               |                 |
-| Wetware          | T               | T                   | T                      | T         |               |                 |
-| Biological       |                 |                     |                        |           |               |                 |
-| Exotic           |                 |                     |                        |           |               |                 |
-| Eldritch         |                 |                     |                        |           |               |                 |
-| Self-Referential |                 |                     |                        |           |               |                 |
-| Ontological      |                 |                     |                        |           |               |                 |
-| Multiversal      |                 |                     |                        |           |               |                 |
-| Prophetic        |                 |                     |                        |           |               |                 |
+| Electronic       | I T             | I T                 | N/A                    | N/A       | N/A           | N/A             |
+| Arcane           | I               | I                   | N/A                    | N/A       | N/A           | N/A             |
+| Integrated       | I T             | I T                 | I T                    | N/A       | N/A           | N/A             |
+| Mystic           | I               | I                   | I                      | N/A       | N/A           | N/A             |
+| Micro            | I T             | I T                 | I T                    | I T       | I             | I               |
+| Sorcerous        | I               | I                   | I                      | I         | I             | I               |
+| Nano             | I T             | I T                 | I T                    | I T       | I             | I               |
+| Orphic           | I               | I                   | I                      | I         | I             | I               |
+| Quantum          | I T             | I T                 | I T                    | I T       | I             | I               |
+| Enigmatic        | I               | I                   | I                      | I         | I             | I               |
+| Crystal          | I T             | I T                 | I T                    | I T       | I             | I               |
+| Philosopher's    | I               | I                   | I                      | I         | I             | I               |
+| Wetware          | I T             | I T                 | I T                    | I T       | I             | I               |
+| Biological       | I               | I                   | I                      | I         | I             | I               |
+| Exotic           | I               | I                   | I                      | I         | I             | I               |
+| Eldritch         | I               | I                   | I                      | I         | I             | I               |
+| Self-Referential | I               | I                   | I                      | I         | I             | I               |
+| Ontological      | I               | I                   | I                      | I         | I             | I               |
+| Multiversal      | I               | I                   | I                      | I         | I             | I               |
+| Prophetic        | I               | I                   | I                      | I         | I             | I               |
 - [ ] New Machines
 - [ ] New Multiblocks
 	- [ ] Gateway Containment Array
@@ -89,3 +94,6 @@
 		- [ ] Add endgame recipes
 		- [ ] Modify EMC values
 	- [ ] Gate Waystones
+- [ ] Fluid Modifications
+	- [ ] Change temperatures
+	- [ ] Change Pneumaticcraft Temp Change recipe results

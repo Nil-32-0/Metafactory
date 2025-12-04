@@ -2,10 +2,10 @@
 
 /**
  * @param {$RecipesEventJS} event Event passed into the function so the recipe can be added
- * @param {$ItemStack} core Item consumed by the recipe, on the core
+ * @param {$Ingredient} core Item consumed by the recipe, on the core
  * @param {number} coreCount Number of core Items consumed by the recipe
- * @param {$ItemStack[]} inputs List of Items consumed by the recipe, on the injectors
- * @param {$ItemStack} result Item produced by the recipe
+ * @param {$Ingredient[]} inputs List of Items consumed by the recipe, on the injectors
+ * @param {$Ingredient} result Item produced by the recipe
  * @param {number} tier Tier injectors required for the recipe
  * @param {number} energy Total energy required for the recipe
  */
@@ -23,10 +23,10 @@ function fusionInjection(event, core, coreCount, inputs, result, tier, energy) {
 
 /**
  * @param {$RecipesEventJS} event Event passed into the function so the recipe can be added
- * @param {$ItemStack} output Item produced by the recipe
- * @param {$ItemStack} input Item consumed by the recipe on the core
- * @param {$ItemStack[]} essences List of up to four Items consumed as essences by the recipe. Can have a stack size up to 40
- * @param {$ItemStack[]} additionalInputs List of up to four Items consumed as additional inputs by the recipe
+ * @param {$Ingredient} output Item produced by the recipe
+ * @param {$Ingredient} input Item consumed by the recipe on the core
+ * @param {$Ingredient[]} essences List of up to four Items consumed as essences by the recipe. Can have a stack size up to 40
+ * @param {$Ingredient[]} additionalInputs List of up to four Items consumed as additional inputs by the recipe
  */
 function mysticalAgricultureAwakening(event, output, input, essences, additionalInputs) {
     event.custom({
@@ -40,9 +40,9 @@ function mysticalAgricultureAwakening(event, output, input, essences, additional
 
 /**
  * @param {$RecipesEventJS} event Event passed into the function so the recipe can be added
- * @param {$ItemStack} output Item produced by the recipe
- * @param {$ItemStack} input Item consumed by the recipe on the core
- * @param {$ItemStack[]} additionalInputs List of up to eight Items consumed as additional inputs by the recipe
+ * @param {$Ingredient} output Item produced by the recipe
+ * @param {$Ingredient} input Item consumed by the recipe on the core
+ * @param {$Ingredient[]} additionalInputs List of up to eight Items consumed as additional inputs by the recipe
  */
 function mysticalAgricultureInfusion(event, output, input, additionalInputs) {
     event.custom({

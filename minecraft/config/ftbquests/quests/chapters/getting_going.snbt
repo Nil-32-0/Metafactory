@@ -562,7 +562,7 @@
 				}
 			]
 			title: "Coke Oven Tools"
-			x: 12.0d
+			x: 13.0d
 			y: 1.5d
 		}
 		{
@@ -578,7 +578,7 @@
 			}]
 			title: "Clay"
 			x: 14.0d
-			y: 0.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["79819FF70803D52B"]
@@ -599,8 +599,8 @@
 				type: "item"
 			}]
 			title: "Sand"
-			x: 14.0d
-			y: 2.5d
+			x: 12.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -623,8 +623,8 @@
 					type: "item"
 				}
 			]
-			x: 16.0d
-			y: 1.5d
+			x: 13.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["48664BD1907A938B"]
@@ -645,8 +645,8 @@
 				}
 			]
 			title: "Your First Coke Oven"
-			x: 18.0d
-			y: 1.5d
+			x: 13.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["5F8F9CD10C775007"]
@@ -660,8 +660,8 @@
 				type: "item"
 			}]
 			title: "Creosote"
-			x: 20.0d
-			y: 1.5d
+			x: 13.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["6ACACFFCA8C8616D"]
@@ -682,6 +682,110 @@
 			x: 6.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["79819FF70803D52B"]
+			description: [
+				"Once you have a brick mold, you can gather some clay, sand, and gravel to make grout for a Tinkers' Construct smeltery."
+				""
+				"Don't waste the glass you get from completing this quest! If you do, you won't be able to get more until you reach Steel!"
+			]
+			id: "65D4F72C102EAE34"
+			rewards: [{
+				count: 5
+				id: "33A28F7F0C901BC0"
+				item: "minecraft:glass"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6B2F88C7AC252EE8"
+				item: "tconstruct:grout"
+				type: "item"
+			}]
+			title: "Gritty"
+			x: 13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["65D4F72C102EAE34"]
+			description: [
+				"Use the glass you recieved from the last quest to make the components for a simple Melter setup."
+				""
+				"Place the Melter on top of the Heater, attach the faucet to the Melter and place the basin under the faucet. Then you can place fuel into the heater and raw ores into the melter to melt them. Once there's melted fluid in the melter, you can right-click the faucet to pour it into the basin."
+			]
+			id: "51BAF16A6A61185C"
+			tasks: [
+				{
+					id: "7463CBD8C53D7E94"
+					item: "tconstruct:seared_melter"
+					type: "item"
+				}
+				{
+					id: "7CD11D9A2163841E"
+					item: "tconstruct:seared_heater"
+					type: "item"
+				}
+				{
+					id: "4D1F6218E343351A"
+					item: "tconstruct:seared_faucet"
+					type: "item"
+				}
+				{
+					id: "7CB8959D200B53C7"
+					item: "tconstruct:seared_basin"
+					type: "item"
+				}
+			]
+			title: "Primitive Melter"
+			x: 13.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"0C66130892BE0655"
+				"51BAF16A6A61185C"
+			]
+			description: [
+				"Using your basic Melter setup, melt down some copper to make a Smeltery controller and some glass dust to make clear glass. Then use that with some more seared bricks to make the components for the Smeltery. "
+				""
+				"Consult \"Mighty Smelting\" for further information on setting up the Smeltery"
+			]
+			id: "49BBC0F932CEA832"
+			tasks: [
+				{
+					id: "2D54F1ACC7525A2E"
+					item: "tconstruct:smeltery_controller"
+					type: "item"
+				}
+				{
+					id: "510A02452D634DC5"
+					item: "tconstruct:seared_bricks"
+					type: "item"
+				}
+				{
+					id: "5F415ADD2A49ED28"
+					item: "tconstruct:seared_drain"
+					type: "item"
+				}
+				{
+					id: "58D567F73C02CBA1"
+					item: "tconstruct:seared_table"
+					type: "item"
+				}
+				{
+					id: "299EDA1AB840AF9D"
+					item: "tconstruct:seared_fuel_tank"
+					type: "item"
+				}
+				{
+					id: "1B3F7ECD481C356D"
+					item: "tconstruct:mighty_smelting"
+					type: "item"
+				}
+			]
+			title: "Full Smeltery"
+			x: 13.0d
+			y: -3.0d
+		}
 	]
-	title: "Getting Going"
+	title: "When The Going Gets..."
 }

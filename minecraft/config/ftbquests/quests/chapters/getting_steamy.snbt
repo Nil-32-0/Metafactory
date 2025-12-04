@@ -1,4 +1,5 @@
 {
+	autofocus_id: "6FFF32581DA809A0"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "getting_steamy"
@@ -218,7 +219,7 @@
 			description: ["Once you hook your boiler up to the Primitive Pump, you'll need something other than Wooden Fluid Pipes to transport the Steam. Make some Bronze Fluid Pipes, which can handle higher temperatures, so you can feed your Steam-powered machines."]
 			id: "7DD3529FAC3CDDC1"
 			tasks: [{
-				count: 8L
+				count: 10L
 				id: "24B6093CF6117ECC"
 				item: "gtceu:bronze_small_fluid_pipe"
 				type: "item"
@@ -236,8 +237,8 @@
 				item: "gtceu:bronze_brick_casing"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 0.0d
+			x: 4.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["7DD3529FAC3CDDC1"]
@@ -248,20 +249,22 @@
 				item: "gtceu:bronze_machine_casing"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 2.0d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["18C445CE33C200D5"]
 			description: ["Make an Alloy Smelter, to more easily make alloys such as Bronze."]
 			id: "13E191AE506CD6C9"
+			shape: "gear"
+			size: 1.25d
 			tasks: [{
 				id: "22C70DF3BA237F81"
 				item: "gtceu:lp_steam_alloy_smelter"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 0.0d
+			x: 4.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["18C445CE33C200D5"]
@@ -274,8 +277,8 @@
 				item: "gtceu:lp_steam_furnace"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -2.0d
+			x: 2.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3944E40BFBE4A7CF"]
@@ -286,7 +289,7 @@
 				item: "gtceu:lp_steam_extractor"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 6.0d
 			y: 2.0d
 		}
 		{
@@ -298,8 +301,8 @@
 				item: "gtceu:lp_steam_compressor"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 2.0d
+			x: 8.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3944E40BFBE4A7CF"]
@@ -310,8 +313,8 @@
 				item: "gtceu:lp_steam_macerator"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 4.0d
+			x: 6.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["29B1D300EAED4710"]
@@ -324,8 +327,8 @@
 				type: "item"
 			}]
 			title: "Blasting Clay"
-			x: 4.0d
-			y: 6.0d
+			x: 8.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["3A19DF49C54BB267"]
@@ -357,8 +360,8 @@
 				}
 			]
 			title: "Fireclay Ingredients"
-			x: 6.0d
-			y: 6.0d
+			x: 10.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -380,8 +383,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 4.0d
+			x: 10.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["19B088923CD57694"]
@@ -402,20 +405,162 @@
 					type: "item"
 				}
 			]
-			x: 8.0d
-			y: 4.0d
+			x: 12.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["11F4E6EB63BEFC26"]
 			id: "56A3A23219DE60A6"
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
-				count: 128L
+				count: 32L
 				id: "279F255D1E249CEC"
 				item: "gtceu:steel_ingot"
 				type: "item"
 			}]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			description: ["Go exploring until you find a Rubber tree. These are pretty important, so you may want several saplings."]
+			id: "4E3C5B849FA16FBC"
+			tasks: [{
+				id: "335C8C277BBF7170"
+				item: "gtceu:rubber_sapling"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4E3C5B849FA16FBC"]
+			description: ["Once you've grown some Rubber trees, chop them down to harvest the Sticky Resin inside them."]
+			id: "7D6DE67593111C03"
+			tasks: [{
+				id: "552FA0F8E489C32F"
+				item: "gtceu:sticky_resin"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"7D6DE67593111C03"
+				"1B919A9F3E8204B0"
+			]
+			description: ["Placing the Sticky Resin you harvested into the Extractor will produce Raw Rubber Pulp, which you'll need to make rubber."]
+			id: "5855300722023D4E"
+			tasks: [{
+				id: "0F046E375E92B3E5"
+				item: "gtceu:raw_rubber_dust"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0C20D7736BFA1DB0"]
+			description: ["In the Nether are Sulfur veins. Track one down and harvest a good amount of sulfur, which you'll use to make rubber."]
+			id: "78750604B5F6F8C2"
+			tasks: [{
+				id: "0B5CB770B5883705"
+				item: "gtceu:sulfur_dust"
+				type: "item"
+			}]
 			x: 10.0d
 			y: 4.0d
+		}
+		{
+			description: ["To progress beyond the Steam Age, you'll need to travel to the Nether. Build a portal and go there now."]
+			icon: "minecraft:obsidian"
+			id: "0C20D7736BFA1DB0"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "63377823457EA6D0"
+				type: "dimension"
+			}]
+			title: "To the Nether"
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"78750604B5F6F8C2"
+				"5855300722023D4E"
+				"13E191AE506CD6C9"
+			]
+			description: ["Take your Raw Rubber Pulp and Sulfer Dust and use your Alloy Smelter to make some Rubber Ingots."]
+			id: "6AA9C70E6473BA74"
+			tasks: [{
+				id: "1BE823524307A399"
+				item: "gtceu:rubber_ingot"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["56A3A23219DE60A6"]
+			description: ["Using some of your Steel, make a Casting Mold (Plate)."]
+			id: "72E90BF20B87548F"
+			tasks: [{
+				id: "05614A012181B80F"
+				item: "gtceu:plate_casting_mold"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"6AA9C70E6473BA74"
+				"72E90BF20B87548F"
+			]
+			description: ["Put the Rubber Ingots you just made back in the Alloy Smelter along with the Casting Mold (Plate) to get Rubber Sheets."]
+			id: "28371E91558791A7"
+			tasks: [{
+				id: "7F5D16E92B037943"
+				item: "gtceu:rubber_plate"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["13E191AE506CD6C9"]
+			description: ["By combining Copper and Redstone in an Alloy Furnace, you can make Red Alloy, a particularly conductive material."]
+			id: "7629FCB491A1A7BF"
+			tasks: [{
+				id: "34B8D9D82CD7DC6A"
+				item: "gtceu:red_alloy_ingot"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"7629FCB491A1A7BF"
+				"28371E91558791A7"
+			]
+			description: ["Clipping a Red Alloy plate with your wire cutters will give you a Red Alloy Wire. Wrapping this with a Rubber Sheet will make a Red Alloy Cable, which will be important very soon."]
+			id: "2DD70A7E07B32273"
+			tasks: [
+				{
+					id: "5C0C735D16035787"
+					item: "gtceu:red_alloy_single_wire"
+					type: "item"
+				}
+				{
+					id: "23B9C68D3989F083"
+					item: "gtceu:red_alloy_single_cable"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 6.0d
 		}
 	]
 	title: "Getting Steamy"

@@ -1,6 +1,9 @@
 // priority: 10
 
 ServerEvents.recipes(event => {
+    // Vanilla/Quark recipe removals
+        event.remove({id: "minecraft:brick"});
+        event.remove({id: "quark:tweaks/crafting/utility/misc/easy_hopper"});
 
     // GT Materials recipe removals
 
@@ -46,6 +49,12 @@ ServerEvents.recipes(event => {
         event.remove({id: "projectexpansion:collector/basic"});
         event.remove({id: "projectexpansion:collector/dark"});
         event.remove({id: "projectexpansion:collector/red"});
+
+    // Tinkers Construct recipe removals
+        event.remove({output: "tconstruct:grout"});
+        event.remove({output: "tconstruct:nether_grout"});
+        event.remove({id: "tconstruct:smeltery/melting/glass/sand"});
+        event.remove({id: "tconstruct:smeltery/melting/glass/sand_cast"});
 
     // Waystones recipe removals
         event.remove({output: "waystones:warp_stone"});

@@ -1,6 +1,9 @@
 // priority: 10
 
 ServerEvents.recipes(event => {
+    // Vanilla/Quark recipe removals
+        event.remove({id: "minecraft:brick"});
+        event.remove({id: "quark:tweaks/crafting/utility/misc/easy_hopper"});
 
     // GT Materials recipe removals
 
@@ -8,6 +11,9 @@ ServerEvents.recipes(event => {
             event.remove({type: "gtceu:alloy_smelter", output: "gtceu:drenched_iron_ingot", input: "gtceu:drenched_iron_block"});
             event.remove({type: "gtceu:alloy_smelter", output: "gtceu:drenched_iron_nugget", input: "gtceu:drenched_iron_block"});
             event.remove({type: "gtceu:arc_furnace", output: "gtceu:drenched_iron_ingot", input: "gtceu:drenched_iron_block"});
+
+        event.remove({output: "gtceu:compressed_coke_clay"});
+        event.remove({id: "gtceu:shapeless/dust_bronze"});
 
     // AE2 recipe removals
         event.remove({output:"ae2:inscriber"});
@@ -21,6 +27,8 @@ ServerEvents.recipes(event => {
 
     // Forestry recipe removals
         event.remove({output: "forestry:fabricator"});
+        event.remove({id: "forestry:ingot_bronze_alloying"});
+        event.remove({id: "forestry:foresters_manual_sapling"});
 
     // Malum recipe removals
         event.remove({type: "smelting", output: "malum:arcane_charcoal"});
@@ -42,6 +50,12 @@ ServerEvents.recipes(event => {
         event.remove({id: "projectexpansion:collector/basic"});
         event.remove({id: "projectexpansion:collector/dark"});
         event.remove({id: "projectexpansion:collector/red"});
+
+    // Tinkers Construct recipe removals
+        event.remove({output: "tconstruct:seared_brick"});
+        event.remove({output: "tconstruct:scorched_brick"});
+        event.remove({id: "tconstruct:smeltery/melting/glass/sand"});
+        event.remove({id: "tconstruct:smeltery/melting/glass/sand_cast"});
 
     // Waystones recipe removals
         event.remove({output: "waystones:warp_stone"});

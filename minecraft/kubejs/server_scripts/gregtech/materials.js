@@ -28,7 +28,28 @@ ServerEvents.recipes(event => {
     ElementalCraftRecipes.initialize(event);
     BotaniaRecipes.initialize(event);
 
+    event.shaped("gtceu:tiny_wrought_iron_dust", [
+        " N ",
+        " M ",
+        "   "
+    ], {
+        N: "gtceu:wrought_iron_nugget",
+        M: "#forge:tools/mortars"
+    });
+
+    event.shaped("4x gtceu:compressed_coke_clay", [
+        "CCC",
+        "SMS",
+        "SSS"
+    ], {
+        C: "minecraft:clay_ball",
+        S: "#minecraft:sand",
+        M: "gtceu:brick_wooden_form"
+    });
+
     // Recipes to obtain materials
+
+    event.shapeless("4x gtceu:bronze_dust", ["3x gtceu:copper_dust", "1x gtceu:tin_dust"]);
 
     // Grounded Copper
         ElementalCraftRecipes.infuse(Item.of("gtceu:grounded_copper_ingot"), Item.of("minecraft:copper_ingot"), 500, "earth");

@@ -145,6 +145,16 @@
         "version": "16.0.14"
     },
     {
+        "filename": "corn_delight-1.1.9-1.20.1.jar",
+        "name": "Corn Delight",
+        "version": "1.1.9-1.20.1"
+    },
+    {
+        "filename": "coroutil-forge-1.20.1-1.3.7.jar",
+        "name": "CoroUtil",
+        "version": "1.20.1-1.3.7"
+    },
+    {
         "filename": "cosmeticarmorreworked-1.20.1-v1a.jar",
         "name": "CosmeticArmorReworked",
         "version": "1.20.1-v1a"
@@ -190,9 +200,9 @@
         "version": "1.1.22+1.20.1+forge"
     },
     {
-        "filename": "elementalcraft-1.20.1-m6.2.2.jar",
+        "filename": "elementalcraft-1.20.1-m6.3.0.jar",
         "name": "ElementalCraft: Metafactory Edition",
-        "version": "1.20.1-m6.2.2"
+        "version": "1.20.1-m6.3.0"
     },
     {
         "filename": "embeddium-0.3.31+mc1.20.1.jar",
@@ -215,9 +225,9 @@
         "version": "6.2.16-beta"
     },
     {
-        "filename": "entityculling-forge-1.9.3-mc1.20.1.jar",
+        "filename": "entityculling-forge-1.9.4-mc1.20.1.jar",
         "name": "EntityCulling",
-        "version": "1.9.3"
+        "version": "1.9.4"
     },
     {
         "filename": "MnaJS-1.20.1-0.1.5-hotfix.jar",
@@ -240,14 +250,14 @@
         "version": "6.1.5u"
     },
     {
-        "filename": "ExtendedAE-1.20-1.4.2-forge.jar",
+        "filename": "ExtendedAE-1.20-1.4.9-forge.jar",
         "name": "ExtendedAE",
-        "version": "1.20-1.4.2-forge"
+        "version": "1.20-1.4.9-forge"
     },
     {
-        "filename": "ftb-library-forge-2001.2.10.jar",
+        "filename": "ftb-library-forge-2001.2.12.jar",
         "name": "FTB Library",
-        "version": "2001.2.10"
+        "version": "2001.2.12"
     },
     {
         "filename": "ftb-quests-forge-2001.4.17.jar",
@@ -260,14 +270,19 @@
         "version": "2001.3.1"
     },
     {
+        "filename": "ftb-xmod-compat-forge-2.1.3.jar",
+        "name": "FTB XMod Compat",
+        "version": "2.1.3"
+    },
+    {
         "filename": "FarmersDelight-1.20.1-1.2.9.jar",
         "name": "Farmer's Delight",
         "version": "1.20.1-1.2.9"
     },
     {
-        "filename": "fast-ip-ping-v1.0.7-mc1.20.4-forge.jar",
+        "filename": "fast-ip-ping-v1.0.8-mc1.20.4-forge.jar",
         "name": "Fast IP Ping",
-        "version": "1.0.7"
+        "version": "1.0.8"
     },
     {
         "filename": "FastSuite-1.20.1-5.1.0.jar",
@@ -290,14 +305,14 @@
         "version": "6.0.1"
     },
     {
-        "filename": "forestry-1.20.1-2.7.0.jar",
+        "filename": "forestry-1.20.1-2.8.0.jar",
         "name": "Forestry",
-        "version": "2.7.0"
+        "version": "2.8.0"
     },
     {
-        "filename": "gtca-1.20.1-2.0.1.jar.disabled",
+        "filename": "gtca-1.20.1-2.1.0-beta.jar",
         "name": "GT Community Additions",
-        "version": "2.0.1"
+        "version": "2.1.0-beta"
     },
     {
         "filename": "gtexolegs-1.1.0.jar",
@@ -360,9 +375,9 @@
         "version": "5.3.3"
     },
     {
-        "filename": "ImmediatelyFast-Forge-1.5.2+1.20.4.jar",
+        "filename": "ImmediatelyFast-Forge-1.5.3+1.20.4.jar",
         "name": "ImmediatelyFast",
-        "version": "1.5.2+1.20.4"
+        "version": "1.5.3+1.20.4"
     },
     {
         "filename": "inventoryessentials-forge-1.20.1-8.2.14.jar",
@@ -380,9 +395,19 @@
         "version": "1.20.1-5.3.2"
     },
     {
-        "filename": "Kiwi-1.20.1-Forge-11.9.2.jar",
+        "filename": "item-filters-forge-2001.1.0-build.59.jar",
+        "name": "Item Filters",
+        "version": "2001.1.0-build.59"
+    },
+    {
+        "filename": "jei-1.20.1-forge-15.20.0.127.jar",
+        "name": "Just Enough Items",
+        "version": "15.20.0.127"
+    },
+    {
+        "filename": "Kiwi-1.20.1-Forge-11.10.0.jar",
         "name": "Kiwi Library",
-        "version": "11.9.2+forge"
+        "version": "11.10.0+forge"
     },
     {
         "filename": "kubejs-forge-2001.6.5-build.16.jar",
@@ -418,6 +443,11 @@
         "filename": "lootr-forge-1.20-0.7.35.94.jar",
         "name": "Lootr",
         "version": "0.7.35.94"
+    },
+    {
+        "filename": "ldlib-forge-1.20.1-1.0.47.jar",
+        "name": "LowDragLib",
+        "version": "1.0.47"
     },
     {
         "filename": "Lychee-1.20.1-Forge-5.1.22.jar",
@@ -460,9 +490,9 @@
         "version": "0.1.5"
     },
     {
-        "filename": "modernfix-forge-5.25.1+mc1.20.1.jar",
+        "filename": "modernfix-forge-5.25.2+mc1.20.1.jar",
         "name": "ModernFix",
-        "version": "5.25.1+mc1.20.1"
+        "version": "5.25.2+mc1.20.1"
     },
     {
         "filename": "modonomicon-1.20.1-forge-1.79.2.jar",
@@ -483,6 +513,11 @@
         "filename": "MyServerIsCompatible-1.20-1.0.jar",
         "name": "MyServerIsCompatible",
         "version": "1.0"
+    },
+    {
+        "filename": "mysterious_mountain_lib-1.6.30-1.20.1.jar",
+        "name": "Mysterious Mountain Lib",
+        "version": "1.6.30-1.20.1"
     },
     {
         "filename": "MysticalAdaptations-1.20.1-1.0.1.jar",
@@ -535,9 +570,9 @@
         "version": "1.20.1-v2.2.2"
     },
     {
-        "filename": "occultism-1.20.1-1.153.0.jar",
+        "filename": "occultism-1.20.1-1.155.0.jar",
         "name": "Occultism",
-        "version": "1.153.0"
+        "version": "1.155.0"
     },
     {
         "filename": "occultism_kubejs-1.20.1-1.0.0.jar",
@@ -560,9 +595,9 @@
         "version": "1.20.1-1"
     },
     {
-        "filename": "PackagedAuto-1.20.1-3.4.14.45.jar",
+        "filename": "PackagedAuto-1.20.1-3.4.15.46.jar",
         "name": "PackagedAuto",
-        "version": "3.4.14.45"
+        "version": "3.4.15.46"
     },
     {
         "filename": "PackagedAvaritia-Re-1.20.1-2.2.2.13.jar",
@@ -600,9 +635,14 @@
         "version": "8.6.3"
     },
     {
-        "filename": "pneumaticcraft-repressurized-6.0.21+mc1.20.1.jar",
+        "filename": "pneumaticcraft-repressurized-6.0.22+mc1.20.1.jar",
         "name": "PneumaticCraft: Repressurized",
-        "version": "6.0.21+mc1.20.1"
+        "version": "6.0.22+mc1.20.1"
+    },
+    {
+        "filename": "polymorph-forge-0.49.10+1.20.1.jar",
+        "name": "Polymorph",
+        "version": "0.49.10+1.20.1"
     },
     {
         "filename": "probejs-7.0.0-forge.jar",
@@ -660,14 +700,14 @@
         "version": "1.15"
     },
     {
-        "filename": "sophisticatedbackpacks-1.20.1-3.24.12.1411.jar",
+        "filename": "sophisticatedbackpacks-1.20.1-3.24.15.1445.jar",
         "name": "Sophisticated Backpacks",
-        "version": "3.24.12.1411"
+        "version": "3.24.15.1445"
     },
     {
-        "filename": "sophisticatedcore-1.20.1-1.2.107.1240.jar",
+        "filename": "sophisticatedcore-1.20.1-1.2.112.1296.jar",
         "name": "Sophisticated Core",
-        "version": "1.2.107.1240"
+        "version": "1.2.112.1296"
     },
     {
         "filename": "SoLOnion_FORGE_v1.4.5_mc1.20.1.jar",
@@ -725,6 +765,11 @@
         "version": "14.1.17"
     },
     {
+        "filename": "watut-forge-1.20.1-1.2.3.jar",
+        "name": "What Are They Up To",
+        "version": "1.20.1-1.2.3"
+    },
+    {
         "filename": "worldedit-mod-7.2.15.jar",
         "name": "WorldEdit",
         "version": "7.2.15+6463-5ca4dff"
@@ -750,8 +795,8 @@
         "version": "2.3.0-build.4+mc1.20.1"
     },
     {
-        "filename": "Zeta-1.0-30.jar",
+        "filename": "Zeta-1.0-31.jar",
         "name": "Zeta",
-        "version": "1.0-30"
+        "version": "1.0-31"
     }
 ]

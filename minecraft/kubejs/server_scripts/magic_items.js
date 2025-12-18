@@ -37,4 +37,16 @@ ServerEvents.recipes(event => {
         E: "minecraft:ender_pearl",
         C: "gtmetx:aether_tube"
     });
+
+    mysticalAgricultureInfusion(event, Ingredient.of("mysticalagriculture:prudentium_essence"), Ingredient.of("mysticalagriculture:inferium_block"),
+    [
+        Ingredient.of("mysticalagriculture:inferium_essence"),
+        Ingredient.of("mysticalagriculture:inferium_essence"),
+        Ingredient.of("mysticalagriculture:inferium_essence"),
+        Ingredient.of("mysticalagriculture:inferium_essence"),
+        Ingredient.of("mysticalagriculture:inferium_essence"),
+        Ingredient.of("mysticalagriculture:inferium_essence"),
+        Ingredient.of("mysticalagriculture:inferium_essence"),
+        Ingredient.of("mysticalagriculture:inferium_essence")
+    ]);
 })

@@ -1,18 +1,27 @@
 // Priority: 0
 
 ServerEvents.recipes(event => {
-    event.shapeless("2x tconstruct:grout", [
-        "gtceu:brick_wooden_form",
-        "minecraft:clay_ball",
-        "minecraft:sand",
-        "minecraft:gravel"
-    ]);
-    event.shapeless("2x tconstruct:nether_grout", [
-        "gtceu:brick_wooden_form",
-        "minecraft:magma_cream",
-        ["minecraft:soul_soil", "minecraft:soul_sand"],
-        "minecraft:gravel"
-    ]);
+    event.shaped("8x kubejs:compressed_grout", [
+        "GGG",
+        "GFG",
+        "GGG"
+    ], {
+        G: "tconstruct:grout",
+        F: "gtceu:brick_wooden_form"
+    });
+    event.shapeless("kubejs:compressed_grout", ["gtceu:brick_wooden_form", "tconstruct:grout"]);
+    event.shaped("8x kubejs:compressed_nether_grout", [
+        "GGG",
+        "GFG",
+        "GGG"
+    ], {
+        G: "tconstruct:nether_grout",
+        F: "gtceu:brick_wooden_form"
+    });
+    event.shapeless("kubejs:compressed_nether_grout", ["gtceu:brick_wooden_form", "tconstruct:nether_grout"]);
+
+    event.smelting("tconstruct:seared_brick", "kubejs:compressed_grout");
+    event.smelting("tconstruct:scorched_brick", "kubejs:compressed_nether_grout");
 
     event.shapeless("gtceu:compressed_clay", ["gtceu:brick_wooden_form", "minecraft:clay_ball"]);
     event.shaped("8x gtceu:compressed_clay", [

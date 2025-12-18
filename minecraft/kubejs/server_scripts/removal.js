@@ -28,6 +28,7 @@ ServerEvents.recipes(event => {
     // Forestry recipe removals
         event.remove({output: "forestry:fabricator"});
         event.remove({id: "forestry:ingot_bronze_alloying"});
+        event.remove({id: "forestry:foresters_manual_sapling"});
 
     // Malum recipe removals
         event.remove({type: "smelting", output: "malum:arcane_charcoal"});
@@ -51,8 +52,8 @@ ServerEvents.recipes(event => {
         event.remove({id: "projectexpansion:collector/red"});
 
     // Tinkers Construct recipe removals
-        event.remove({output: "tconstruct:grout"});
-        event.remove({output: "tconstruct:nether_grout"});
+        event.remove({output: "tconstruct:seared_brick"});
+        event.remove({output: "tconstruct:scorched_brick"});
         event.remove({id: "tconstruct:smeltery/melting/glass/sand"});
         event.remove({id: "tconstruct:smeltery/melting/glass/sand_cast"});
 

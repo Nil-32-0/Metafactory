@@ -696,11 +696,18 @@
 				item: "minecraft:glass"
 				type: "item"
 			}]
-			tasks: [{
-				id: "6B2F88C7AC252EE8"
-				item: "tconstruct:grout"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "6B2F88C7AC252EE8"
+					item: "tconstruct:grout"
+					type: "item"
+				}
+				{
+					id: "6FAEC8C9E660F139"
+					item: "kubejs:compressed_grout"
+					type: "item"
+				}
+			]
 			title: "Gritty"
 			x: 13.0d
 			y: 0.0d
@@ -747,7 +754,7 @@
 			description: [
 				"Using your basic Melter setup, melt down some copper to make a Smeltery controller and some glass dust to make clear glass. Then use that with some more seared bricks to make the components for the Smeltery. "
 				""
-				"Consult \"Mighty Smelting\" for further information on setting up the Smeltery"
+				"Structural requirements for the Smelter can be found in \"Mighty Smelting\"."
 			]
 			id: "49BBC0F932CEA832"
 			tasks: [

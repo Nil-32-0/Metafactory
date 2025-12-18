@@ -562,6 +562,17 @@
 			x: 6.0d
 			y: 6.0d
 		}
+		{
+			dependencies: ["28371E91558791A7"]
+			id: "0D26E2ADF6016A59"
+			tasks: [{
+				id: "6FA2738AF9E9122A"
+				item: "gtceu:tin_single_cable"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 8.0d
+		}
 	]
 	title: "Getting Steamy"
 }

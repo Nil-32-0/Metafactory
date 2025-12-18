@@ -11,8 +11,8 @@ const AE2Recipes = {
     },
 
     /**
-     * @param {$ItemStack} output Item produced by the recipe
-     * @param {$ItemStack} input Item consumed by the recipe
+     * @param {$Ingredient} output Item produced by the recipe
+     * @param {$Ingredient} input Item consumed by the recipe
      */
     charger (output, input) {this.event.custom({
         type:"ae2:charger",
@@ -21,10 +21,10 @@ const AE2Recipes = {
     })},
     inscriber: {
         /**
-         * @param {$ItemStack} output Item produced by the recipe
-         * @param {$ItemStack} input1 Item consumed by the recipe, in the center slot
-         * @param {$ItemStack | null} input2 Optional Item consumed by the recipe, in the top slot
-         * @param {$ItemStack | null} input3 Optional Item consumed by the recipe, in the bottom slot
+         * @param {$Ingredient} output Item produced by the recipe
+         * @param {$Ingredient} input1 Item consumed by the recipe, in the center slot
+         * @param {$Ingredient | null} input2 Optional Item consumed by the recipe, in the top slot
+         * @param {$Ingredient | null} input3 Optional Item consumed by the recipe, in the bottom slot
          */
         press (output, input1, input2, input3) {
             let inputs = {}
@@ -43,9 +43,9 @@ const AE2Recipes = {
                 result: output
         })},
         /**
-         * @param {$ItemStack} output Item produced by the recipe
-         * @param {$ItemStack} input Item consumed by the recipe, in the center slot
-         * @param {$ItemStack} press Item required for the recipe, in the top slot. Not consumed
+         * @param {$Ingredient} output Item produced by the recipe
+         * @param {$Ingredient} input Item consumed by the recipe, in the center slot
+         * @param {$Ingredient} press Item required for the recipe, in the top slot. Not consumed
          */
         inscribe (output, input, press) {this.event.custom({
             type: "ae2:inscriber",
@@ -58,9 +58,9 @@ const AE2Recipes = {
         })}
     },
     /**
-     * @param {$ItemStack} output Item produced by the recipe
+     * @param {$Ingredient} output Item produced by the recipe
      * @param {string} fluidTag Tag of the Fluid the recipe takes place in
-     * @param {$ItemStack[]} inputs List of Items consumed by the recipe
+     * @param {$Ingredient[]} inputs List of Items consumed by the recipe
      */
     transform (output, fluidTag, inputs) {this.event.custom({
         type: "ae2:transform",
@@ -74,9 +74,9 @@ const AE2Recipes = {
 
     // Does not work at the moment
     // /**
-    // * @param {$ItemStack} output Item produced by the recipe
+    // * @param {$Ingredient} output Item produced by the recipe
     // * @param {Number} inputEnergy Amount of energy consumed by the recipe
-    // * @param {$ItemStack[]} inputs List of Items consumed by the recipe
+    // * @param {$Ingredient[]} inputs List of Items consumed by the recipe
     // * @param {$FluidStack} inputFluid Fluid consumed by the recipe
     // */
     // reaction (output, inputEnergy, inputs, inputFluid) {

@@ -20,7 +20,7 @@ Generic Circuits available for each tier:
 
 | Tier | Circuits (Magic)                                                                                                                                          |
 | ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ULV  | Aether Tube, MANA Chip (Magically Attributed NAND Architechture)                                                                                          |
+| ULV  | Aether Tube, MANA Chip (Magically Attributed NAND Architecture)                                                                                           |
 | LV   | Basic Arcane, Basic Mystic                                                                                                                                |
 | MV   | Good Arcane, Good Mystic, Sorcerous Processor                                                                                                             |
 | HV   | Advanced Mystic, Sorcerous Processor Assembly, Orphic Processor                                                                                           |

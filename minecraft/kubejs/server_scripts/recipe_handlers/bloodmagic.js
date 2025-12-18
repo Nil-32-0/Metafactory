@@ -21,7 +21,7 @@ const BloodMagicRecipes = {
 
 
         /**
-         * @param {$ItemStack} item Item consumed by the recipe
+         * @param {$Ingredient} item Item consumed by the recipe
          * @param {number} count How many items are consumed
          */
         inputItem (item, count) {
@@ -30,14 +30,14 @@ const BloodMagicRecipes = {
             return this;
         },
         /**
-         * @param {$ItemStack} item Item produced by the recipe
+         * @param {$Ingredient} item Item produced by the recipe
          */
         outputItem (item) {
             this.recipe.output = item;
             return this;
         },
         // /**
-        //  * @param {[$ItemStack,number][]} items List of additional Items produced by the recipe, with chances on each
+        //  * @param {[$Ingredient,number][]} items List of additional Items produced by the recipe, with chances on each
         //  */
         // TODO: Get this working
         // addedOutputs (items) {
@@ -75,7 +75,7 @@ const BloodMagicRecipes = {
         },
 
         /**
-         * @param {$ItemStack} tool The alchemical tool used in the recipe
+         * @param {$Ingredient} tool The alchemical tool used in the recipe
          */
         register (tool) {
             this.recipe.tool = tool;
@@ -84,9 +84,9 @@ const BloodMagicRecipes = {
     },
 
     /**
-     * @param {$ItemStack} output Item produced by the recipe
-     * @param {$ItemStack} baseInput Item consumed by the recipe, used first
-     * @param {$ItemStack} additionInput Item consumed by the recipe, used second
+     * @param {$Ingredient} output Item produced by the recipe
+     * @param {$Ingredient} baseInput Item consumed by the recipe, used first
+     * @param {$Ingredient} additionInput Item consumed by the recipe, used second
      * @param {string} texture Texture location of texture used by the recipe animation
      */
     array (output, baseInput, additionInput, texture) {this.event.custom({
@@ -106,14 +106,14 @@ const BloodMagicRecipes = {
         },
 
         /**
-         * @param {$ItemStack[]} items List of Items consumed by the recipe
+         * @param {$Ingredient[]} items List of Items consumed by the recipe
          */
         inputItems(items) {
             this.recipe.input = items;
             return this;
         },
         /**
-         * @param {$ItemStack} item Item produced by the recipe
+         * @param {$Ingredient} item Item produced by the recipe
          */
         outputItem(item) {
             this.recipe.output = item;
@@ -156,14 +156,14 @@ const BloodMagicRecipes = {
         },
 
         /**
-         * @param {$ItemStack} item Item consumed by the recipe
+         * @param {$Ingredient} item Item consumed by the recipe
          */
         inputItem (item) {
             this.recipe.input = item;
             return this;
         },
         /**
-         * @param {$ItemStack} item Item produced by the recipe
+         * @param {$Ingredient} item Item produced by the recipe
          */
         outputItem (item) {
             this.recipe.output = item;
@@ -221,7 +221,7 @@ const BloodMagicRecipes = {
         },
 
         /**
-         * @param {$ItemStack[]} items List of Items consumed by the recipe, up to four
+         * @param {$Ingredient[]} items List of Items consumed by the recipe, up to four
          */
         inputItems (items) {
             let index = 0;
@@ -232,7 +232,7 @@ const BloodMagicRecipes = {
             return this;
         },
         /**
-         * @param {$ItemStack} item Item produced by the recipe
+         * @param {$Ingredient} item Item produced by the recipe
          */
         outputItem (item) {
             this.recipe.output = item;

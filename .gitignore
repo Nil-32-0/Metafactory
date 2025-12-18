@@ -10,7 +10,6 @@ minecraft/kubejs/startup_scripts/example.js
 /minecraft/local/
 /minecraft/logs/
 /minecraft/modernfix/
-/minecraft/mods/
 /minecraft/patchouli_books/
 /minecraft/saves/
 /minecraft/screenshots/
@@ -35,13 +34,19 @@ minecraft/kubejs/config/probe-settings.json
 
 # Included config files
 /minecraft/config/*
+!/minecraft/config/almostunified/duplicates.json
+!/minecraft/config/almostunified/unify.json
 !/minecraft/config/apotheosis/
 /minecraft/config/apotheosis/*
 !/minecraft/config/apotheosis/apotheosis.cfg
 !/minecraft/config/apotheosis/garden.cfg
+!/minecraft/config/ftbquests/
 
 !/minecraft/config/extendedcrafting-common.toml
 !/minecraft/config/gtceu.yaml
 !/minecraft/config/mysticalagriculture-common.toml
 
 /minecraft/defaultconfigs/ftb*/
+
+/minecraft/mods/*
+!/minecraft/mods/gtmetx-1.20.1-0.1.0.jar

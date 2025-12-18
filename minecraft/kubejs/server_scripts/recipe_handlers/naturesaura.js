@@ -10,7 +10,7 @@ const NaturesAuraRecipes = {
 
     /**
      * @param {string} entity ID of the entity produced by the recipe
-     * @param {$ItemStack[]} inputs List of Items consumed by the recipe
+     * @param {$Ingredient[]} inputs List of Items consumed by the recipe
      * @param {number | null} aura Aura consumed by the recipe, optional, default 0
      * @param {number | null} time Duration of the recipe in ticks, optional, default 20. 1 second = 20 ticks
      */
@@ -19,8 +19,8 @@ const NaturesAuraRecipes = {
     },
 
     /**
-     * @param {$ItemStack} output Item produced by the recipe
-     * @param {$ItemStack} input Item consumed by the recipe
+     * @param {$Ingredient} output Item produced by the recipe
+     * @param {$Ingredient} input Item consumed by the recipe
      * @param {number | null} aura Aura consumed by the recipe, optional, default 0
      * @param {number | null} time Duration of the recipe in ticks, optional, default 20. 1 second = 20 ticks
      * @param {string | null} catalyst Block ID of the catalyst for the recipe, optional
@@ -36,17 +36,17 @@ const NaturesAuraRecipes = {
     },
 
     /**
-     * @param {$ItemStack} output Item produced by the recipe
-     * @param {$ItemStack} input Item consumed by the recipe
-     * @param {$ItemStack} activationItem Item consumed by the recipe, dropped to start the recipe
+     * @param {$Ingredient} output Item produced by the recipe
+     * @param {$Ingredient} input Item consumed by the recipe
+     * @param {$Ingredient} activationItem Item consumed by the recipe, dropped to start the recipe
      */
     offering(output, input, activationItem) {
         this.event.recipes.naturesaura.offering(output, input, activationItem);
     },
 
     /**
-     * @param {$ItemStack} output Item produced by the recipe
-     * @param {$ItemStack[]} inputs List of up to eight Items consumed by the recipe
+     * @param {$Ingredient} output Item produced by the recipe
+     * @param {$Ingredient[]} inputs List of up to eight Items consumed by the recipe
      * @param {string | null} sapling Block ID of the sapling for the recipe, optional
      * @param {number | null} time Duration of the recipe in ticks, optional, default 20. 1 second = 20 ticks
      */

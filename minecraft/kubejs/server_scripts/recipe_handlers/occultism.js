@@ -6,8 +6,8 @@ const OccultismRecipes = {
     },
 
     /**
-     * @param {$ItemStack} output Item produced by the recipe
-     * @param {$ItemStack} input Item consumed by the recipe
+     * @param {$Ingredient} output Item produced by the recipe
+     * @param {$Ingredient} input Item consumed by the recipe
      * @param {number | null} duration Duration of the recipe in ticks, optional, default 20 ticks. 1 second = 20 ticks
      * @param {boolean | null} multiply If the recipe output should be multiplied based on the crusher, optional, default true
      */
@@ -20,8 +20,8 @@ const OccultismRecipes = {
     })},
 
     /**
-     * @param {$ItemStack} output Item produced by the recipe
-     * @param {$ItemStack} input Item consumed by the recipe, should correspond to an Occultism dimensional miner
+     * @param {$Ingredient} output Item produced by the recipe
+     * @param {$Ingredient} input Item consumed by the recipe, should correspond to an Occultism dimensional miner
      * @param {number} weight Weight of the result
      */
     dimMiner(output, input, weight) {this.event.custom({
@@ -32,8 +32,8 @@ const OccultismRecipes = {
     })},
 
     /**
-     * @param {$ItemStack} output Item produced by the recipe
-     * @param {$ItemStack} input Item consumed by the recipe
+     * @param {$Ingredient} output Item produced by the recipe
+     * @param {$Ingredient} input Item consumed by the recipe
      */
     spiritFire (output, input) {this.event.custom({
         type: "occultism:spirit_fire",

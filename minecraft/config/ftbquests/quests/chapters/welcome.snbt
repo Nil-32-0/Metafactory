@@ -1,0 +1,45 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welcome"
+	group: ""
+	id: "18082E1F208E3CE9"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Welcome to Metafactory! If you've never played with GregTech before, follow the quests!"]
+			id: "19AE02F1C0968952"
+			shape: "hexagon"
+			tasks: [{
+				id: "56C084958A72F5A0"
+				title: "Welcome!"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["19AE02F1C0968952"]
+			description: [
+				"Most quests will be circles, indicating they must be completed to progress."
+				""
+				"The larger, gear-shaped quests are important, and usually are required to unlock the next chapter."
+				"{@pagebreak}"
+				"Diamond quests are optional, but there is usually some benefit to completing them."
+				""
+				"Hexagonal quests such as this one are purely informational, but should be read if you are unfamiliar with GregTech, or with this pack!"
+			]
+			id: "33B2EA3A525F0C2D"
+			shape: "hexagon"
+			tasks: [{
+				id: "4D23F22053B2DD71"
+				title: "About the questbook"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+	]
+	title: "Welcome"
+}

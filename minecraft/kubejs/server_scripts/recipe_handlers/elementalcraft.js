@@ -6,8 +6,8 @@ const ElementalCraftRecipes = {
     },
 
     /**
-     * @param {$ItemStack} output Item produced by the recipe
-     * @param {$ItemStack[]} inputs List of Items consumed by the recipe, in the order they must be inserted
+     * @param {$Ingredient} output Item produced by the recipe
+     * @param {$Ingredient[]} inputs List of Items consumed by the recipe, in the order they must be inserted
      * @param {number} manaAmount The amount of Elemental Mana consumed by the recipe. Container amounts are 1k, 1M, 5M
      * @param {"air"|"earth"|"fire"|"water"} manaType The type of Elemental Mana consumed by the recipe
      */
@@ -20,8 +20,8 @@ const ElementalCraftRecipes = {
     })},
 
     /**
-     * @param {$ItemStack} output Item produced by the recipe
-     * @param {$ItemStack} input Item consumed by the recipe
+     * @param {$Ingredient} output Item produced by the recipe
+     * @param {$Ingredient} input Item consumed by the recipe
      * @param {number} manaAmount The amount of Elemental Mana consumed by the recipe. Container amounts are 1k, 1M, 5M
      * @param {"air"|"earth"|"fire"|"water"} manaType The type of Elemental Mana consumed by the recipe
      */
@@ -34,8 +34,8 @@ const ElementalCraftRecipes = {
     })},
 
     /**
-     * @param {$ItemStack} output Item produced by the recipe
-     * @param {$ItemStack} input Item consumed by the recipe
+     * @param {$Ingredient} output Item produced by the recipe
+     * @param {$Ingredient} input Item consumed by the recipe
      * @param {number} manaAmount The amount of Elemental Mana consumed by the recipe. Container amounts are 1k, 1M, 5M
      * @param {number | null} luckRatio Optional luckRatio for the recipe
      */
@@ -54,8 +54,8 @@ const ElementalCraftRecipes = {
     },
 
     /**
-     * @param {$ItemStack} output Item produced by the recipe
-     * @param {$ItemStack[]} inputs List of the 5 Items consumed by the recipe. Order is Center, Water, Fire, Earth, Air for positioning
+     * @param {$Ingredient} output Item produced by the recipe
+     * @param {$Ingredient[]} inputs List of the 5 Items consumed by the recipe. Order is Center, Water, Fire, Earth, Air for positioning
      * @param {number} manaAmount The amount of each kind of Elemental Mana consumed by the recipe. Container amounts are 1k, 1M, 5M
      */
     pureInfuse (output, inputs, manaAmount) {this.event.custom({
@@ -66,8 +66,8 @@ const ElementalCraftRecipes = {
     })},
 
     /**
-     * @param {$ItemStack} output Item produced by the recipe
-     * @param {$ItemStack[]} inputs List of the 4 Items consumed by the recipe
+     * @param {$Ingredient} output Item produced by the recipe
+     * @param {$Ingredient[]} inputs List of the 4 Items consumed by the recipe
      * @param {number} manaAmount The amount of Elemental Mana consumed by the recipe. Container amounts are 1k, 1M, 5M
      * @param {"air"|"earth"|"fire"|"water"} manaType The type of Elemental Mana consumed by the recipe
      */
@@ -81,8 +81,8 @@ const ElementalCraftRecipes = {
     })},
 
     /**
-     * @param {$ItemStack} output Item produced by the recipe
-     * @param {$ItemStack} input Item consumed by the recipe
+     * @param {$Ingredient} output Item produced by the recipe
+     * @param {$Ingredient} input Item consumed by the recipe
      * @param {number} manaAmount The amount of Elemental Mana consumed by the recipe. Container amounts are 1k, 1M, 5M
      * @param {number | null} luckRatio Optional luckRatio for the recipe
      */

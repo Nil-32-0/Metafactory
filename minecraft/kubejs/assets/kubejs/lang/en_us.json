@@ -1,4 +1,15 @@
 {
+    "material.gtceu.naquadria_neutronate": "Naquadria Neutronate",
+    "material.gtceu.astatine_protactinium_telluride": "Astatine Protactinium Telluride",
+    "material.gtceu.fermium_tennessine_trinaquadide": "Fermium Tennessine Trinaquadide",
+    "material.gtceu.semistable_compound": "Semistable Compound",
+    "material.gtceu.aerogen_alloy": "Aerogen Alloy",
+    "material.gtceu.tachyonic_naquadah_neutronate": "Tachyonic Naquadah Neutronate",
+    "material.gtceu.infinity": "Infinity",
+    "material.gtceu.temporally_frozen_bec": "Temporally Frozen Bose-Einstein Condensate",
+    "material.gtceu.constrained_neutrino": "Constrained Neutrino",
+    "material.gtceu.transcendental": "Transcendental",
+    "material.gtceu.subspatially_layered": "Subspatially Layered",
     "material.gtceu.blazing_quartz": "Blazing Quartz",
     "material.gtceu.cthonic_gold": "Cthonic Gold",
     "material.gtceu.dimensional_shard": "Dimensional Shard",
@@ -9,6 +20,12 @@
     "material.gtceu.prosperity": "Prosperity Shard",
     "material.gtceu.soulstone": "Soulstone",
     "material.gtceu.vinteum": "Vinteum",
+
+    "material.gtceu.drenched_iron": "Drenched Iron",
+    "material.gtceu.grounded_copper": "Grounded Copper",
+    "material.gtceu.quickened_redstone": "Quickened Redstone",
+    "material.gtceu.enlightened_red_alloy": "Enlightened Red Alloy",
+    "material.gtceu.pure_glass": "Pure Glass",
 
     "tagprefix.livingrock": "Livingrock %s Ore",
 
@@ -21,6 +38,9 @@
     "gtceu.jei.ore_vein.alfheim/large_deep_magic_vein": "Alfheim Depths Large Magic Vein",
 
     "gtceu.jei.ore_vein.overworld/malignant_vein": "Malignant Vein",
+    "kubejs:overworld/malignant_vein": "Malignant Vein",
     "gtceu.jei.ore_vein.overworld/draconic_vein": "Draconic Vein",
-    "gtceu.jei.ore_vein.overworld/magic_vein": "Magic Vein"
+    "kubejs:overworld/draconic_vein": "Draconic Vein",
+    "gtceu.jei.ore_vein.overworld/magic_vein": "Magic Vein",
+    "kubejs:overworld/magic_vein": "Magic Vein"
 }

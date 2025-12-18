@@ -1,14 +1,20 @@
 // priority: 10
 
 ServerEvents.recipes(event => {
-    function gemReplacement (gem, gtGem) {
+    function gemReplacement (gem, gtGem, existsBlock, block) {
         let gtGemFull = "gtceu:" + gtGem + "_gem"
 
         event.replaceInput({input: gtGemFull}, gtGemFull, gem)
         event.replaceOutput({output: gtGemFull}, gtGemFull, gem)
 
+        let gtBlockFull = "gtceu:" + gtGem + "_block"
+        if (existsBlock) {
+            event.replaceInput({input: gtBlockFull}, gtBlockFull, block);
+            event.replaceOutput({output: gtBlockFull}, gtBlockFull, block);
+        }
+
         event.remove({type:"gtceu:cutter", output: gem})
-        event.remove({type:"gtceu:forge_hammer", input: "gtceu:"+gtGem+"_block"})
+        event.remove({type:"gtceu:forge_hammer", input: gtBlockFull})
         event.remove({type:"gtceu:forge_hammer", input: "gtceu:endstone_"+gtGem+"_ore"})
         event.remove({type:"gtceu:forge_hammer", input: "gtceu:netherrack_"+gtGem+"_ore"})
         event.remove({type:"gtceu:implosion_compressor", input: "gtceu:"+gtGem+"_dust"})
@@ -28,11 +34,19 @@ ServerEvents.recipes(event => {
             .itemOutputs(Item.of(gem, 2))
             .EUt(GTValues.VH[GTValues.LV])
             .duration(10)
-        event.recipes.gtceu.forge_hammer("hammer_"+gtGem+"_block_to_gem")
-            .itemInputs(Item.of("gtceu:"+gtGem+"_block"))
-            .itemOutputs(Item.of(gem, 9))
-            .EUt(GTValues.VH[GTValues.LV]*1.5)
-            .duration(100)
+        if (existsBlock) {
+            event.recipes.gtceu.forge_hammer("hammer_"+gtGem+"_block_to_gem")
+                .itemInputs(Item.of(block))
+                .itemOutputs(Item.of(gem, 9))
+                .EUt(GTValues.VH[GTValues.LV]*1.5)
+                .duration(100);
+        } else {
+            event.recipes.gtceu.forge_hammer("hammer_"+gtGem+"_block_to_gem")
+                .itemInputs(Item.of(gtBlockFull))
+                .itemOutputs(Item.of(gem, 9))
+                .EUt(GTValues.VH[GTValues.LV]*1.5)
+                .duration(100);
+        }
 
         let explosives = ["tnt", "powderbarrel", "dynamite", "industrial_tnt"]
         let explosiveMappings = {
@@ -52,16 +66,14 @@ ServerEvents.recipes(event => {
                 .EUt(GTValues.VA[GTValues.LV])
                 .duration(20)
         })
-        
-        
     }
 
-    gemReplacement("malum:blazing_quartz", "blazing_quartz")
-    gemReplacement("rftoolsbase:dimensionalshard", "dimensional_shard")
-    gemReplacement("elementalcraft:inert_crystal", "inert_crystal")
-    gemReplacement("malum:natural_quartz", "natural_quartz")
-    gemReplacement("mysticalagriculture:prosperity_shard", "prosperity")
-    gemReplacement("malum:processed_soulstone", "soulstone")
+    gemReplacement("malum:blazing_quartz", "blazing_quartz", true, "malum:block_of_blazing_quartz")
+    gemReplacement("rftoolsbase:dimensionalshard", "dimensional_shard", false)
+    gemReplacement("elementalcraft:inert_crystal", "inert_crystal", true, "elementalcraft:inert_crystal_block")
+    gemReplacement("malum:natural_quartz", "natural_quartz", false)
+    gemReplacement("mysticalagriculture:prosperity_shard", "prosperity", true, "mysticalagriculture:prosperity_block")
+    gemReplacement("malum:processed_soulstone", "soulstone", true, "malum:block_of_soulstone")
 
     event.replaceInput({input: "gtceu:draconium_dust"}, "gtceu:draconium_dust", "draconicevolution:draconium_dust")
     event.replaceOutput({output: "gtceu:draconium_dust"}, "gtceu:draconium_dust", "draconicevolution:draconium_dust")

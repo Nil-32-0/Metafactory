@@ -171,6 +171,60 @@
 			x: 6.0d
 			y: 2.0d
 		}
+		{
+			dependencies: [
+				"3D461D68E9B40386"
+				"6300964BF28251E7"
+				"5E31016C2AD74B8E"
+			]
+			description: [
+				"Make a Basic Steam Turbine to begin transforming Steam into Power. Steam can be pumped into any face, while wires must be connected to the face with the green dot to extract power. This converts Steam to EU at a rate of 2mb -> 1 EU."
+				""
+				"At low levels like the single-block turbine generators, distilled water is not produced."
+			]
+			id: "0FE7D58658BF9803"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "0FA7D8E3F0A01BDE"
+				item: "gtceu:lv_steam_turbine"
+				type: "item"
+			}]
+			title: "Not so Steampunk"
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"0B8539C8842DA836"
+				"0D26E2ADF6016A59"
+			]
+			description: ["Make a couple of LV Electric Motors. You may want to consider making a batch of these at once, as they will be used in many future recipes."]
+			id: "6300964BF28251E7"
+			tasks: [{
+				count: 2L
+				id: "6A8E25D30451F151"
+				item: "gtceu:lv_electric_motor"
+				type: "item"
+			}]
+			title: "The First Subcomponent"
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["56A3A23219DE60A6"]
+			description: ["While the Steam machine casings were the first you made, the LV Machine casing is the first you'll need a large quantity of. Begin by making a couple batches for your first LV machines."]
+			id: "5E31016C2AD74B8E"
+			tasks: [{
+				count: 4L
+				id: "1556D5DF55D3A4AD"
+				item: "gtceu:lv_machine_casing"
+				type: "item"
+			}]
+			title: "LV Machine Casings"
+			x: 8.0d
+			y: 2.0d
+		}
 	]
 	title: "Sparkies"
 }

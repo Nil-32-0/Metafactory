@@ -38,4 +38,8 @@ ServerEvents.recipes(event => {
             .itemInputs("malum:weak_runewood_ash", "gtceu:sticky_resin")
             .itemOutputs("gtmetx:resin_runewood_ash")
             .EUt(GTValues.VH[GTValues.LV]).duration(60);
+
+    // Glass Availability
+        event.replaceInput({output: "gtceu:lp_steam_extractor"}, "minecraft:glass", "#forge:glass");
+        
 })

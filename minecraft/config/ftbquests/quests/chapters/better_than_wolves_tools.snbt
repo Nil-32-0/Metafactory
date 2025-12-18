@@ -1,0 +1,478 @@
+{
+	autofocus_id: "21FBC75CF8ACF1C4"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "better_than_wolves_tools"
+	group: "63486BB5AAE2584B"
+	id: "48F6837C09E05506"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["21FBC75CF8ACF1C4"]
+			description: ["The most-used subcomponent, you'll need a lot of these. You should start by going for the Tool Replacement machines, as they typically offer more efficient recipes which will make further machines easier."]
+			id: "7185027130B5CEB3"
+			tasks: [{
+				id: "4C39243963F81ADD"
+				item: "gtceu:lv_electric_motor"
+				type: "item"
+			}]
+			title: "Subcomponent 1"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7185027130B5CEB3"]
+			description: [
+				"Despite not being used in many recipes, the Pump is still vital for you to make several of, as it has another use:"
+				""
+				"You can place it against a block with a pipe connected, and then shift right-click the cover placed to configure it. Once placed, the pump will insert or extract fluids from the connected block into the pipe network as configured."
+				""
+				"One thing to note is that the 'insert' mode inserts &lto the pipe network&r, whereas 'extract' inserts to the block."
+			]
+			id: "0CF46145C49B1D0A"
+			tasks: [{
+				id: "2FE41375D4A7DB10"
+				item: "gtceu:lv_electric_pump"
+				type: "item"
+			}]
+			title: "Subcomponent 2"
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7185027130B5CEB3"]
+			description: ["While not used in as many things, mechanical pistons are still used for some important machine and so you'll need several of them."]
+			id: "241CE7D5D474CF73"
+			tasks: [{
+				id: "26468CA4F32BF1DF"
+				item: "gtceu:lv_electric_piston"
+				type: "item"
+			}]
+			title: "Subcomponent 3"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0FE7D58658BF9803"]
+			description: [
+				"The way GregTech's power system works is based on a series of voltage tiers. "
+				"Starting from LV and going up to OpV, these tiers each represent how much EU is contained within 1 Amp of current. LV has 32 EU/Amp, with each subsequent voltage tier multiplying this value by 4."
+				"{@pagebreak}"
+				"Machines and cables are each rated for a specific voltage tier and amperage. "
+				"Attempting to run more current through a wire than it can handle will set it on fire, whereas a machine provided with a higher voltage than it can deal with will explode."
+				"Machines will take only the amps specified by the recipe they are running, or 1 amp when their energy buffer isn't full, which means you can use a multi-amp cable to power several machines. "
+				"This also means you should use a cable that is the same voltage tier as the machine it powers, as using a lower tier cable would result in the machine not being able to draw enough power."
+			]
+			id: "21FBC75CF8ACF1C4"
+			shape: "hexagon"
+			tasks: [{
+				id: "5F298FB67011EBB5"
+				title: "Understanding Voltage"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7185027130B5CEB3"]
+			description: ["Like the Electric Pump, the Conveyer can be placed on a block connected to Item Pipes, functioning the same way."]
+			id: "2FA18A0CDDBB4796"
+			tasks: [{
+				id: "271394673D930A27"
+				item: "gtceu:lv_conveyor_module"
+				type: "item"
+			}]
+			title: "Subcomponent 4"
+			x: 3.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"7185027130B5CEB3"
+				"241CE7D5D474CF73"
+			]
+			description: ["The Robot Arm can be placed just like a Conveyer, functioning the exact same except for the addition of an option to limit the number of items transferred when the network or block has a specific number of the items it transfers."]
+			id: "78BED48F1B7AD244"
+			tasks: [{
+				id: "61B621E243CB2338"
+				item: "gtceu:lv_robot_arm"
+				type: "item"
+			}]
+			title: "Subcomponent 7"
+			x: 3.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["21FBC75CF8ACF1C4"]
+			description: ["You only need one Emitter at this point, but it is used in one of the most important machines you'll make: the circuit assembler."]
+			id: "53528D14C8241E67"
+			tasks: [{
+				id: "37804D9ADDD39EB6"
+				item: "gtceu:lv_emitter"
+				type: "item"
+			}]
+			title: "Subcomponent 5"
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["241CE7D5D474CF73"]
+			description: ["The lathe does similar things to the file, but more efficiently and without consuming durability."]
+			id: "25614458F89FC3EE"
+			subtitle: "Tool Replacement"
+			tasks: [{
+				id: "68A73566204980EB"
+				item: "gtceu:lv_lathe"
+				type: "item"
+			}]
+			title: "Superior File"
+			x: -1.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["241CE7D5D474CF73"]
+			description: ["While you have the Steam version of this machine, upgrading to the LV version allows you to power it with energy and run recipes in half the time."]
+			id: "3E4939032EB94645"
+			subtitle: "Tool Replacement"
+			tasks: [{
+				id: "32EE9890CA0BCFDE"
+				item: "gtceu:lv_macerator"
+				type: "item"
+			}]
+			title: "Superior Mortar"
+			x: 2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["241CE7D5D474CF73"]
+			description: [
+				"While not as good as the Bender, the Forge Hammer has some other uses that the Hammer would normally be used for and so you should make one. Once you have both, you should only need your hammer for breaking machines and configuring output sides."
+				""
+				"Another side benefit the Forge Hammer can offer is crushing ores faster than a macerator, with the downside of losing any byproducts or increase in count the macerator might have made."
+			]
+			id: "13C8D2BA8523FC9F"
+			subtitle: "Tool Replacement"
+			tasks: [{
+				id: "28307D8E6D3F8A45"
+				item: "gtceu:lv_forge_hammer"
+				type: "item"
+			}]
+			title: "The Other Superior Hammer"
+			x: 1.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["2FA18A0CDDBB4796"]
+			description: ["Primarily used to make bolts from rods, the cutter takes some fluid as a lubricant but produces twice the output as a saw."]
+			id: "30184AFF50D733FD"
+			subtitle: "Tool Replacement"
+			tasks: [{
+				id: "680D0ACD4C519304"
+				item: "gtceu:lv_cutter"
+				type: "item"
+			}]
+			title: "Superior Saw"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7185027130B5CEB3"]
+			description: ["Where the wire cutters take a plate and make one wire, the wiremill takes an ingot and makes two wires. It also lets you make Fine Wire more efficiently, which will be important. You should hang onto your wire cutters though, as they're how you set cable connections."]
+			id: "0BB0E037CCD762AE"
+			subtitle: "Tool Replacement"
+			tasks: [{
+				id: "1C9C4E2F0E7B1D0D"
+				item: "gtceu:lv_wiremill"
+				type: "item"
+			}]
+			title: "Superior Wire Cutters"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"2FA18A0CDDBB4796"
+				"78BED48F1B7AD244"
+			]
+			description: ["While not a true replacement for crafting, the Assembler can perform most recipes to combine parts that would have needed tools, and can use liquids or make recipes not available in a crafting table."]
+			id: "5B5A8922E7F11E99"
+			subtitle: "Tool Replacement"
+			tasks: [{
+				id: "6330E26C2A658515"
+				item: "gtceu:lv_assembler"
+				type: "item"
+			}]
+			title: "Superior Crafting"
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["11E81C722A7FE539"]
+			description: ["Twice as fast as the Steam version, with how much you'll need to make this machine is effectively required."]
+			id: "46AD095C5B4CF2FA"
+			optional: true
+			subtitle: "Machine Upgrade"
+			tasks: [{
+				id: "0D82D297126A6E58"
+				item: "gtceu:lv_alloy_smelter"
+				type: "item"
+			}]
+			title: "Alloy Smelter Upgrade"
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["11E81C722A7FE539"]
+			description: ["Once you have some excess oxygen, you can use it in the Arc Furnace to make Wrought Iron and Annealed Copper easier. You can also turn Sand directly into Glass with this machine, at a much more efficient rate."]
+			id: "630BECD413EF755B"
+			subtitle: "New Machine"
+			tasks: [{
+				id: "6494348753C6FC4F"
+				item: "gtceu:lv_arc_furnace"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["241CE7D5D474CF73"]
+			description: ["The best-in-class option for making plates, the Bender lets you convert most ingots to plates in a 1-to-1 conversion, just taking some power to do so."]
+			id: "7BD3079CD8EA79D0"
+			subtitle: "...If you want plates"
+			tasks: [{
+				id: "7999F256228123C9"
+				item: "gtceu:lv_bender"
+				type: "item"
+			}]
+			title: "Superior Hammer"
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["0A92388A2DF3BCA2"]
+			description: ["One of the most commonly used ore processing machines, the Centrifuge can be used with nearly any ore after being crushed to get a chance at byproducts, in addition to the normal recipes it can perform."]
+			id: "738526D895D739C8"
+			subtitle: "New Machine"
+			tasks: [{
+				id: "427C7822DCDAA7C1"
+				item: "gtceu:lv_centrifuge"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7185027130B5CEB3"]
+			description: ["Chemical reactions allow you to perform some extremely useful recipes, such as more efficiently making Rubber, so you should make a Chemical Reactor."]
+			id: "60BB442F433DA905"
+			subtitle: "New Machine"
+			tasks: [{
+				id: "3DCF9772FE327015"
+				item: "gtceu:lv_chemical_reactor"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["241CE7D5D474CF73"]
+			description: ["Not necessarily required as you still have the Steam version of the Compressor, but the LV version lets you perform recipes quicker."]
+			id: "0E269CD3907DA10F"
+			optional: true
+			subtitle: "Machine Upgrade"
+			tasks: [{
+				id: "73D1E642AF2AF24D"
+				item: "gtceu:lv_compressor"
+				type: "item"
+			}]
+			title: "Compressor Upgrade"
+			x: -2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["11E81C722A7FE539"]
+			description: ["The Electrolyzer allows you to break compounds apart, which will be needed for future recipes and can let you turn some previously useless materials into useful ones."]
+			id: "651277D559F90A0D"
+			subtitle: "New Machine"
+			tasks: [{
+				id: "6798E39FD4D2E0DA"
+				item: "gtceu:lv_electrolyzer"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"0CF46145C49B1D0A"
+				"241CE7D5D474CF73"
+			]
+			description: [
+				"Not necessarily required as you still have the Steam version of the Extractor, but the LV version lets you perform recipes quicker."
+				""
+				"Another advantage of the Extractor at LV is Scrap Remelting, which allows you to melt items. You'll need this capability to make the Liquid glass required for Diodes."
+			]
+			id: "05FDAD3BD3910A7A"
+			optional: true
+			subtitle: "Machine Upgrade"
+			tasks: [{
+				id: "62AB0EFA565E160C"
+				item: "gtceu:lv_extractor"
+				type: "item"
+			}]
+			title: "Extractor Upgrade"
+			x: -4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7185027130B5CEB3"]
+			description: ["For more complicated alloys, you'll need something better than an alloy smelter or mixing dusts by hand, so make a Mixer."]
+			id: "07AC35A86D46CE85"
+			subtitle: "New Machine"
+			tasks: [{
+				id: "66873D5F9FA792D6"
+				item: "gtceu:lv_mixer"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0A92388A2DF3BCA2"]
+			description: ["Used entirely for ore processing, the Ore Washer replaces right-clicking a cauldron of water with a machine, allowing you to get byproducts as well.&l"]
+			id: "52B6DA8168539033"
+			subtitle: "Ore Line"
+			tasks: [{
+				id: "5615434F5094E02B"
+				item: "gtceu:lv_ore_washer"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["11E81C722A7FE539"]
+			description: ["Tired of spending 4 redstone for each polarized rod? Make the polarizer and just use energy instead!"]
+			id: "2D4BFEDECE42AD4C"
+			subtitle: "New Machine"
+			tasks: [{
+				id: "2C71E3961B0E04BC"
+				item: "gtceu:lv_polarizer"
+				type: "item"
+			}]
+			title: "Better Than Redstone"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0A92388A2DF3BCA2"]
+			description: ["The Sifter is used entirely for processing Gems, but it can produce up to Exquisite crystals, as well as allow processing of crushed crystal ores into crystals without need for an implosion compressor."]
+			id: "75174CBDC3957DBA"
+			subtitle: "Ore Line"
+			tasks: [{
+				id: "6A116ABB1A2A1BA6"
+				item: "gtceu:lv_sifter"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0A92388A2DF3BCA2"]
+			description: ["A variation of the centrifuge used only for ore processing, for certain ores the Thermal Centrifuge is the only way to obtain particular byproducts."]
+			id: "0675C42FF16E3E3B"
+			subtitle: "Ore Line"
+			tasks: [{
+				id: "1502F8F67612B1C2"
+				item: "gtceu:lv_thermal_centrifuge"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"0A92388A2DF3BCA2"
+				"1DC8582AB8D80D98"
+			]
+			description: ["While not required, the Miner can automatically mine the ores underneath it for you, saving you time and effort."]
+			id: "6DB819185C1FEE9A"
+			optional: true
+			subtitle: "Ore Line"
+			tasks: [{
+				id: "4DE46F2C6D75F1A1"
+				item: "gtceu:lv_miner"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"2FA18A0CDDBB4796"
+				"53528D14C8241E67"
+				"78BED48F1B7AD244"
+				"5B5A8922E7F11E99"
+			]
+			description: ["Though it requires a couple MV circuits, the Circuit Assembler allows several options for making circuits that are cheaper than the typical crafting recipes. For higher tiers of circuit, the Circuit Assembler is in fact the only method to obtain them."]
+			id: "48CAA4EA70681992"
+			subtitle: "New Machine"
+			tasks: [{
+				id: "7922DC825AA6AB57"
+				item: "gtceu:lv_circuit_assembler"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["21FBC75CF8ACF1C4"]
+			description: [
+				"Some machine recipes take 'programmed circuits'. These are not actual items that must be input into the machine."
+				""
+				"Instead, most LV+ machines have a box in the bottom left of their GUI, where clicking opens a menu of different programmed circuit numbers. The value set may be changed at any time. "
+				"Recipes which appear to take a programmed circuit instead must be performed in a machine where this menu is set to the specified number."
+			]
+			id: "11E81C722A7FE539"
+			optional: true
+			shape: "hexagon"
+			size: 0.85d
+			tasks: [{
+				id: "78764855C2831FEE"
+				title: "Programmed Circuits"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7185027130B5CEB3"]
+			description: ["While the Macerator only starts giving byproducts for ores after HV, any other machine used in the ore processing diagram will always be able to give byproducts. If you want your ores to give you more, make some of these machines!"]
+			id: "0A92388A2DF3BCA2"
+			shape: "hexagon"
+			tasks: [{
+				id: "15EF9ABCC90EA687"
+				title: "Ore Line"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["21FBC75CF8ACF1C4"]
+			description: ["Like the Emitter, the Sensor is only used in one or two machines at this point. Unlike the Emitter, the machines the Sensor is used in aren't required so it's up to you if you want to make one."]
+			id: "1DC8582AB8D80D98"
+			optional: true
+			tasks: [{
+				id: "17BFC2A9BC8783ED"
+				item: "gtceu:lv_sensor"
+				type: "item"
+			}]
+			title: "Subcomponent 6"
+			x: -4.0d
+			y: -2.0d
+		}
+	]
+	title: "Better Than &mWolves&r Tools"
+}

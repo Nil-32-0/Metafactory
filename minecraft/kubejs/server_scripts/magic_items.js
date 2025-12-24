@@ -49,4 +49,18 @@ ServerEvents.recipes(event => {
         Ingredient.of("mysticalagriculture:inferium_essence"),
         Ingredient.of("mysticalagriculture:inferium_essence")
     ]);
+
+    event.custom({
+        type: "tconstruct:casting_table",
+        cast: {
+            item: "elementalcraft:inert_crystal"
+        },
+        cast_consumed: true,
+        cooling_time: 50,
+        fluid: {
+            amount: 64,
+            fluid: "gtceu:gold"
+        },
+        result: "elementalcraft:contained_crystal"
+    });
 })

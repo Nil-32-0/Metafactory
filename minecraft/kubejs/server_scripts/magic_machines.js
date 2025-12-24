@@ -73,4 +73,6 @@ ServerEvents.recipes(event => {
     event.shapeless("projecte:collector_mk1", ["projectexpansion:basic_collector"]);
     event.shapeless("projecte:collector_mk2", ["projectexpansion:dark_collector"]);
     event.shapeless("projecte:collector_mk3", ["projectexpansion:red_collector"]);
+
+    event.replaceInput({id: "projecte:condenser_mk1"}, "minecraft:diamond", "avaritia:neutron_pile");
 })

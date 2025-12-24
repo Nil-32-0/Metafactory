@@ -33,6 +33,7 @@ ServerEvents.recipes(event => {
     // Malum recipe removals
         event.remove({type: "smelting", output: "malum:arcane_charcoal"});
         event.remove({output: "malum:spirit_altar"});
+        event.remove({id: "malum:copper_nugget_from_ingot"});
 
     // Mystical Agriculture recipe removals
         event.remove({id: "matc:crystals/inferium"});

@@ -16,4 +16,7 @@ JEIEvents.hideItems(event => {
     event.hide("gtceu:drenched_iron_ingot");
     event.hide("gtceu:drenched_iron_block");
     event.hide("gtceu:drenched_iron_nugget");
+    
+    event.hide("gtceu:springaline_gem");
+    event.hide("gtceu:springaline_block");
 })

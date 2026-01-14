@@ -25,6 +25,9 @@ ServerEvents.recipes(event => {
     // Botania recipe removals
         event.remove({id: "botania:petal_apothecary/pure_daisy"});
 
+    // Elementalcraft recipe removals
+        event.remove({output: "elementalcraft:springaline_glass"});
+
     // Forestry recipe removals
         event.remove({output: "forestry:fabricator"});
         event.remove({id: "forestry:ingot_bronze_alloying"});
@@ -57,6 +60,7 @@ ServerEvents.recipes(event => {
         event.remove({output: "tconstruct:scorched_brick"});
         event.remove({id: "tconstruct:smeltery/melting/glass/sand"});
         event.remove({id: "tconstruct:smeltery/melting/glass/sand_cast"});
+        event.remove({output: "tconstruct:seared_melter"});
 
     // Waystones recipe removals
         event.remove({output: "waystones:warp_stone"});

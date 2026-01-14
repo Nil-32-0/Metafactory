@@ -1,7 +1,7 @@
 // priority: 10
 
 ServerEvents.recipes(event => {
-    function gemReplacement (gem, gtGem, existsBlock, block) {
+    function gemReplacement (gem, gtGem, existsBlock, existsOre, block) {
         let gtGemFull = "gtceu:" + gtGem + "_gem"
 
         event.replaceInput({input: gtGemFull}, gtGemFull, gem)
@@ -24,16 +24,19 @@ ServerEvents.recipes(event => {
             .itemOutputs(Item.of(gem, 2))
             .EUt(GTValues.VH[GTValues.LV])
             .duration(20)
-        event.recipes.gtceu.forge_hammer("hammer_endstone_"+gtGem+"_ore_to_crushed_ore")
-            .itemInputs(Item.of("gtceu:endstone_"+gtGem+"_ore"))
-            .itemOutputs(Item.of(gem, 2))
-            .EUt(GTValues.VH[GTValues.LV])
-            .duration(10)
-        event.recipes.gtceu.forge_hammer("hammer_netherrack_"+gtGem+"_ore_to_crushed_ore")
-            .itemInputs(Item.of("gtceu:netherrack_"+gtGem+"_ore"))
-            .itemOutputs(Item.of(gem, 2))
-            .EUt(GTValues.VH[GTValues.LV])
-            .duration(10)
+        if (existsOre) {
+            event.recipes.gtceu.forge_hammer("hammer_endstone_"+gtGem+"_ore_to_crushed_ore")
+                .itemInputs(Item.of("gtceu:endstone_"+gtGem+"_ore"))
+                .itemOutputs(Item.of(gem, 2))
+                .EUt(GTValues.VH[GTValues.LV])
+                .duration(10)
+            event.recipes.gtceu.forge_hammer("hammer_netherrack_"+gtGem+"_ore_to_crushed_ore")
+                .itemInputs(Item.of("gtceu:netherrack_"+gtGem+"_ore"))
+                .itemOutputs(Item.of(gem, 2))
+                .EUt(GTValues.VH[GTValues.LV])
+                .duration(10)
+        }
+        
         if (existsBlock) {
             event.recipes.gtceu.forge_hammer("hammer_"+gtGem+"_block_to_gem")
                 .itemInputs(Item.of(block))
@@ -68,12 +71,13 @@ ServerEvents.recipes(event => {
         })
     }
 
-    gemReplacement("malum:blazing_quartz", "blazing_quartz", true, "malum:block_of_blazing_quartz")
-    gemReplacement("rftoolsbase:dimensionalshard", "dimensional_shard", false)
-    gemReplacement("elementalcraft:inert_crystal", "inert_crystal", true, "elementalcraft:inert_crystal_block")
-    gemReplacement("malum:natural_quartz", "natural_quartz", false)
-    gemReplacement("mysticalagriculture:prosperity_shard", "prosperity", true, "mysticalagriculture:prosperity_block")
-    gemReplacement("malum:processed_soulstone", "soulstone", true, "malum:block_of_soulstone")
+    gemReplacement("malum:blazing_quartz", "blazing_quartz", true, true, "malum:block_of_blazing_quartz")
+    gemReplacement("rftoolsbase:dimensionalshard", "dimensional_shard", false, true)
+    gemReplacement("elementalcraft:inert_crystal", "inert_crystal", true, true, "elementalcraft:inert_crystal_block")
+    gemReplacement("malum:natural_quartz", "natural_quartz", false, true)
+    gemReplacement("mysticalagriculture:prosperity_shard", "prosperity", true, true, "mysticalagriculture:prosperity_block")
+    gemReplacement("malum:processed_soulstone", "soulstone", true, true, "malum:block_of_soulstone")
+    gemReplacement("elementalcraft:springaline_shard", "springaline", true, false, "elementalcraft:springaline_block")
 
     event.replaceInput({input: "gtceu:draconium_dust"}, "gtceu:draconium_dust", "draconicevolution:draconium_dust")
     event.replaceOutput({output: "gtceu:draconium_dust"}, "gtceu:draconium_dust", "draconicevolution:draconium_dust")

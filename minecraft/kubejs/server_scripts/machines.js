@@ -37,4 +37,13 @@ ServerEvents.recipes(event => {
         F: "minecraft:furnace",
         P: "pneumaticcraft:pressure_tube"
     });
+
+    // Tinkers' Construct machine recipes
+    event.shaped("tconstruct:seared_melter", [
+        "BCB",
+        "BBB"
+    ], {
+        B: "tconstruct:seared_brick",
+        C: "minecraft:cauldron"
+    });
 })

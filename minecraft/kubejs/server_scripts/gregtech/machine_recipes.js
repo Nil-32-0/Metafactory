@@ -39,7 +39,40 @@ ServerEvents.recipes(event => {
             .itemOutputs("gtmetx:resin_runewood_ash")
             .EUt(GTValues.VH[GTValues.LV]).duration(60);
 
-    // Glass Availability
-        event.replaceInput({output: "gtceu:lp_steam_extractor"}, "minecraft:glass", "#forge:glass");
-        
+    // Glass Tiers
+        let ulv_machines = ["lp_steam_extractor", "lp_steam_liquid_boiler", "hp_steam_liquid_boiler"];
+        ulv_machines.forEach(machine => {
+            event.replaceInput({output: "gtceu:" + machine}, "minecraft:glass", "#tconstruct:glass/clear");
+        });
+        event.replaceInput({output: "gtceu:hp_steam_solar_boiler"}, "minecraft:glass", "tconstruct:clear_glass");
+        event.replaceInput({output: "gtceu:lp_steam_solar_boiler"}, "minecraft:glass", "tconstruct:clear_glass");
+
+        let glass_machines = ["autoclave", "brewery", "canner", "chemical_bath", "chemical_reactor", "cutter", "distillery", 
+            "electrolyzer", "extractor", "fermenter", "fluid_heater", "fluid_solidifier", "mixer", "ore_washer", "rock_crusher"]
+        let replaceable_tiers = {
+            "lv": "#forge:glass",
+            "mv": "#forge:glass",
+            "hv": "gtceu:tempered_glass",
+            "ev": "gtceu:tempered_glass",
+            "iv": "gtceu:laminated_glass",
+            "luv": "gtceu:laminated_glass",
+            "zpm": "gtceu:fusion_glass",
+            "uv": "gtceu:fusion_glass",
+            "uhv": "gtceu:fusion_glass",
+            "uev": "#forge:glass",
+            "uiv": "#forge:glass",
+            "uxv": "#forge:glass",
+            "opv": "#forge:glass"
+        }
+        glass_machines.forEach(machine => {
+            Object.keys(replaceable_tiers).forEach(tier => {
+                event.replaceInput({output: "gtceu:" + tier + "_" + machine}, replaceable_tiers[tier], "#gtmetx:glass/" + tier);
+            });
+        });
+
+        event.recipes.gtceu.laser_engraver("springaline_glass")
+            .itemInputs("elementalcraft:burnt_glass")
+            .notConsumable("gtceu:springaline_lens")
+            .itemOutputs("elementalcraft:springaline_glass")
+            .EUt(GTValues.VHA[GTValues.HV]).duration(100);
 })

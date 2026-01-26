@@ -28,6 +28,10 @@ ServerEvents.recipes(event => {
         I: "mysticalagradditions:insanium_essence"
     });
 
+    ElementalCraftRecipes.initialize(event);
+    ElementalCraftRecipes.infuse(Ingredient.of("kubejs:purified_cerupetal"), Ingredient.of("mna:cerublossom"), 250, "purity");
+    ElementalCraftRecipes.infuse(Ingredient.of("kubejs:entropic_cerupetal"), Ingredient.of("mna:cerublossom"), 250, "entropy");
+
     event.shaped("waystones:warp_stone", [
         "AEA",
         "ECE",
@@ -62,5 +66,28 @@ ServerEvents.recipes(event => {
             fluid: "gtceu:gold"
         },
         result: "elementalcraft:contained_crystal"
+    });
+
+    mystical_flower_types.forEach(type => {
+        event.replaceOutput({output: "botania:" + type + "_petal", input: "#minecraft:flowers"}, 
+            "botania:" + type + "_petal", "kubejs:inert_" + type + "_petal");
+        event.custom({
+            "type": "lychee:item_inside",
+            "post": [{"type": "drop_item", "item": "mna:cerublossom", "count": 5},
+                {
+                    "type": "drop_item",
+                    "item": "botania:" + type + "_petal",
+                    "count": 2
+                }
+            ],
+            "item_in": [
+                {"item": "kubejs:entropic_cerupetal"}, {"item": "kubejs:entropic_cerupetal"}, 
+                {"item": "kubejs:purified_cerupetal"}, {"item": "kubejs:purified_cerupetal"},
+                {
+                    "item": "kubejs:inert_" + type + "_petal"
+                }
+            ],
+            "block_in": "minecraft:water"
+        });
     });
 })

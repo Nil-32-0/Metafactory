@@ -80,6 +80,107 @@ ServerEvents.recipes(event => {
                 .itemOutputs("gtmetx:" + type + "_coke_block")
                 .outputFluids(Fluid.of("gtceu:creosote", 2000))
                 .duration(8100);
+
+            event.recipes.gtceu.pyrolyse_oven(type + "_to_creosote")
+                .circuit(1)
+                .itemInputs("16x minecraft:" + name)
+                .itemOutputs("20x gtmetx:" + type + "_charcoal")
+                .outputFluids(Fluid.of("gtceu:creosote", 3500))
+                .EUt(GTValues.VH[GTValues.MV]).duration(640);
+            event.recipes.gtceu.pyrolyse_oven(type + "_to_creosote_nitrogen")
+                .circuit(2)
+                .itemInputs("16x minecraft:" + name)
+                .inputFluids(Fluid.of("gtceu:nitrogen", 1000))
+                .itemOutputs("20x gtmetx:" + type + "_charcoal")
+                .outputFluids(Fluid.of("gtceu:creosote", 3500))
+                .EUt(GTValues.V[GTValues.MV] * 3 / 4).duration(320);
+            event.recipes.gtceu.pyrolyse_oven(type + "_to_coal_gas")
+                .circuit(20)
+                .itemInputs("16x minecraft:" + name)
+                .inputFluids(Fluid.of("gtceu:steam", 1000))
+                .itemOutputs("20x gtmetx:" + type + "_charcoal")
+                .outputFluids(Fluid.of("gtceu:coal_gas", 2000))
+                .EUt(GTValues.VH[GTValues.MV]).duration(640);
+            event.recipes.gtceu.pyrolyse_oven(type + "_to_charcoal_byproducts")
+                .circuit(4)
+                .itemInputs("16x minecraft:" + name)
+                .inputFluids(Fluid.of("gtceu:nitrogen", 1000))
+                .itemOutputs("20x gtmetx:" + type + "_charcoal")
+                .outputFluids(Fluid.of("gtceu:charcoal_byproducts", 4000))
+                .EUt(GTValues.V[GTValues.MV] * 3 / 4).duration(320);
+            event.recipes.gtceu.pyrolyse_oven(type + "_charcoal_to_coke_creosote")
+                .circuit(1)
+                .itemInputs("16x gtmetx:" + type + "_charcoal")
+                .itemOutputs("16x gtmetx:" + type + "_coke")
+                .outputFluids(Fluid.of("gtceu:creosote", 3500))
+                .EUt(GTValues.VH[GTValues.MV]).duration(640);
+            event.recipes.gtceu.pyrolyse_oven(type + "_charcoal_to_coke_creosote_nitrogen")
+                .circuit(2)
+                .itemInputs("16x gtmetx:" + type + "_charcoal")
+                .inputFluids(Fluid.of("gtceu:nitrogen", 1000))
+                .itemOutputs("16x gtmetx:" + type + "_coke")
+                .outputFluids(Fluid.of("gtceu:creosote", 3500))
+                .EUt(GTValues.V[GTValues.MV] * 3 / 4).duration(320);
+            event.recipes.gtceu.pyrolyse_oven(type + "_charcoal_to_coke_coal_gas")
+                .circuit(22)
+                .itemInputs("16x gtmetx:" + type + "_charcoal")
+                .inputFluids(Fluid.of("gtceu:steam", 1000))
+                .itemOutputs("16x gtmetx:" + type + "_coke")
+                .outputFluids(Fluid.of("gtceu:coal_gas", 4000))
+                .EUt(GTValues.V[GTValues.MV] * 3 / 4).duration(320);
+
+            event.recipes.gtceu.industrial_coke_oven(type + "_charcoal_creosote")
+                .circuit(1)
+                .itemInputs("minecraft:" + name)
+                .itemOutputs("gtmetx:" + type + "_charcoal")
+                .outputFluids(Fluid.of("gtceu:creosote", 1500))
+                .EUt(GTValues.VH[GTValues.MV]).duration(32);
+            event.recipes.gtceu.industrial_coke_oven(type + "_charcoal_creosote_nitrogen")
+                .circuit(2)
+                .itemInputs("2x minecraft:" + name)
+                .inputFluids(Fluid.of("gtceu:nitrogen", 125))
+                .itemOutputs("2x gtmetx:" + type + "_charcoal")
+                .outputFluids(Fluid.of("gtceu:creosote", 1600))
+                .EUt(GTValues.V[GTValues.MV] * 3 / 4).duration(320);
+            event.recipes.gtceu.industrial_coke_oven(type + "_charcoal_coal_gas")
+                .circuit(22)
+                .itemInputs("6x minecraft:" + name)
+                .inputFluids(Fluid.of("gtceu:steam", 500))
+                .itemOutputs("12x gtmetx:" + type + "_charcoal")
+                .outputFluids(Fluid.of("gtceu:coal_gas", 2520))
+                .EUt(GTValues.VA[GTValues.MV]).duration(288);
+            event.recipes.gtceu.industrial_coke_oven(type + "_charcoal_coal_gas_x2")
+                .itemInputs("8x minecraft:" + name, "3x gtmetx:" + type + "_charcoal")
+                .inputFluids(Fluid.of("gtceu:steam", 1000))
+                .itemOutputs("17x gtmetx:" + type + "_charcoal")
+                .outputFluids(Fluid.of("gtceu:coal_gas", 5040))
+                .EUt(GTValues.VHA[GTValues.HV]).duration(600);
+            event.recipes.gtceu.industrial_coke_oven(type + "_coke_creosote")
+                .circuit(1)
+                .itemInputs("gtmetx:" + type + "_charcoal")
+                .itemOutputs("gtmetx:" + type + "_coke")
+                .outputFluids(Fluid.of("gtceu:creosote", 1500))
+                .EUt(GTValues.VH[GTValues.MV]).duration(32);
+            event.recipes.gtceu.industrial_coke_oven(type + "_coke_creosote_nitrogen")
+                .circuit(2)
+                .itemInputs("2x gtmetx:" + type + "_charcoal")
+                .inputFluids(Fluid.of("gtceu:nitrogen", 125))
+                .itemOutputs("2x gtmetx:" + type + "_coke")
+                .outputFluids(Fluid.of("gtceu:creosote", 1600))
+                .EUt(GTValues.V[GTValues.MV] * 3 / 4).duration(320);
+            event.recipes.gtceu.industrial_coke_oven(type + "_coke_coal_gas")
+                .circuit(22)
+                .itemInputs("6x gtmetx:" + type + "_charcoal")
+                .inputFluids(Fluid.of("gtceu:steam", 500))
+                .itemOutputs("12x gtmetx:" + type + "_coke")
+                .outputFluids(Fluid.of("gtceu:coal_gas", 2520))
+                .EUt(GTValues.VA[GTValues.MV]).duration(288);
+            event.recipes.gtceu.industrial_coke_oven(type + "_coke_coal_gas_x2")
+                .itemInputs("8x gtmetx:" + type + "_charcoal", "3x gtmetx:" + type + "_coke")
+                .inputFluids(Fluid.of("gtceu:steam", 1000))
+                .itemOutputs("17x gtmetx:" + type + "_coke")
+                .outputFluids(Fluid.of("gtceu:coal_gas", 5040))
+                .EUt(GTValues.VHA[GTValues.HV]).duration(600);
         });
 
     // Glass Tiers

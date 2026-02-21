@@ -1,0 +1,181 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "powering_up"
+	group: "63486BB5AAE2584B"
+	id: "3AEE9092F6F5F571"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"5B5A8922E7F11E99"
+				"44EE06FBFE9E3501"
+			]
+			description: ["The first use for your new glue and assembler, make some better boards for circuits."]
+			id: "21B013C12028A987"
+			tasks: [{
+				count: 2L
+				id: "63111932C85E5CA1"
+				item: "gtceu:phenolic_circuit_board"
+				type: "item"
+			}]
+			title: "Phenolic Circuit Board"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2FA18A0CDDBB4796"
+				"53528D14C8241E67"
+				"78BED48F1B7AD244"
+				"5B5A8922E7F11E99"
+				"62FEFF0BF7BDC5AE"
+			]
+			description: ["Though it requires a couple MV circuits, the Circuit Assembler allows several options for making circuits that are cheaper than the typical crafting recipes. For higher tiers of circuit, the Circuit Assembler is in fact the only method to obtain them."]
+			id: "48CAA4EA70681992"
+			subtitle: "New Machine"
+			tasks: [{
+				id: "7922DC825AA6AB57"
+				item: "gtceu:lv_circuit_assembler"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["738526D895D739C8"]
+			description: ["With your new centrifuge you can turn Sticky Resin into Rubber more efficiently, making Glue as a byproduct. Hang onto it, you'll need a lot."]
+			id: "44EE06FBFE9E3501"
+			tasks: [
+				{
+					amount: 1000L
+					fluid: "gtceu:glue"
+					id: "6D964BFAE4586D85"
+					optional_task: true
+					type: "fluid"
+				}
+				{
+					id: "2699C7AC9CF4D1F8"
+					title: "Complete"
+					type: "checkmark"
+				}
+			]
+			title: "Horse Factory"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			description: ["Rather more annoying to obtain than Arsenic but no less important, you'll need a good amount of Gallium as well. The main method of making it at this point is as a byproduct of Sphalerite processing, so start gambling!"]
+			id: "554D9199A884542D"
+			tasks: [{
+				id: "20F96049A7247ACC"
+				item: "gtceu:gallium_dust"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"A vital ingredient in semiconductor production for processors, you'll want to get a good amount of Arsenic Dust."
+				""
+				"The easiest way to produce it at this stage is going to be centrifuging Realgar dust. As a byproduct, this will give you some extra sulfur!"
+			]
+			id: "4BD9BFB6DC431F3C"
+			tasks: [{
+				id: "1C972BAC0BF9F7E2"
+				item: "gtceu:arsenic_dust"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"4BD9BFB6DC431F3C"
+				"554D9199A884542D"
+			]
+			description: ["Using your mixer, combine those dusts and you'll have a very important ingredient in several processing steps."]
+			id: "21CE1690948DD9EA"
+			tasks: [{
+				id: "152055C853F6E992"
+				item: "gtceu:gallium_arsenide_dust"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["21CE1690948DD9EA"]
+			description: ["For now you'll have to use the inferior method of producing diodes, combining molten glass with copper and gallium arsenide. Later you'll unlock wafer production, greatly increasing yields."]
+			id: "26715AA3BCA7FD1C"
+			tasks: [{
+				count: 4L
+				id: "16F3BAC68EF59806"
+				item: "gtceu:diode"
+				type: "item"
+			}]
+			title: "Diode"
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"773567A260EDE5D0"
+				"21B013C12028A987"
+			]
+			description: ["Combining your new circuit boards with silver wires gives you a base suitable for MV circuits."]
+			id: "36E27577F6E7853F"
+			tasks: [{
+				count: 2L
+				id: "01F674D8048C5897"
+				item: "gtceu:phenolic_printed_circuit_board"
+				type: "item"
+			}]
+			title: "Printed Phenolic Circuit Board"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: ["Needed for MV-tier circuits at a rate of 4 ingots per circuit board, you'll want a good amount of Silver going into this tier."]
+			id: "773567A260EDE5D0"
+			tasks: [{
+				id: "187446450774B022"
+				item: "gtceu:silver_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"26715AA3BCA7FD1C"
+				"36E27577F6E7853F"
+			]
+			description: ["Make a couple of Good Electronic Circuits, so that you can make the Circuit Assembler - the gateway to both more efficient and better circuits."]
+			id: "62FEFF0BF7BDC5AE"
+			tasks: [{
+				count: 2L
+				id: "777374CEA6F47F6D"
+				item: { Count: 2, id: "gtceu:good_electronic_circuit" }
+				type: "item"
+			}]
+			title: "Good Electronic Circuits"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: ["Arguably &othe&r resource for circuits, you'll need a large amount of silicon. There are a few ways to produce it reliably, in LV you can electrolyze Silicon Dioxide dust for small quantities, and once you start getting MV machines you can also electrolyze clay dust. This is a more difficult to renew option, but gives additional resources such as Aluminium that make it more appealing."]
+			id: "476AC8C0FF782470"
+			tasks: [{
+				id: "20484C42D76E803F"
+				item: "gtceu:silicon_dust"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+	]
+	title: "Powering Up"
+}

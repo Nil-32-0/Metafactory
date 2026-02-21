@@ -174,7 +174,7 @@
 			}]
 			title: "Superior Saw"
 			x: 6.0d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["7185027130B5CEB3"]
@@ -407,24 +407,6 @@
 			}]
 			x: -6.0d
 			y: -2.0d
-		}
-		{
-			dependencies: [
-				"2FA18A0CDDBB4796"
-				"53528D14C8241E67"
-				"78BED48F1B7AD244"
-				"5B5A8922E7F11E99"
-			]
-			description: ["Though it requires a couple MV circuits, the Circuit Assembler allows several options for making circuits that are cheaper than the typical crafting recipes. For higher tiers of circuit, the Circuit Assembler is in fact the only method to obtain them."]
-			id: "48CAA4EA70681992"
-			subtitle: "New Machine"
-			tasks: [{
-				id: "7922DC825AA6AB57"
-				item: "gtceu:lv_circuit_assembler"
-				type: "item"
-			}]
-			x: 6.0d
-			y: 4.0d
 		}
 		{
 			dependencies: ["21FBC75CF8ACF1C4"]

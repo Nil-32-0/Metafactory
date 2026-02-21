@@ -90,4 +90,15 @@ ServerEvents.recipes(event => {
             "block_in": "minecraft:water"
         });
     });
+
+    event.custom({
+        'type': "lychee:item_inside",
+        'post': [{
+            'type': "place",
+            'block': "kubejs:pale_water"
+        }],
+        'item_in': [{'item': "mna:aum"}],
+        'block_in': "minecraft:water"
+    });
+    
 })

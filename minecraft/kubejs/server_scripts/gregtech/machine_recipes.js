@@ -39,6 +39,49 @@ ServerEvents.recipes(event => {
             .itemOutputs("gtmetx:resin_runewood_ash")
             .EUt(GTValues.VH[GTValues.LV]).duration(60);
 
+    // Coals/Cokes
+        let coalCokeTypes = ['bamboo', 'cactus', 'sugar'];
+        coalCokeTypes.forEach(type => {
+            event.recipes.gtceu.compressor("compress_" + type + "_charcoal_to_block")
+                .itemInputs("9x gtmetx:" + type + "_charcoal")
+                .itemOutputs("gtmetx:" + type + "_charcoal_block")
+                .EUt(GTValues.VH[GTValues.ULV] / 2).duration(300);
+            event.recipes.gtceu.compressor("compress_" + type + "_coke_to_block")
+                .itemInputs("9x gtmetx:" + type + "_coke")
+                .itemOutputs("gtmetx:" + type + "_coke_block")
+                .EUt(GTValues.VH[GTValues.ULV] / 2).duration(300);
+            event.recipes.gtceu.forge_hammer("hammer_" + type + "_charcoal_block_to_individual")
+                .itemInputs("gtmetx:" + type + "_charcoal_block")
+                .itemOutputs("9x gtmetx:" + type + "_charcoal")
+                .EUt(GTValues.VA[GTValues.LV]).duration(100);
+            event.recipes.gtceu.forge_hammer("hammer_" + type + "_coke_block_to_individual")
+                .itemInputs("gtmetx:" + type + "_coke_block")
+                .itemOutputs("9x gtmetx:" + type + "_coke")
+                .EUt(GTValues.VA[GTValues.LV]).duration(100);
+            
+            let name = type != 'sugar' ? type : 'sugar_cane';
+            event.recipes.gtceu.coke_oven(name + "_to_charcoal")
+                .itemInputs("minecraft:" + name)
+                .itemOutputs("gtmetx:" + type + "_charcoal")
+                .outputFluids(Fluid.of("gtceu:creosote", 200))
+                .duration(900);
+            event.recipes.gtceu.coke_oven(name + "_block_to_charcoal_block")
+                .itemInputs((type == 'bamboo' ? "minecraft:" : "quark:") + name + "_block")
+                .itemOutputs("gtmetx:" + type + "_charcoal_block")
+                .outputFluids(Fluid.of("gtceu:creosote", 2000))
+                .duration(8100);
+            event.recipes.gtceu.coke_oven(type + "_charcoal_to_coke")
+                .itemInputs("gtmetx:" + type + "_charcoal")
+                .itemOutputs("gtmetx:" + type + "_coke")
+                .outputFluids(Fluid.of("gtceu:creosote", 200))
+                .duration(900);
+            event.recipes.gtceu.coke_oven(type + "_charcoal_block_to_coke_block")
+                .itemInputs("gtmetx:" + type + "_charcoal_block")
+                .itemOutputs("gtmetx:" + type + "_coke_block")
+                .outputFluids(Fluid.of("gtceu:creosote", 2000))
+                .duration(8100);
+        });
+
     // Glass Tiers
         let ulv_machines = ["lp_steam_extractor", "lp_steam_liquid_boiler", "hp_steam_liquid_boiler"];
         ulv_machines.forEach(machine => {

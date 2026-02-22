@@ -1,0 +1,1 @@
+A Minecraft modpack built around GregTech. This is a magitech pack that aims to have parallel processing lines for the player to explore simultaneously to produce increasingly complex items, until they can finally create the ultimate material.

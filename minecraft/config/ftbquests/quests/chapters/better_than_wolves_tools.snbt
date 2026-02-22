@@ -561,6 +561,7 @@
 				"5B5A8922E7F11E99"
 				"62FEFF0BF7BDC5AE"
 				"3BE80768BAEED440"
+				"4E846B9C3496CFE4"
 			]
 			description: ["A key machine upgrade, the improved Assembler will allow you to make many more recipes."]
 			hide_until_deps_complete: true
@@ -570,13 +571,14 @@
 				item: "gtceu:mv_assembler"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 8.0d
 			y: 7.5d
 		}
 		{
 			dependencies: [
 				"30184AFF50D733FD"
 				"62FEFF0BF7BDC5AE"
+				"4E846B9C3496CFE4"
 			]
 			description: ["Unlocks the ability to cut processed wafers, which is a vital ability for further circuit development."]
 			hide_until_deps_complete: true
@@ -839,7 +841,7 @@
 				item: "gtceu:mv_robot_arm"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 5.5d
 			y: 7.5d
 		}
 		{
@@ -860,6 +862,7 @@
 		}
 		{
 			dependencies: ["7185027130B5CEB3"]
+			description: ["An improved motor to make better machines."]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "482E75678C122A81"
@@ -870,6 +873,19 @@
 			}]
 			x: 0.0d
 			y: 12.0d
+		}
+		{
+			dependencies: ["2FA18A0CDDBB4796"]
+			description: ["Improved version of the conveyer module."]
+			hide_until_deps_complete: true
+			id: "4E846B9C3496CFE4"
+			tasks: [{
+				id: "1C8C9BFDBBE610F0"
+				item: "gtceu:mv_conveyor_module"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 6.0d
 		}
 	]
 	title: "Better Than &mWolves&r Tools"

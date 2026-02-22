@@ -187,8 +187,8 @@
 				type: "item"
 			}]
 			title: "Superior Wire Cutters"
-			x: -3.0d
-			y: 3.0d
+			x: -2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -272,8 +272,8 @@
 				item: "gtceu:lv_chemical_reactor"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 4.5d
+			x: -1.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["241CE7D5D474CF73"]
@@ -322,8 +322,8 @@
 				type: "item"
 			}]
 			title: "Extractor Upgrade"
-			x: -4.0d
-			y: 6.0d
+			x: -3.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["7185027130B5CEB3"]
@@ -335,8 +335,8 @@
 				item: "gtceu:lv_mixer"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 5.0d
+			x: -0.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["0A92388A2DF3BCA2"]
@@ -454,6 +454,422 @@
 			title: "Subcomponent 6"
 			x: -4.0d
 			y: -2.0d
+		}
+		{
+			dependencies: [
+				"7BD3079CD8EA79D0"
+				"62FEFF0BF7BDC5AE"
+				"482E75678C122A81"
+			]
+			description: ["Not required for most recipes but offers additional processing speed and the ability to create double plates, if that is needed."]
+			hide_until_deps_complete: true
+			id: "1DF408E4F6EEAA35"
+			tasks: [{
+				id: "573AF6C8E036A273"
+				item: "gtceu:mv_bender"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"13C8D2BA8523FC9F"
+				"62FEFF0BF7BDC5AE"
+				"482E75678C122A81"
+			]
+			hide_until_deps_complete: true
+			id: "601388D91C4EF76F"
+			tasks: [{
+				id: "049A2BD626F57C8B"
+				item: "gtceu:mv_forge_hammer"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"25614458F89FC3EE"
+				"62FEFF0BF7BDC5AE"
+				"482E75678C122A81"
+			]
+			description: ["Needed for future processing, the MV lathe allows you to create lenses."]
+			hide_until_deps_complete: true
+			id: "419FB8B369B0AE30"
+			tasks: [{
+				id: "41364AF026ECA223"
+				item: "gtceu:mv_lathe"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"0E269CD3907DA10F"
+				"62FEFF0BF7BDC5AE"
+				"482E75678C122A81"
+			]
+			description: ["Not required for any recipes but offers additional processing speed."]
+			hide_until_deps_complete: true
+			id: "73A2DF567E7BE03F"
+			tasks: [{
+				id: "57A237B9747C3D11"
+				item: "gtceu:mv_compressor"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"3E4939032EB94645"
+				"62FEFF0BF7BDC5AE"
+				"482E75678C122A81"
+			]
+			description: ["Not required for any recipes but offers additional processing speed."]
+			hide_until_deps_complete: true
+			id: "2D54EF434BF989F8"
+			tasks: [{
+				id: "4498E748EAEF0A6F"
+				item: "gtceu:mv_macerator"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"05FDAD3BD3910A7A"
+				"62FEFF0BF7BDC5AE"
+				"3A32D1061625179B"
+			]
+			description: ["While just a faster extractor for extraction recipes, this improved Extractor will allow for scrap remelting of more materials."]
+			hide_until_deps_complete: true
+			id: "4346F1DDC20558EF"
+			tasks: [{
+				id: "482044A572A9B87D"
+				item: "gtceu:mv_extractor"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"5B5A8922E7F11E99"
+				"62FEFF0BF7BDC5AE"
+				"3BE80768BAEED440"
+			]
+			description: ["A key machine upgrade, the improved Assembler will allow you to make many more recipes."]
+			hide_until_deps_complete: true
+			id: "6E997D2D32B837BB"
+			tasks: [{
+				id: "3C6A98674C782066"
+				item: "gtceu:mv_assembler"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"30184AFF50D733FD"
+				"62FEFF0BF7BDC5AE"
+			]
+			description: ["Unlocks the ability to cut processed wafers, which is a vital ability for further circuit development."]
+			hide_until_deps_complete: true
+			id: "2A109EB576B31F25"
+			tasks: [{
+				id: "536F5667E6490B2E"
+				item: "gtceu:mv_cutter"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"0BB0E037CCD762AE"
+				"62FEFF0BF7BDC5AE"
+			]
+			description: ["Not required for any recipes but the additional processing speed is a benefit."]
+			hide_until_deps_complete: true
+			id: "3AD8C090D37AEF8D"
+			tasks: [{
+				id: "39DC3448B8CC80D5"
+				item: "gtceu:mv_wiremill"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"60BB442F433DA905"
+				"62FEFF0BF7BDC5AE"
+			]
+			description: ["A better chemical reactor, allowing for some far more useful reactions."]
+			hide_until_deps_complete: true
+			id: "2DC34B8B1F62E871"
+			tasks: [{
+				id: "056231486BF0DC6C"
+				item: "gtceu:mv_chemical_reactor"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"07AC35A86D46CE85"
+				"62FEFF0BF7BDC5AE"
+			]
+			description: ["A better mixer, needed for mixing some higher-quality products."]
+			hide_until_deps_complete: true
+			id: "683B19E72ABDD744"
+			tasks: [{
+				id: "13B8AC63F9B9A6D2"
+				item: "gtceu:mv_mixer"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"2D4BFEDECE42AD4C"
+				"62FEFF0BF7BDC5AE"
+			]
+			description: ["Not required for any recipes but offers additional processing speed."]
+			hide_until_deps_complete: true
+			id: "0997B0B26739F712"
+			tasks: [{
+				id: "31E23A54BFCC8F4A"
+				item: "gtceu:mv_polarizer"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"630BECD413EF755B"
+				"62FEFF0BF7BDC5AE"
+			]
+			description: ["Not required for any recipes but offers additional processing speed."]
+			hide_until_deps_complete: true
+			id: "5B73C6900E4C3560"
+			tasks: [{
+				id: "7B9F2CF337D1A19B"
+				item: "gtceu:mv_arc_furnace"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"46AD095C5B4CF2FA"
+				"62FEFF0BF7BDC5AE"
+			]
+			description: ["Primarily a speed increase, also unlocks a few nonessential recipes."]
+			hide_until_deps_complete: true
+			id: "5672A25B5E75C73D"
+			tasks: [{
+				id: "3F080DC0D2001F53"
+				item: "gtceu:mv_alloy_smelter"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"651277D559F90A0D"
+				"62FEFF0BF7BDC5AE"
+			]
+			description: ["A key machine upgrade, the improved Electrolyzer will let you process more types of materials."]
+			hide_until_deps_complete: true
+			id: "70AA489E4954BE3C"
+			tasks: [{
+				id: "67D9E9399B90628D"
+				item: "gtceu:mv_electrolyzer"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"738526D895D739C8"
+				"62FEFF0BF7BDC5AE"
+			]
+			description: ["Not required for most recipes but offers additional processing speed."]
+			hide_until_deps_complete: true
+			id: "046B1D893A3A765D"
+			tasks: [{
+				id: "64BCDD2CB70DD0DA"
+				item: "gtceu:mv_centrifuge"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"75174CBDC3957DBA"
+				"62FEFF0BF7BDC5AE"
+			]
+			description: ["Not required for any recipes but offers additional processing speed."]
+			hide_until_deps_complete: true
+			id: "38A12D0D84217A3B"
+			tasks: [{
+				id: "21CE899C5C5D3571"
+				item: "gtceu:mv_sifter"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"52B6DA8168539033"
+				"62FEFF0BF7BDC5AE"
+			]
+			description: ["Not required for any recipes but offers additional processing speed."]
+			hide_until_deps_complete: true
+			id: "0D664D62C0DB8C4F"
+			tasks: [{
+				id: "261DBA5405B77C1C"
+				item: "gtceu:mv_ore_washer"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0675C42FF16E3E3B"
+				"62FEFF0BF7BDC5AE"
+			]
+			description: ["Not required for any recipes but offers additional processing speed."]
+			hide_until_deps_complete: true
+			id: "4A003743B4EE9558"
+			tasks: [{
+				id: "677A14F2A4EE94A5"
+				item: "gtceu:mv_thermal_centrifuge"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"6DB819185C1FEE9A"
+				"62FEFF0BF7BDC5AE"
+				"36A2E9CF1399C5BE"
+			]
+			description: ["Not required for any recipes but offers additional processing speed and range."]
+			hide_until_deps_complete: true
+			id: "1773B2B7A62E59F0"
+			tasks: [{
+				id: "47CB01726F13613C"
+				item: "gtceu:mv_miner"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"1DC8582AB8D80D98"
+				"62FEFF0BF7BDC5AE"
+			]
+			description: ["A better version of the sensor."]
+			hide_until_deps_complete: true
+			id: "36A2E9CF1399C5BE"
+			tasks: [{
+				id: "2D5E46102DFE5121"
+				item: "gtceu:mv_sensor"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"53528D14C8241E67"
+				"62FEFF0BF7BDC5AE"
+			]
+			hide_until_deps_complete: true
+			id: "5F8EFBBD06C89640"
+			tasks: [{
+				id: "2356DDAFBC26E298"
+				item: "gtceu:mv_emitter"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5F8EFBBD06C89640"]
+			description: ["Needed for more efficient circuits, the Laser Engraver allows for wafer processing."]
+			hide_until_deps_complete: true
+			id: "6E86CD0AC00A5326"
+			subtitle: "New Machine"
+			tasks: [{
+				id: "4BDCE589F2A59DA1"
+				item: "gtceu:mv_laser_engraver"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"78BED48F1B7AD244"
+				"62FEFF0BF7BDC5AE"
+			]
+			hide_until_deps_complete: true
+			id: "3BE80768BAEED440"
+			tasks: [{
+				id: "4F9F04A9217AB50B"
+				item: "gtceu:mv_robot_arm"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"0CF46145C49B1D0A"
+				"482E75678C122A81"
+			]
+			description: ["Improved version of the electric pump."]
+			hide_until_deps_complete: true
+			id: "3A32D1061625179B"
+			tasks: [{
+				id: "4E176391F3D47223"
+				item: "gtceu:mv_electric_pump"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["7185027130B5CEB3"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "482E75678C122A81"
+			tasks: [{
+				id: "51CDA2C4EFE31C9C"
+				item: "gtceu:mv_electric_motor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
 		}
 	]
 	title: "Better Than &mWolves&r Tools"

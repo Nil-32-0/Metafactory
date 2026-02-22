@@ -9,4 +9,11 @@ StartupEvents.registry("item", event => {
 
     event.create("malum:weak_runewood_ash").texture("malum:item/weak_runewood_ash");
     event.create("malum:weak_soulwood_ash").texture("malum:item/weak_soulwood_ash");
+
+    event.create("kubejs:entropic_cerupetal").texture("kubejs:item/entropic_cerupetal");
+    event.create("kubejs:purified_cerupetal").texture("kubejs:item/purified_cerupetal");
+
+    mystical_flower_types.forEach(type => {
+        event.create("kubejs:inert_" + type + "_petal").texture("kubejs:item/petal/inert_" + type + "_petal");
+    });
 })

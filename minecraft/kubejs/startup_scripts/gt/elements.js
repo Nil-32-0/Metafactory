@@ -130,5 +130,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .cableProperties(8, 2, 0, false);
 
     event.create("pure_glass").dust().color(0xdddddd).iconSet(GTMaterialIconSet.GLASS).components("1x silicon", "2x oxygen");
+    event.create("springaline").gem().color(0x5d88b7).iconSet(GTMaterialIconSet.GEM_VERTICAL)
+        .flags(GTMaterialFlags.GENERATE_LENS);
 
 })

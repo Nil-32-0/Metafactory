@@ -1,0 +1,915 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "maddening_multiblocks"
+	group: ""
+	hide_quest_until_deps_complete: true
+	id: "1DC35ACD8776356E"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7AB510471199F628"]
+			description: ["For some of your fluid storage needs!"]
+			id: "2D91C6D1F5DE168E"
+			tasks: [
+				{
+					id: "070A6F273E1E71E7"
+					item: "gtceu:wooden_multiblock_tank"
+					type: "item"
+				}
+				{
+					count: 23L
+					id: "450FFFB794986F60"
+					item: "gtceu:wood_wall"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "59024560883B1EA7"
+					item: "gtceu:wooden_tank_valve"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6FFF32581DA809A0"]
+			description: ["For more of your fluid storage needs!"]
+			id: "2C856AAED248A815"
+			tasks: [
+				{
+					id: "578A7ED14186F85F"
+					item: "gtceu:bronze_multiblock_tank"
+					type: "item"
+				}
+				{
+					count: 23L
+					id: "2BDDCA242DA7E47D"
+					item: { Count: 23, id: "gtceu:steam_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0A09CAFF77103BFC"
+					item: { Count: 2, id: "gtceu:bronze_tank_valve" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["56A3A23219DE60A6"]
+			description: ["For your fluid storage needs!"]
+			id: "0B77829A431AD612"
+			tasks: [
+				{
+					id: "7E052A80774F6880"
+					item: "gtceu:steel_multiblock_tank"
+					type: "item"
+				}
+				{
+					count: 23L
+					id: "1F978FF31B6A3B71"
+					item: { Count: 23, id: "gtceu:solid_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "42A47D824BC02319"
+					item: { Count: 2, id: "gtceu:steel_tank_valve" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			description: ["Welcome to the multiblocks page! Quests to build multiblocks will appear here as you unlock their requirements. Most GT multiblocks are upgradeable and so their quests will reflect this."]
+			id: "15C88B75C065DF1D"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "37D26833D33816A2"
+				title: "Multiblocks"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3D461D68E9B40386"]
+			description: [
+				"For large quantities of steam."
+				"Note: If not using solid fuel, the input bus can be omitted for 2 input hatches instead."
+			]
+			id: "4E0C3E1D2DFCC32A"
+			tasks: [
+				{
+					id: "60F02AE1138F2163"
+					item: "gtceu:bronze_large_boiler"
+					type: "item"
+				}
+				{
+					count: 23L
+					id: "6A1E112A91529D89"
+					item: "gtceu:steam_machine_casing"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "351D0439B62B5A37"
+					item: { Count: 2, id: "gtceu:bronze_pipe_casing" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "5B1A96C2400055DE"
+					item: "gtceu:bronze_firebox_casing"
+					type: "item"
+				}
+				{
+					id: "20E9674AEAF64E32"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+				{
+					id: "536ED350F1DF69C2"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:ulv_input_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:lv_input_hatch"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6581D66C5BAEB126"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:ulv_output_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:lv_output_hatch"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1BB9F8847CB19A3D"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:ulv_input_bus"
+								}
+								{
+									Count: 1b
+									id: "gtceu:lv_input_bus"
+								}
+							]
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4008B64DCD2569D2"
+					item: "gtceu:lv_muffler_hatch"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4E0C3E1D2DFCC32A"
+				"56A3A23219DE60A6"
+				"3D461D68E9B40386"
+			]
+			description: ["For even larger quantities of steam."]
+			id: "0BE55D8670C0663B"
+			tasks: [
+				{
+					id: "21EE19C9747BDA6B"
+					item: "gtceu:steel_large_boiler"
+					type: "item"
+				}
+				{
+					count: 23L
+					id: "6819C0C2A69E33E9"
+					item: { Count: 23, id: "gtceu:solid_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "2F50D0D722FB2F38"
+					item: { Count: 2, id: "gtceu:steel_pipe_casing" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "7D41C849A1AC17ED"
+					item: { Count: 5, id: "gtceu:steel_firebox_casing" }
+					type: "item"
+				}
+				{
+					id: "3419AA6B3A98B4E1"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+				{
+					id: "077A9F7C10753A37"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:ulv_input_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:lv_input_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:mv_input_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:hv_input_hatch"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "13751A61F9949A63"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:ulv_output_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:lv_output_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:mv_output_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:hv_output_hatch"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "47ECC52E90B98189"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:ulv_input_bus"
+								}
+								{
+									Count: 1b
+									id: "gtceu:lv_input_bus"
+								}
+								{
+									Count: 1b
+									id: "gtceu:mv_input_bus"
+								}
+								{
+									Count: 1b
+									id: "gtceu:hv_input_bus"
+								}
+							]
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7B6067EA04DE5879"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:lv_muffler_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:mv_muffler_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:hv_muffler_hatch"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0BE55D8670C0663B"]
+			description: ["For extreme quantities of steam."]
+			id: "6E18BD3474B7F335"
+			tasks: [
+				{
+					id: "2305747D125F855E"
+					item: "gtceu:titanium_large_boiler"
+					type: "item"
+				}
+				{
+					count: 23L
+					id: "1D2B486ED9DE6581"
+					item: { Count: 23, id: "gtceu:stable_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "362AF90AB0D9EC9F"
+					item: { Count: 2, id: "gtceu:titanium_pipe_casing" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "4B0DDFDAE55C0DAB"
+					item: { Count: 5, id: "gtceu:titanium_firebox_casing" }
+					type: "item"
+				}
+				{
+					id: "308E445BA0C81A0C"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+				{
+					id: "301577AAF20CEE3E"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:ulv_input_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:lv_input_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:mv_input_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:hv_input_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:ev_input_hatch"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "17105C5C657BEEC9"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:ulv_output_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:lv_output_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:mv_output_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:hv_output_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:ev_output_hatch"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5237D0B0FD7D56A6"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:ulv_input_bus"
+								}
+								{
+									Count: 1b
+									id: "gtceu:lv_input_bus"
+								}
+								{
+									Count: 1b
+									id: "gtceu:mv_input_bus"
+								}
+								{
+									Count: 1b
+									id: "gtceu:hv_input_bus"
+								}
+								{
+									Count: 1b
+									id: "gtceu:ev_input_bus"
+								}
+							]
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "16C548AE839F80D0"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:lv_muffler_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:mv_muffler_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:hv_muffler_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:ev_muffler_hatch"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6E18BD3474B7F335"]
+			description: ["For insane quantities of steam."]
+			id: "7A0603FD1512B7FA"
+			tasks: [
+				{
+					id: "0E3D1C600EF0E051"
+					item: "gtceu:tungstensteel_large_boiler"
+					type: "item"
+				}
+				{
+					count: 23L
+					id: "5D50F4DB1964D349"
+					item: { Count: 23, id: "gtceu:robust_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "13C8639A8A5CB15F"
+					item: { Count: 2, id: "gtceu:tungstensteel_pipe_casing" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "4CD774BF6167C477"
+					item: { Count: 5, id: "gtceu:tungstensteel_firebox_casing" }
+					type: "item"
+				}
+				{
+					id: "7830A7FC3F258AF3"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+				{
+					id: "504A65E118E82F49"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:ulv_input_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:lv_input_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:mv_input_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:hv_input_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:ev_input_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:iv_input_hatch"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7E76756936DEFDBF"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:ulv_output_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:lv_output_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:mv_output_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:hv_output_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:ev_output_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:iv_output_hatch"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2A6F97C84DFCB0FE"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:ulv_input_bus"
+								}
+								{
+									Count: 1b
+									id: "gtceu:lv_input_bus"
+								}
+								{
+									Count: 1b
+									id: "gtceu:mv_input_bus"
+								}
+								{
+									Count: 1b
+									id: "gtceu:hv_input_bus"
+								}
+								{
+									Count: 1b
+									id: "gtceu:ev_input_bus"
+								}
+								{
+									Count: 1b
+									id: "gtceu:iv_input_bus"
+								}
+							]
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "185E2E730EC533F9"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:lv_muffler_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:mv_muffler_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:hv_muffler_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:ev_muffler_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:iv_muffler_hatch"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["29B1D300EAED4710"]
+			description: ["A steam-powered multiblock that allows for parallel processing of up to 8 macerator recipes simultaneously."]
+			id: "775F65D1D4278491"
+			tasks: [
+				{
+					id: "29C90820EFCECB38"
+					item: "gtceu:steam_grinder"
+					type: "item"
+				}
+				{
+					count: 22L
+					id: "7E921DD4112F829F"
+					item: { Count: 23, id: "gtceu:steam_machine_casing" }
+					type: "item"
+				}
+				{
+					id: "2CB96107FF3D60BA"
+					item: "gtceu:steam_input_bus"
+					type: "item"
+				}
+				{
+					id: "5993626C02E5C3E6"
+					item: "gtceu:steam_output_bus"
+					type: "item"
+				}
+				{
+					id: "7B18A50EDC0F3B9A"
+					item: "gtceu:steam_input_hatch"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["142770FC066542F7"]
+			description: ["A steam-powered multiblock that allows for parallel processing of up to 8 furnace recipes simultaneously."]
+			id: "6583D89C8FA63236"
+			tasks: [
+				{
+					id: "5B6068C47192A599"
+					item: "gtceu:steam_oven"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "2BCC263B35BF3846"
+					item: { Count: 8, id: "gtceu:steam_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "6113F6497EA5FB93"
+					item: { Count: 8, id: "gtceu:bronze_firebox_casing" }
+					type: "item"
+				}
+				{
+					id: "719CD7F281423769"
+					item: "gtceu:steam_input_hatch"
+					type: "item"
+				}
+				{
+					id: "7173A62D464B917A"
+					item: "gtceu:steam_input_bus"
+					type: "item"
+				}
+				{
+					id: "6F479124E9390AAA"
+					item: "gtceu:steam_output_bus"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3D461D68E9B40386"]
+			description: ["Your first long-term multiblock, you'll need the EBF for many progression steps in the future. The main methods of upgrading it are better coil blocks and improved energy hatches."]
+			id: "1A9506B24859DE41"
+			tasks: [
+				{
+					id: "358B75A586EF6ABA"
+					item: "gtceu:electric_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "1640B7723DA2D4A5"
+					item: { Count: 16, id: "gtceu:cupronickel_coil_block" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "644C1BD0B33F1B07"
+					item: { Count: 9, id: "gtceu:heatproof_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "585AFB0E3556CB9A"
+					item: { Count: 2, id: "gtceu:lv_energy_input_hatch" }
+					type: "item"
+				}
+				{
+					id: "7AD270545E20863C"
+					item: "gtceu:lv_input_bus"
+					type: "item"
+				}
+				{
+					id: "27286EF1B1440D9B"
+					item: "gtceu:lv_output_bus"
+					type: "item"
+				}
+				{
+					id: "269848F93DEBA385"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+				{
+					id: "7940604837799786"
+					item: "gtceu:lv_muffler_hatch"
+					type: "item"
+				}
+				{
+					id: "326B3040C967D6D8"
+					item: "gtceu:lv_input_hatch"
+					type: "item"
+				}
+				{
+					id: "7880744C68D0A51D"
+					item: "gtceu:lv_output_hatch"
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A9506B24859DE41"]
+			id: "7976C93DC348B68D"
+			tasks: [{
+				id: "62C67DCBFC29FED9"
+				item: "gtceu:kanthal_coil_block"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7976C93DC348B68D"]
+			id: "77ABD7D1B53F42C8"
+			tasks: [{
+				id: "3E2F51A09F91278B"
+				item: "gtceu:nichrome_coil_block"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["77ABD7D1B53F42C8"]
+			id: "0A65B656C2B033BB"
+			tasks: [{
+				id: "5249E09ADABA73CB"
+				item: "gtceu:rtm_alloy_coil_block"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0A65B656C2B033BB"]
+			id: "49511BEF5DA55FE4"
+			tasks: [{
+				id: "5EF2913E7A5CC106"
+				item: "gtceu:hssg_coil_block"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["49511BEF5DA55FE4"]
+			id: "449E80B705B197A6"
+			tasks: [{
+				id: "37F6EB596D683907"
+				item: "gtceu:naquadah_coil_block"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["449E80B705B197A6"]
+			id: "5121A2D38181A4C8"
+			tasks: [{
+				id: "106472B60B3A8070"
+				item: "gtceu:trinium_coil_block"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["5121A2D38181A4C8"]
+			id: "1FC00091F276C8B1"
+			tasks: [{
+				id: "75F64A1441F904F8"
+				item: "gtceu:tritanium_coil_block"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 14.0d
+		}
+	]
+	title: "Maddening Multiblocks"
+}

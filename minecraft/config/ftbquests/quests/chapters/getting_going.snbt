@@ -684,18 +684,8 @@
 		}
 		{
 			dependencies: ["79819FF70803D52B"]
-			description: [
-				"Once you have a brick mold, you can gather some clay, sand, and gravel to make grout for a Tinkers' Construct smeltery."
-				""
-				"Don't waste the glass you get from completing this quest! If you do, you won't be able to get more until you reach Steel!"
-			]
+			description: ["Once you have a brick mold, you can gather some clay, sand, and gravel to make grout for a Tinkers' Construct smeltery."]
 			id: "65D4F72C102EAE34"
-			rewards: [{
-				count: 5
-				id: "33A28F7F0C901BC0"
-				item: "minecraft:glass"
-				type: "item"
-			}]
 			tasks: [
 				{
 					id: "6B2F88C7AC252EE8"
@@ -714,11 +704,7 @@
 		}
 		{
 			dependencies: ["65D4F72C102EAE34"]
-			description: [
-				"Use the glass you recieved from the last quest to make the components for a simple Melter setup."
-				""
-				"Place the Melter on top of the Heater, attach the faucet to the Melter and place the basin under the faucet. Then you can place fuel into the heater and raw ores into the melter to melt them. Once there's melted fluid in the melter, you can right-click the faucet to pour it into the basin."
-			]
+			description: ["Place the Melter on top of the Heater, attach the faucet to the Melter and place the basin under the faucet. Then you can place fuel into the heater and raw ores into the melter to melt them. Once there's melted fluid in the melter, you can right-click the faucet to pour it into the basin."]
 			id: "51BAF16A6A61185C"
 			tasks: [
 				{

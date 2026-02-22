@@ -1,0 +1,128 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "elementary_watson"
+	group: "6299F820C0605FD9"
+	id: "0EEAD7445561259A"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["To get started down the path of the mage, find some Inert Crystals and smelt some Gold."]
+			id: "0A6E9C758ECDB364"
+			tasks: [
+				{
+					id: "3DD87DD1271647C4"
+					item: "elementalcraft:inert_crystal"
+					type: "item"
+				}
+				{
+					id: "76FF9BF2623DE235"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+			]
+			title: "Basics of Magic"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0A6E9C758ECDB364"
+				"51BAF16A6A61185C"
+			]
+			description: ["Once you can melt down gold into nuggets, make a few contained crystals with them."]
+			id: "0F70029377B12228"
+			tasks: [{
+				id: "56693734060BFC96"
+				item: "elementalcraft:contained_crystal"
+				type: "item"
+			}]
+			title: "Crystal Containment"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F70029377B12228"]
+			description: ["When placed directly underneath a floating source, which looks like a colored circle, it will extract the element from that source into the container underneath."]
+			id: "4941503A1CB4A442"
+			tasks: [{
+				id: "351B6FCEA1D1626D"
+				item: "elementalcraft:rudimentary_element_extractor"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F70029377B12228"]
+			description: ["Make a few batches of element pipes. They auto-connect to compatible blocks next to them, and can be right-clicked on a connection to configure them to extract the element in the connected block."]
+			id: "4EF9543A7552A9E8"
+			tasks: [{
+				count: 12L
+				id: "171435205B0C7A23"
+				item: "elementalcraft:elementpipe_impaired"
+				type: "item"
+			}]
+			title: "Impaired Element Pipes"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0F70029377B12228"]
+			description: ["Using some iron, make a basic infuser. To use it, place it on top of a container with an element in it, then right-click the infuser with an item to infuse the item with that element."]
+			id: "51C32D406CBD2DEE"
+			tasks: [{
+				id: "5B6FD52CC8B8289E"
+				item: "elementalcraft:infuser"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4EF9543A7552A9E8"]
+			description: ["Make a couple small containers. Use one to store the extracted element then pipe that element into another with the infuser on top, so that you can constantly be infusing."]
+			id: "04B1FB759ED8F240"
+			tasks: [{
+				count: 2L
+				id: "6B8ACE1832A5F537"
+				item: "elementalcraft:small_container"
+				type: "item"
+			}]
+			title: "Containing Elements"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"4941503A1CB4A442"
+				"04B1FB759ED8F240"
+				"51C32D406CBD2DEE"
+			]
+			description: ["Using your new tools, find Fire, Water, and Earth sources, and use them to make some infused materials."]
+			id: "61C5563AB988BB9E"
+			tasks: [
+				{
+					id: "212157BB6A264F82"
+					item: "elementalcraft:drenched_iron_ingot"
+					type: "item"
+				}
+				{
+					id: "1E53258AFD44E4A3"
+					item: "gtceu:grounded_copper_ingot"
+					type: "item"
+				}
+				{
+					id: "16DE57232C42E87A"
+					item: "gtceu:quickened_redstone_dust"
+					type: "item"
+				}
+			]
+			title: "Infused Materials"
+			x: 6.0d
+			y: 0.0d
+		}
+	]
+	title: "Elementary, Watson"
+}

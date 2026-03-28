@@ -29,6 +29,11 @@
     "material.gtceu.pure_glass": "Pure Glass",
 
     "tagprefix.livingrock": "Livingrock %s Ore",
+    "tagprefix.holystone": "Holystone %s Ore",
+    "tagprefix.raw_clorite": "Raw Clorite %s Ore",
+    "tagprefix.aseterite": "Aseterite %s Ore",
+    "tagprefix.divinite": "Angilite %s Ore",
+    "tagprefix.sentrite": "Sentrite %s Ore",
 
     "gtceu.jei.ore_vein.alfheim/dragonstone_peaks": "Alfheim Peaks Dragonstone Vein",
     "gtceu.jei.ore_vein.alfheim/peak_filler": "Alfheim Peaks Livingrock",

@@ -10,9 +10,14 @@
         "version": "0.5.2"
     },
     {
-        "filename": "AdvancedAE-1.3.2-1.20.1.jar",
+        "filename": "AdvancedAE-1.3.3-1.20.1.jar",
         "name": "Advanced AE",
-        "version": "1.3.2-1.20.1"
+        "version": "1.3.3-1.20.1"
+    },
+    {
+        "filename": "aeroblender-1.20.1-1.0.1-neoforge.jar",
+        "name": "AeroBlender",
+        "version": "1.20.1-1.0.1-neoforge"
     },
     {
         "filename": "AgriCraft-forge-1.20.1-4.0.6.jar",
@@ -195,6 +200,11 @@
         "version": "1.20.1-5.1.0"
     },
     {
+        "filename": "deep_aether-1.20.1-1.1.7.jar",
+        "name": "Deep Aether",
+        "version": "1.20.1-1.1.7"
+    },
+    {
         "filename": "Draconic-Evolution-1.20.1-3.1.2.621-universal.jar",
         "name": "Draconic Evolution",
         "version": "3.1.2.621"
@@ -225,14 +235,14 @@
         "version": "5.3.3-R-1.20.1"
     },
     {
-        "filename": "EnderIO-1.20.1-6.2.17-beta-all.jar",
+        "filename": "EnderIO-1.20.1-6.2.18-beta-all.jar",
         "name": "Ender IO",
-        "version": "6.2.17-beta"
+        "version": "6.2.18-beta"
     },
     {
-        "filename": "entityculling-forge-1.9.5-mc1.20.1.jar",
+        "filename": "entityculling-forge-1.10.0-mc1.20.1.jar",
         "name": "EntityCulling",
-        "version": "1.9.5"
+        "version": "1.10.0"
     },
     {
         "filename": "MnaJS-1.20.1-0.1.5-hotfix.jar",
@@ -255,9 +265,9 @@
         "version": "6.1.5u"
     },
     {
-        "filename": "ExtendedAE-1.20-1.4.10-forge.jar",
+        "filename": "ExtendedAE-1.20-1.4.12-forge.jar",
         "name": "ExtendedAE",
-        "version": "1.20-1.4.10-forge"
+        "version": "1.20-1.4.12-forge"
     },
     {
         "filename": "ftb-library-forge-2001.2.12.jar",
@@ -280,9 +290,9 @@
         "version": "2.1.3"
     },
     {
-        "filename": "FarmersDelight-1.20.1-1.2.10.jar",
+        "filename": "FarmersDelight-1.20.1-1.2.11.jar",
         "name": "Farmer's Delight",
-        "version": "1.20.1-1.2.10"
+        "version": "1.20.1-1.2.11"
     },
     {
         "filename": "fast-ip-ping-v1.0.8-mc1.20.4-forge.jar",
@@ -310,9 +320,9 @@
         "version": "6.0.1"
     },
     {
-        "filename": "forestry-1.20.1-2.10.0.jar",
+        "filename": "forestry-1.20.1-2.10.2.jar",
         "name": "Forestry",
-        "version": "2.10.0"
+        "version": "2.10.2"
     },
     {
         "filename": "gtca-1.20.1-2.1.0-beta.jar",
@@ -425,9 +435,9 @@
         "version": "1.0"
     },
     {
-        "filename": "kubejs_enderio-forge-1.20.1-0.6.0.jar",
+        "filename": "kubejs_enderio-forge-1.20.1-0.6.1.jar",
         "name": "KubeJS-EnderIO",
-        "version": "1.20.1-0.6.0"
+        "version": "1.20.1-0.6.1"
     },
     {
         "filename": "LibX-1.20.1-5.0.14.jar",
@@ -450,9 +460,9 @@
         "version": "0.7.35.94"
     },
     {
-        "filename": "ldlib-forge-1.20.1-1.0.49.jar",
+        "filename": "ldlib-forge-1.20.1-1.0.50.jar",
         "name": "LowDragLib",
-        "version": "1.0.49"
+        "version": "1.0.50"
     },
     {
         "filename": "Lychee-1.20.1-Forge-5.2.0.jar",
@@ -625,9 +635,9 @@
         "version": "1.0.0.6"
     },
     {
-        "filename": "Patchouli-1.20.1-84.1-FORGE.jar",
+        "filename": "Patchouli-1.20.1-85-FORGE.jar",
         "name": "Patchouli",
-        "version": "1.20.1-84.1-FORGE"
+        "version": "1.20.1-85-FORGE"
     },
     {
         "filename": "photon-forge-1.20.1-1.1.17.jar",
@@ -710,14 +720,14 @@
         "version": "1.15"
     },
     {
-        "filename": "sophisticatedbackpacks-1.20.1-3.24.24.1538.jar",
+        "filename": "sophisticatedbackpacks-1.20.1-3.24.29.1603.jar",
         "name": "Sophisticated Backpacks",
-        "version": "3.24.24.1538"
+        "version": "3.24.29.1603"
     },
     {
-        "filename": "sophisticatedcore-1.20.1-1.3.5.1505.jar",
+        "filename": "sophisticatedcore-1.20.1-1.3.10.1552.jar",
         "name": "Sophisticated Core",
-        "version": "1.3.5.1505"
+        "version": "1.3.10.1552"
     },
     {
         "filename": "SoLOnion_FORGE_v1.4.5_mc1.20.1.jar",
@@ -740,14 +750,29 @@
         "version": "1.1.8"
     },
     {
-        "filename": "supermartijn642corelib-1.1.20-forge-mc1.20.1.jar",
+        "filename": "supermartijn642corelib-1.1.21-forge-mc1.20.1.jar",
         "name": "SuperMartijn642's Core Lib",
-        "version": "1.1.20"
+        "version": "1.1.21"
+    },
+    {
+        "filename": "TerraBlender-forge-1.20.1-3.0.1.10.jar",
+        "name": "TerraBlender",
+        "version": "3.0.1.10"
     },
     {
         "filename": "Terralith_1.20.x_v2.5.4.jar",
         "name": "Terralith",
         "version": "2.5.4"
+    },
+    {
+        "filename": "aether-1.20.1-1.5.2-neoforge.jar",
+        "name": "The Aether",
+        "version": "1.20.1-1.5.2-neoforge"
+    },
+    {
+        "filename": "aether-redux-2.0.19-1.20.1-neoforge.jar",
+        "name": "The Aether: Redux",
+        "version": "2.0.19"
     },
     {
         "filename": "theoneprobe-1.20.1-10.0.3.jar",
@@ -770,9 +795,9 @@
         "version": "15.1.3"
     },
     {
-        "filename": "waystones-forge-1.20.1-14.1.19.jar",
+        "filename": "waystones-forge-1.20.1-14.1.20.jar",
         "name": "Waystones",
-        "version": "14.1.19"
+        "version": "14.1.20"
     },
     {
         "filename": "watut-forge-1.20.1-1.2.3.jar",
